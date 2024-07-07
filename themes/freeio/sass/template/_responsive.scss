@@ -1,0 +1,214 @@
+/*
+*  Responsive
+*/
+@media(min-width: 1460px){
+    .container{
+        max-width: 1430px;
+    }
+    .main-blog{
+        width: 72%;
+        &.p-left .site-main{
+            padding-left: $theme-padding;
+        }
+        &.p-right .site-main{
+            padding-right: $theme-padding;
+        }
+    }
+    .sidebar-blog{
+        width: 28%;
+    }
+    .row-margin-left{
+        > .elementor-container{
+            overflow: hidden;
+            width: calc( 1460px + ((100vw - 1460px) / 2) );
+            max-width: calc( 1460px + ((100vw - 1460px) / 2) ) !important;
+            left: calc( (100vw - 1460px) / 4 );
+            padding-right: calc( (100vw - 1430px) / 2);
+            .slick-carousel{
+                .slick-arrow{
+                    @include box-shadow(0 5px 10px 0 rgba(#051036,0.07));
+                }
+            }
+            .elementor-widget-wrap{
+                padding-left: 30px;
+                padding-right: 30px;
+            }
+        }
+    }
+    .fullscreen .slick-list{
+      overflow: visible;
+    }
+}
+@media (min-width: 1025px) {
+  .d-dk-none {
+    display: none !important;
+  }
+}
+@media (min-width: 1025px) and (max-width: 1200px) {
+  .d-dk-none {
+    display: none !important;
+  }
+  @for $i from 1 through 12 {
+    .col-tablet-extra-#{$i}{
+        width: percentage($i/12);
+    }
+  }
+}
+@media (min-width: 992px) {
+  .sticky-lg-top {
+    position: sticky !important;
+  }
+}
+@media(min-width: 1200px){
+    .hidden-dots{
+        .slick-dots{
+            display: none;
+        }
+    }
+    .radius-12{
+        @include border-radius(12px);
+    }
+    .radius-16{
+        @include border-radius(16px);
+    }
+    .pl-80{
+        padding-left: 80px;
+    }
+}
+@media (max-width: 1199px){
+    .freelancer-item .information-right,
+    .project-list{
+        .btn{
+            padding-left: 20px;
+            padding-right: 20px;
+            i{
+                display: none;
+            }
+        }
+    }
+}
+@media (max-width: 991px){
+    // logo 991px
+    .mobile-groups-button{
+        padding:15px 0;
+        position: relative;
+        z-index: 2;
+        ~ .main-content{
+            margin-top: 0 !important;
+        }
+    }
+    .inner-dashboard.container-fluid .sidebar:not(.sidebar-listing-detail){
+        top: 0 !important;
+        height: 100vh !important;
+    }
+    .menu_short_profile li a{
+        @include border-radius($border-radius-sm);
+    }
+    .main-special-blog{
+        margin-bottom: 10px;
+    }
+}
+@media (max-width:767px) {
+    .row{
+        margin-left: -0.5rem;
+        margin-right: -0.5rem;
+        > [class *="col-"]:not(.elementor-column){
+            padding-left: 0.5rem;
+            padding-right: 0.5rem;
+        }
+    }
+    .nav-tabs{
+        overflow-x: auto;
+        white-space: nowrap;
+        li{
+            float: none;
+            display: inline-block;
+            margin-bottom: 5px;
+        }
+    }
+    form.form-search .twitter-typeahead::before {
+        right: 0;
+    }
+    .detail-average-rating + .detail-rating{
+        margin-top: 10px;
+    }
+    .post-list-item-v3 .top-image{
+        width: 120px;
+    }
+}
+@media (max-width:575px) {
+    .wrapper-services-related{
+        .jobs-item-related:last-child .job-item,
+        .freelancer-item,
+        .service-item{
+            margin-bottom: 0;
+        }
+    }
+    .header-detail-job .job-thumbnail + .job-information{
+        padding: 10px 0 0;
+    }
+    .search-orderby-wrapper{
+        .ms-auto{
+            margin-top: $theme-margin / 2;
+        }
+    }
+    .project-list .project-metas i{
+        display: none;
+    }
+}
+@media(max-width: 479px){
+    .woocommerce form .woocommerce-billing-fields .woocommerce-billing-fields__field-wrapper > * > *,
+    .woocommerce form .woocommerce-billing-fields .woocommerce-billing-fields__field-wrapper > * > .select2-container, .woocommerce form .woocommerce-billing-fields .woocommerce-billing-fields__field-wrapper > * > select, .woocommerce form .woocommerce-billing-fields .woocommerce-billing-fields__field-wrapper > * > input{
+        width: 100% !important;
+        margin: 0 0 5px !important;
+    }
+    .apus-filter{
+        .subtitle{
+            display: none;
+        }
+    }
+    div.cmb2-wrap [id*="map_location-map"] ~ input{
+        margin:0 0 5px !important;
+        width: 100%;
+    }
+    .comment-list .comment-reply-link .text-reply::before {
+        display: none;
+    }
+    .woocommerce-page table.cart td.actions .coupon{
+        margin: 0;
+        .input-text{
+            margin: 0 0 1rem;
+            width: 100%;
+        }
+    }
+}
+// fix admin
+.admin-bar{
+    @media(max-width: 782px){
+        &.header_transparent{
+            #apus-header{
+                top: 46px;
+            }
+        }
+        .header-mobile{
+            top: 46px;
+            &.sticky-header{
+
+            }
+        }
+    }
+}
+@media(min-width: 783px){
+    .admin-bar{
+        .header-mobile{
+            top: 32px;
+        }
+    }
+}
+@media(max-width: 600px){
+    .admin-bar{
+        .header-mobile.sticky-header{
+            top: 0;
+        }
+    }
+}

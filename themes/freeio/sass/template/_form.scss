@@ -1,0 +1,713 @@
+// btn
+.btn-action-icon{
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+    vertical-align: middle;
+    position: relative;
+    @include size(40px,40px);
+    font-size: 1rem;
+    text-align: center;
+    color: $theme-color-second;
+    background: #FFEDE8;
+    @include border-radius($border-radius-sm);
+    @include transition(all 0.3s ease-in-out 0s);
+	&:hover,&:focus{
+      color: #fff;
+      background:$theme-color-second;
+      &:before{
+      	color: #fff;
+      }
+    }
+	//------------------///
+	&.rejec{
+	    &:hover,&:focus{
+	      color: #fff;
+	      background:$warning;
+	    }
+	    &.rejected{
+	      @include opacity(0.6);
+	    }
+	}
+	&.download{
+	    &:hover,&:focus{
+	      color: #fff;
+	      background: #222;
+	    }
+	}
+	&[class*="remove"]{
+	    &:hover,&:focus{
+	      color: #fff;
+	      background: $danger;
+	    }
+	}
+	&:before{
+      position: absolute;
+      top:0;
+      left: 0;
+      @include size(100%,100%);
+      @include opacity(0);
+      color: $theme-color-second;
+      content:'\f110';
+      font-family: 'Font Awesome 5 Free';
+      font-weight: 900;
+      @include transition(all 0.3s ease-in-out 0s );
+    }
+    &.loading{
+        color: transparent !important;
+        &:before{
+        	line-height: 40px;
+          @include opacity(0.8);
+          animation:rotate_icon 1500ms linear 0s normal none infinite running;
+          -webkit-animation:rotate_icon 1500ms linear 0s normal none infinite running;
+        }
+    }
+}
+// action detail
+.list-action{
+  	[class *="btn"]{
+	    i{
+	    	@include transition(all 0.2s ease-in-out 0s);
+		      display: inline-block;
+		      overflow: hidden;
+		      vertical-align: middle;
+		      background-color: #f4f4f4;
+		      color: #717171;
+		      font-size: 1.0625rem;
+		      height: 45px;
+		      line-height: 45px;
+		      width: 45px;
+		      text-align: center;
+		      @include border-radius(50%);
+		      margin-right: .5rem;
+	    }
+	    &:hover{
+	    	i{
+		      color: #fff;
+		      background-color: $theme-color;
+		    }
+	    }
+	}
+  	[class *="added"]{
+	    i{
+	      color: #fff;
+	      background-color: $theme-color;
+	    }
+	    &:hover{
+	    	i:before{
+	    		content: "\e646";
+				font-family: 'themify';
+				font-weight: 400;
+	    	}
+	    }
+	}
+	[class *="btn"]{
+		&.loading{
+	    	i{
+	    		&:before{
+	    			display: inline-block;
+	    			animation:rotate_icon 1500ms linear 0s normal none infinite running;
+		        	-webkit-animation:rotate_icon 1500ms linear 0s normal none infinite running;
+		    		content:'\f110';
+			      	font-family: 'Font Awesome 5 Free';
+			      	font-weight: 900;
+		    	}
+	    	}
+		}
+	}
+	// review
+	.review{
+		@media(min-width: 1200px){
+			padding-top: 0.875rem;
+			padding-bottom: 0.875rem;
+			min-width: 200px;
+			text-align: center;
+		}
+	}
+	> *{
+		display: inline-block;
+		margin-right: 0.625rem;
+		@media(min-width: 1200px){
+			margin-right: 1.875rem;
+		}
+		&:last-child{
+			margin-right: 0 !important;
+		}
+	}
+}
+
+.view_all{
+    font-weight: 500;
+    display: inline-block;
+    font-size: 14px;
+    &:focus,
+    &:hover{
+    	text-decoration: underline;
+    }
+}
+.pre{
+	margin-right: 0.5rem !important;
+	vertical-align: middle;
+	line-height: 1;
+}
+.next{
+	margin-left: 0.5rem !important;
+	vertical-align: middle;
+	line-height: 1;
+}
+.btn-freelancer-alert,
+.btn-job-alert{
+	&:before{
+		content: "\f142";
+		font-family: "Flaticon";
+		margin-right: 10px;
+		font-size: 25px;
+		line-height:0;
+		vertical-align: sub;
+		display: inline-block;
+	}
+}
+.btn-second{
+  background: $theme-color-second;
+  border-color: $theme-color-second;
+  color: #fff;
+  &:active,
+  &:hover{
+  	background: $theme-hover-color-second;
+	border-color: $theme-hover-color-second;
+	color: #fff;
+  }
+}
+.btn-outline{
+	@include button-outline(primary, $primary, #fff );
+	@include button-outline(success, $success, #FFFFFF );
+	@include button-outline(info, $info, #FFFFFF );
+	@include button-outline(danger, $danger, #FFFFFF );
+	@include button-outline(warning, $warning, #FFFFFF );
+}
+.btn-inverse{
+	@include button-inverse(primary, $primary, #FFFFFF );
+	@include button-inverse(success, $success, #FFFFFF );
+	@include button-inverse(info, $info, #FFFFFF );
+	@include button-inverse(danger, $danger, #FFFFFF );
+	@include button-inverse(warning, $warning, #FFFFFF );
+	@include button-inverse(theme, $theme-color, #FFFFFF );
+	@include button-inverse(second, $theme-color-second, #FFFFFF );
+}
+.view-more-btn{
+	i{
+		margin-left: 12px;
+	}
+}
+.reamore{
+	font-size:14px;
+	font-weight:500;
+	color:$theme-color !important;
+	text-transform:uppercase;
+	padding:0 0 4px;
+	border-bottom:2px solid $theme-color;
+	i{
+		margin-left: 8px;
+	}
+}
+.btn-browse{
+	text-transform:uppercase;
+	font-size: 12px;
+	padding: 10px 15px;
+	border:1px solid #eaeff5;
+	@include border-radius(50px);
+	line-height: 1.42857143;
+	&:hover,&:focus{
+		background:$theme-color;
+		color: #fff;
+		border-color:$theme-color;
+	}
+}
+.apus-loadmore-btn{
+	display:inline-block;
+	padding: 10px 30px;
+	border:1px solid #24324A;
+	text-transform: capitalize;
+	font-weight: 600;
+	color:#24324A;
+	background-color: #fff;
+	@include transition(all 0.3s ease-in-out 0s);
+	@include border-radius($border-radius);
+	position: relative;
+	@media(min-width: 1200px){
+		padding: 10px 40px;
+	}
+	&:hover,&:focus{
+		color:#fff;
+		border-color:#24324A;
+		background-color:#24324A;
+	}
+	&.loading{
+		border-color:transparent !important;
+		background-color: transparent !important;
+		color: transparent !important;
+		&:after{
+            background-image: url("data:image/svg+xml,%3Csvg xmlns=\"http://www.w3.org/2000/svg\" width=\"38\" height=\"38\" viewBox=\"0 0 38 38\" stroke=\"rgba(102,102,102,0.25)\"%3E%3Cg fill=\"none\" fill-rule=\"evenodd\"%3E%3Cg transform=\"translate(1 1)\" stroke-width=\"2\"%3E%3Ccircle stroke-opacity=\".55\" cx=\"18\" cy=\"18\" r=\"18\"/%3E%3Cpath d=\"M36 18c0-9.94-8.06-18-18-18\"%3E%3CanimateTransform attributeName=\"transform\" type=\"rotate\" from=\"0 18 18\" to=\"360 18 18\" dur=\"1s\" repeatCount=\"indefinite\"/%3E%3C/path%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+            background-position: center center;
+            background-repeat: no-repeat;
+            content: "";
+            @include size(100%, 100%);
+            display: block;
+            position: absolute;
+            top:0;
+            left: 0;
+       	}
+	}
+}
+
+.viewmore-products-btn{
+	position:relative;
+	&:before{
+		content: '';
+		position: absolute;
+		top: -2px;
+		left: -2px;
+		@include size(calc(100% + 4px),calc(100% + 4px));
+		z-index:2;
+		@include opacity(0);
+		background:rgba(255,255,255,0.9) url(#{$image-theme-path}loading-quick.gif) no-repeat scroll center center / 20px auto;
+	}
+	&.loading{
+		&:before{
+			@include opacity(1);
+		}
+	}
+}
+button:focus,
+.btn:focus{
+	outline:none !important;
+	@include box-shadow(none !important);
+}
+.radius-0{
+	@include border-radius(0 !important);
+}
+.radius-circle{
+	@include border-radius(100px !important);
+}
+.read-more{
+	font-size:12px;
+	font-weight:600;
+	text-transform:uppercase;
+	color:$theme-color;
+}
+.btn-theme.btn-white{
+	background: #fff;
+	color: $theme-color !important;
+	border-color:#fff;
+	&:active,
+	&:hover{
+		background-color: $theme-color;
+		color: #fff !important;
+		border-color: $theme-color;
+	}
+}
+.btn-purple{
+	background: #bc7cbf;
+	color: #fff;
+	border-color:#bc7cbf;
+	&:active,
+	&:hover{
+		color:#fff;
+		background:darken(#bc7cbf, 5%);
+		border-color:darken(#bc7cbf, 5%);
+	}
+}
+.btn-brown {
+	background: transparent;
+	color:#c0c0c0;
+	border-color: #4e4f4f;
+	&:focus,
+	&:hover{
+		color:#fff;
+		background:transparent;
+		border-color: #fff;
+	}
+}
+.btn-back {
+	padding: 8px 15px;
+	@include border-radius(2px);
+	background: rgba(255, 58, 114, .1);
+	color:#ff7c39;
+	border-color: #ff7c39;
+	&:focus,
+	&:hover{
+		color:#fff;
+		background:rgba(255, 58, 114, 1);
+		border-color: #ff7c39;
+	}
+}
+.btn-white.btn-br-white{
+	background: #fff;
+	color: $body-link;
+	border-color:#fff;
+	&:active,
+	&:hover{
+		color: $body-link;
+		background:darken(#fff,15%);
+		border-color:darken(#fff,15%);
+	}
+}
+
+.btn-readmore{
+	@include transition(all 0.3s ease-out);
+	text-decoration: underline;
+	color: $theme-hover-color;
+}
+.btn-lighten{
+	border-color:#fff;
+	color:#fff;
+	background: transparent;
+	&:hover{
+		color: #fff;
+		background: transparent;
+		border-color:#fff;
+	}
+}
+.btn-outline.btn-white{
+	background: transparent;
+	color: #fff;
+	border-color:#fff;
+	&:active,
+	&:hover{
+		color: #fff;
+		background: $theme-color;
+		border-color: $theme-color;
+	}
+}
+.btn-primary.btn-inverse{
+	&:active,
+	&:hover{
+		background:#fff !important;
+		color: $primary !important;
+		border-color:$primary !important;
+	}
+}
+.btn-theme {
+	background: var(--freeio-theme-color);
+	border-color: var(--freeio-theme-color);
+	color: #fff;
+  &:active,
+  &:hover{
+  	background: var(--freeio-theme-hover-color);
+	border-color: var(--freeio-theme-hover-color);
+	color: #fff;
+  }
+}
+.btn-green{
+  @include button-variant(#fff,#48C740, #48C740);
+}
+.btn-dark {
+  @include button-variant(#fff,#0D263B, #0D263B);
+}
+.btn-theme-rgba10{
+	background: var(--freeio-theme-color-010);
+	border-color: transparent;
+	color: $theme-color;
+	&:hover,&:focus{
+		color: #fff;
+		background: $theme-color;
+		border-color: transparent;
+	}
+}
+.btn-theme.btn-outline{
+	color: $theme-color;
+	border-color: $theme-color;
+	background: transparent;
+	&:hover,&:active{
+		color: #fff;
+		background: $theme-color;
+		border-color: $theme-color;
+	}
+}
+.btn-outline.btn-green{
+	color: #48C740;
+	border-color: #48C740;
+	background: transparent;
+	&:hover,&:active{
+		color: #fff;
+		background: #48C740;
+		border-color: #48C740;
+	}
+}
+/* Search
+------------------------------------------------*/
+.search-popup{
+	.dropdown-menu{
+		padding: 10px;
+	}
+}
+
+.searchform{
+	.input-search{
+		padding:15px;
+		border-right: 0;
+		line-height: 1.5;
+	}
+	.btn-search{
+		vertical-align: top;
+		color: #adafac;
+		padding:12px $btn-padding-y;
+	}
+	.input-group-btn{
+		line-height: 100%;
+	}
+}
+// Search categories
+.search-category{
+	.btn{
+		margin-left: 10px !important;
+		@include border-radius($border-radius-sm !important );
+	}
+	.wpo-search-inner{
+		label.form-control{
+			border:none;
+			border-bottom-right-radius: $border-radius-sm;
+	        border-top-right-radius: $border-radius-sm;
+		}
+	}
+	select {
+		border:none;
+		text-transform: capitalize;
+		font-weight: 500;
+	}
+}
+
+/* comment form
+------------------------------------------------*/
+.chosen-container{
+	width: 100% !important;
+}
+
+.input-group-form{
+	@include border-radius(3px);
+	background: $input-group-form-bg;
+	margin: $input-group-form-margin;
+	.form-control-reversed{
+		border: 0px;
+		background: $input-form-bg;
+		color: darken($white, 20%);
+	    font-size: 14px;
+	    height: 34px;
+	    &:hover,
+	    &:focus{
+	        @include box-shadow(none);
+	    }
+	}
+	.input-group-addon{
+        border: 0;
+        background: $input-form-bg;
+        border-radius-left:4px;
+    }
+}
+.btn-compare,
+.btn-favorites{
+	font-size: 21px;
+	line-height: 1;
+	.count{
+		font-size: 13px;
+		display: inline-block;
+		font-weight: 600;
+		color: #fff;
+		background-color: $theme-color;
+		@include border-radius(50%);
+		padding:4px 7px;
+		vertical-align: top;
+		margin-top: -10px;
+		margin-left: -14px;
+	}
+}
+.btn-underline{
+	text-decoration: underline;
+	&:hover{
+		color: $theme-color;
+	}
+}
+.btn-view-all-photos{
+	background-color: #fff;
+	i{
+		display: inline-block;
+		margin-right: 8px;
+	}
+	@media(max-width:991px){
+		padding: 5px 10px;
+	}
+}
+.btn-view,
+.view-my-listings{
+	i{
+		display: inline-block;
+		margin-left: 5px;
+	}
+}
+.btn-view{
+	font-weight: 700;
+	white-space: nowrap;
+	padding: 0;
+	border: 0;
+	background: transparent;
+	color: $body-link;
+	&:hover,&:focus{
+		color: $theme-color;
+		background: transparent;
+	}
+}
+.btn-show-filter {
+	i{
+		display: inline-block;
+		margin-left: 10px;
+		line-height: 1;
+		vertical-align: middle;
+		font-size: 16px;
+	}
+}
+.btn-app{
+	line-height: 1;
+	color: #fff;
+	background-color: $theme-color-second;
+	padding:10px 20px;
+	@media(min-width: 1200px){
+		padding:14px 25px;
+	}
+	@include border-radius($border-radius);
+	@include transition(all 0.3s ease-in-out 0s);
+	text-align: left;
+	&:hover,&:focus{
+		color: #fff;
+		background-color: $body-link;
+	}
+	.app-icon{
+		font-size: 20px;
+		line-height: 1;
+		width: 40px;
+		@media(min-width: 1200px){
+			width: 42px;
+			font-size: 25px;
+		}
+		padding-right: 20px;
+		flex-shrink: 0;
+	}
+	.inner{
+		padding-left: 20px;
+		flex-grow: 1;
+		border-left: 1px solid rgba(#fff,0.3);
+	}
+	.name-app{
+		display: block;
+		font-size: $font-size-base;
+		font-weight: 500;
+		margin-top: 5px;
+	}
+	.sub{
+		font-size: 12px;
+	}
+	&.st_white{
+		background: rgba(#fff,0.1);
+		&:hover,&:focus{
+			color: #fff;
+			background: rgba(#fff,0.2);
+		}
+		.inner{
+			padding: 0;
+			border: 0;
+		}
+	}
+	&.st_green{
+		background: #F1FCFA;
+		color: $body-link;
+		&:hover,&:focus{
+			color: $body-link;
+			background: darken(#F1FCFA, 10%);
+		}
+		.inner{
+			padding: 0;
+			border: 0;
+		}
+	}
+	&.st_dark{
+		background: #222222;
+		&:hover,&:focus{
+			background: $theme-color-second;
+		}
+	}
+	&.st_gray{
+		background: #F0EFEC;
+		color: $body-link;
+		&:hover,&:focus{
+			color: #fff;
+			background: $theme-color-second;
+		}
+	}
+}
+.btn-light-theme{
+	border:0;
+	text-transform: uppercase;
+	background-color: var(--freeio-theme-color-010);
+	color: $theme-color;
+	padding:11px 35px;
+	&:hover,&:focus{
+		color: #fff;
+		background-color: $theme-color;
+	}
+}
+.filter{
+	padding:8px 20px;
+	@media(min-width: 1200px){
+		padding: 8px 1.875rem;
+	}
+	border: 0;
+	background-color: #F4F4F4;
+	color: $body-color;
+	i{
+		margin-right: 10px;
+		display: inline-block;
+		line-height: 1;
+		vertical-align: middle;
+	}
+	&:hover,&:focus{
+		color: #fff;
+		background-color: $theme-color;
+	}
+}
+.save-search-btn,
+.reset-search-btn{
+	white-space: nowrap;
+	i{
+		display: inline-block;
+		margin-right: 5px;
+		vertical-align: middle;
+	}
+}
+.mobile-menu-icon{
+	display: inline-block;
+	position: relative;
+	@include size(20px,16px);
+	line-height: 1;
+	border-top: 2px solid #222222;
+	&:after,
+	&:before{
+		content: '';
+		position: absolute;
+		@include transition(all 0.3s ease-in-out 0s);
+		background-color: #222222;
+		bottom: 0;
+		right: 0;
+		@include size(100%,2px);
+	}
+	&:after{
+		@include size(15px,2px);
+	}
+	&:before{
+		@include size(100%,2px);
+		bottom: 50%;
+	}
+	&:hover{
+		&:after{
+			width: 100%;
+		}
+	}
+}

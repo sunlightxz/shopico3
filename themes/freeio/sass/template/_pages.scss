@@ -1,0 +1,154 @@
+.home-page-default {
+  padding-top: $theme-padding;
+  padding-bottom: $theme-padding;
+  @media(min-width: 1200px){
+  	padding-top: 70px;
+  	padding-bottom: 70px;
+  }
+}
+.main-page {
+	.page-links{
+		clear: both;
+		overflow: hidden;
+		padding:$theme-padding 0;
+		margin:0;
+	}
+	#comments{
+		padding-top:30px;
+		clear: both;
+	}
+}
+.main-content {
+	padding-bottom:$theme-padding;
+	@media(min-width: 1200px){
+		padding-bottom: 60px;
+	}
+}
+.apus-breadscrumb{
+	+ .home-page-default{
+		padding-top: 0;
+	}
+}
+.main-content-detail{
+	padding-bottom: 40px;
+	@media(min-width: 768px){
+		padding-bottom:50px;
+	}
+	@media(min-width: 1200px){
+		padding-bottom:100px;
+	}
+}
+body.no-footer{
+	#apus-footer{
+		display: none !important;
+	}
+}
+.wrapper-main-page{
+	&.container-fluid{
+		padding-left: 0;
+		padding-right: 0;
+		> .row{
+			margin-left: 0;
+			margin-right: 0;
+			> div{
+				padding-left: 0;
+				padding-right: 0;
+			}
+		}
+	}
+}
+//----------------------------------
+// layout page
+div.wpcf7-validation-errors{
+	margin: 0;
+	padding: 15px;
+}
+.contact-form-content{
+	padding: $theme-padding;
+	background: $contact-bg;
+	min-height: 260px;
+	.rounded{
+		margin-right: 10px;
+		color: $white;
+		@include size(40px,40px);
+		background: darken($body-bg, 20%);
+		.fa,.icon{
+			font-size: 16px;
+			margin: 13px;
+		}
+	}
+}
+// Page Not Found
+//----------------------------------
+.page-404{
+	position:relative;
+ .not-found{
+ 		padding:30px 0;
+ 		@media(min-width: 1200px){
+ 			padding:100px 0;
+ 		}
+ 	}
+ 	.description{
+ 		color: $body-link;
+   	margin-top: 10px;
+ 	}
+ 	.return{
+   	margin-top: $theme-margin / 2;
+   	@media(min-width: 1200px){
+   		margin-top: $theme-margin;
+   	}
+ 	}
+ 	.title-big{
+   	font-size:25px;
+   	margin: 15px 0 0;
+   	@media(min-width: 1200px){
+   		font-size: 32px;
+   		margin-top: 40px;
+   	}
+ 	}
+ 	img{
+ 		max-width: 80%;
+ 	}
+ 	@media(max-width: 767px){
+ 		text-align: center;
+ 		.inner-right{
+	 		margin-top: $theme-margin;
+	 	}
+ 	}
+ 	@media(min-width: 1200px){
+ 		.btn{
+ 			min-width: 270px;
+ 			text-align: center;
+ 		}
+ 	}
+ 	.container{
+ 		max-width: 1320px;
+ 	}
+}
+.top_profile{
+	padding:30px 30px 25px;
+	border-bottom: 1px solid #dee6ed;
+	.user-logo{
+		margin: 0 0 25px;
+	}
+	.logo-inner{
+		@include size(150px,150px);
+		padding:5px;
+		@include border-radius(50%);
+		background:#fff;
+		overflow: hidden;
+		margin:auto;
+	}
+	.title{
+		font-size: 18px;
+		margin:0;
+	}
+	.categories{
+		a{
+			color: $body-color;
+			&:hover,&:focus{
+				color: $body-link;
+			}
+		}
+	}
+}

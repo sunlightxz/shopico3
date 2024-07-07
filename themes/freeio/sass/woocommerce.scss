@@ -1,0 +1,34 @@
+/*------------------------------------------------------------------
+[Table of contents]
+1. form
+2. utilities
+3. theme effect
+4. buttons
+5. alerts
+6. woocommerce
+7. woocommerce widgets
+-------------------------------------------------------------------*/
+// Configuration
+@import "bootstrap/scss/functions";
+@import "bootstrap/scss/variables";
+@import "bootstrap/scss/mixins";
+@import "bootstrap/scss/utilities";
+@import "vars/vars-global";
+@import "vars/template-vars";
+@import "vars/woocommerce-vars";
+@import "template/utilities";       
+
+/* 1. form */
+@import "template/form";
+
+/* 2. utilities */
+@import "template/utilities";
+
+/* 3. theme effect */
+@import "template/theme-effect";
+
+/* 6. woocommerce */
+@import "template/woocommerce";
+
+/* 7. woocommerce widgets */
+@import "template/woocommerce-widgets";

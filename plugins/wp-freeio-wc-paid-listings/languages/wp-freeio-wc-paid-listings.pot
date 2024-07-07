@@ -1,0 +1,728 @@
+# Copyright (C) 2022 Habq
+# This file is distributed under the same license as the WP Freeio - WooCommerce Paid Listings plugin.
+msgid ""
+msgstr ""
+"Project-Id-Version: WP Freeio - WooCommerce Paid Listings 1.0.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wp-freeio-wc-paid-listings\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2022-11-22T07:59:36+00:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.5.0\n"
+"X-Domain: wp-freeio-wc-paid-listings\n"
+
+#. Plugin Name of the plugin
+msgid "WP Freeio - WooCommerce Paid Listings"
+msgstr ""
+
+#. Plugin URI of the plugin
+msgid "http://apusthemes.com/wp-freeio-wc-paid-listings/"
+msgstr ""
+
+#. Description of the plugin
+msgid "Add paid listing functionality via WooCommerce"
+msgstr ""
+
+#. Author of the plugin
+msgid "Habq"
+msgstr ""
+
+#. Author URI of the plugin
+msgid "http://apusthemes.com"
+msgstr ""
+
+#: inc/class-contact-package.php:26
+msgid "Contact packages Page"
+msgstr ""
+
+#: inc/class-contact-package.php:27
+msgid "Select Contact Packages Page. It will redirect employers at selected page to buy package."
+msgstr ""
+
+#: inc/class-contact-package.php:37
+msgid "All users can view freelancer, but only employers with package can see contact info (Users who purchased <strong class=\"highlight\">Contact Package</strong> can see contact info.)"
+msgstr ""
+
+#: inc/class-cv-package.php:30
+msgid "Register Employers with package (Registered employers who purchased <strong class=\"highlight\">CV Package</strong> can view freelancers.)"
+msgstr ""
+
+#: inc/class-cv-package.php:108
+#: inc/class-cv-package.php:134
+msgid "The page is restricted only for subscribed employers."
+msgstr ""
+
+#: inc/class-product-type-package.php:358
+#: inc/post-types/class-post-type-job_package.php:58
+msgid "Service Package"
+msgstr ""
+
+#: inc/class-product-type-package.php:359
+#: inc/post-types/class-post-type-job_package.php:59
+msgid "Project Package"
+msgstr ""
+
+#: inc/class-product-type-package.php:360
+#: inc/post-types/class-post-type-job_package.php:60
+msgid "Job Package"
+msgstr ""
+
+#: inc/class-product-type-package.php:361
+#: inc/post-types/class-post-type-job_package.php:61
+msgid "CV Package"
+msgstr ""
+
+#: inc/class-product-type-package.php:362
+#: inc/post-types/class-post-type-job_package.php:62
+msgid "Contact Package"
+msgstr ""
+
+#: inc/class-product-type-package.php:363
+#: inc/post-types/class-post-type-job_package.php:63
+msgid "Freelancer Package"
+msgstr ""
+
+#: inc/class-product-type-package.php:364
+#: inc/post-types/class-post-type-job_package.php:64
+msgid "Resume Package"
+msgstr ""
+
+#: inc/class-product-type-package.php:368
+msgid "Service Package Subscription"
+msgstr ""
+
+#: inc/class-product-type-package.php:369
+msgid "Project Package Subscription"
+msgstr ""
+
+#: inc/class-product-type-package.php:370
+msgid "Job Package Subscription"
+msgstr ""
+
+#: inc/class-product-type-package.php:371
+msgid "CV Package Subscription"
+msgstr ""
+
+#: inc/class-product-type-package.php:372
+msgid "Contact Package Subscription"
+msgstr ""
+
+#: inc/class-product-type-package.php:373
+msgid "Freelancer Package Subscription"
+msgstr ""
+
+#: inc/class-product-type-package.php:374
+msgid "Resume Package Subscription"
+msgstr ""
+
+#: inc/class-product-type-package.php:547
+#: inc/class-product-type-package.php:589
+#: inc/class-product-type-package.php:631
+#: inc/class-product-type-package.php:678
+#: inc/class-product-type-package.php:718
+#: inc/class-product-type-package.php:758
+#: inc/class-product-type-package.php:798
+msgid "Subscription Type"
+msgstr ""
+
+#: inc/class-product-type-package.php:548
+#: inc/class-product-type-package.php:590
+#: inc/class-product-type-package.php:632
+#: inc/class-product-type-package.php:679
+#: inc/class-product-type-package.php:719
+#: inc/class-product-type-package.php:759
+#: inc/class-product-type-package.php:799
+msgid "Choose how subscriptions affect this package"
+msgstr ""
+
+#: inc/class-product-type-package.php:552
+#: inc/class-product-type-package.php:594
+#: inc/class-product-type-package.php:636
+#: inc/class-product-type-package.php:683
+#: inc/class-product-type-package.php:723
+#: inc/class-product-type-package.php:763
+#: inc/class-product-type-package.php:803
+msgid "Link the subscription to the package (renew listing limit every subscription term)"
+msgstr ""
+
+#: inc/class-product-type-package.php:553
+#: inc/class-product-type-package.php:595
+#: inc/class-product-type-package.php:637
+#: inc/class-product-type-package.php:684
+#: inc/class-product-type-package.php:724
+#: inc/class-product-type-package.php:764
+#: inc/class-product-type-package.php:804
+msgid "Link the subscription to posted listings (renew posted listings every subscription term)"
+msgstr ""
+
+#: inc/class-product-type-package.php:560
+msgid "Feature Services?"
+msgstr ""
+
+#: inc/class-product-type-package.php:561
+#: inc/class-product-type-package.php:603
+#: inc/class-product-type-package.php:650
+#: inc/class-product-type-package.php:817
+#: inc/post-types/class-post-type-job_package.php:158
+#: inc/post-types/class-post-type-job_package.php:221
+#: inc/post-types/class-post-type-job_package.php:284
+#: inc/post-types/class-post-type-job_package.php:478
+msgid "Feature this listing - it will be styled differently and sticky."
+msgstr ""
+
+#: inc/class-product-type-package.php:565
+msgid "Services Limit"
+msgstr ""
+
+#: inc/class-product-type-package.php:567
+#: inc/class-product-type-package.php:609
+#: inc/class-product-type-package.php:656
+msgid "The number of listings a user can post with this package"
+msgstr ""
+
+#: inc/class-product-type-package.php:572
+msgid "Services Duration (Days)"
+msgstr ""
+
+#: inc/class-product-type-package.php:574
+#: inc/class-product-type-package.php:616
+#: inc/class-product-type-package.php:663
+msgid "The number of days that the listings will be active"
+msgstr ""
+
+#: inc/class-product-type-package.php:602
+msgid "Feature Projects?"
+msgstr ""
+
+#: inc/class-product-type-package.php:607
+msgid "Projects Limit"
+msgstr ""
+
+#: inc/class-product-type-package.php:614
+msgid "Projects Duration (Days)"
+msgstr ""
+
+#: inc/class-product-type-package.php:644
+msgid "Urgent Jobs?"
+msgstr ""
+
+#: inc/class-product-type-package.php:645
+#: inc/class-product-type-package.php:812
+#: inc/post-types/class-post-type-job_package.php:152
+#: inc/post-types/class-post-type-job_package.php:215
+#: inc/post-types/class-post-type-job_package.php:278
+#: inc/post-types/class-post-type-job_package.php:472
+msgid "Urgent this listing - it will be styled differently and sticky."
+msgstr ""
+
+#: inc/class-product-type-package.php:649
+msgid "Feature Jobs?"
+msgstr ""
+
+#: inc/class-product-type-package.php:654
+msgid "Jobs Limit"
+msgstr ""
+
+#: inc/class-product-type-package.php:661
+msgid "Jobs Duration (Days)"
+msgstr ""
+
+#: inc/class-product-type-package.php:692
+#: inc/class-product-type-package.php:732
+#: inc/class-product-type-package.php:772
+#: inc/post-types/class-post-type-job_package.php:334
+#: inc/post-types/class-post-type-job_package.php:381
+#: inc/post-types/class-post-type-job_package.php:428
+msgid "Package Expiry Time (Days)"
+msgstr ""
+
+#: inc/class-product-type-package.php:694
+#: inc/class-product-type-package.php:734
+#: inc/class-product-type-package.php:774
+#: inc/post-types/class-post-type-job_package.php:342
+#: inc/post-types/class-post-type-job_package.php:389
+#: inc/post-types/class-post-type-job_package.php:436
+msgid "The number of days that the user package active. Leave this field blank for unlimited"
+msgstr ""
+
+#: inc/class-product-type-package.php:700
+#: inc/class-product-type-package.php:740
+#: inc/post-types/class-post-type-job_package.php:345
+#: inc/post-types/class-post-type-job_package.php:392
+msgid "Number of CV's"
+msgstr ""
+
+#: inc/class-product-type-package.php:702
+#: inc/class-product-type-package.php:742
+#: inc/post-types/class-post-type-job_package.php:353
+#: inc/post-types/class-post-type-job_package.php:400
+msgid "The number of CV to view in this package. Leave this field blank for unlimited"
+msgstr ""
+
+#: inc/class-product-type-package.php:780
+msgid "Number of Applications"
+msgstr ""
+
+#: inc/class-product-type-package.php:782
+msgid "The number of Applications to freelancer apply. Leave this field blank for unlimited"
+msgstr ""
+
+#: inc/class-product-type-package.php:811
+msgid "Urgent Resumes?"
+msgstr ""
+
+#: inc/class-product-type-package.php:816
+msgid "Featured Resumes?"
+msgstr ""
+
+#: inc/class-product-type-package.php:821
+msgid "Resume Duration (Days)"
+msgstr ""
+
+#: inc/class-product-type-package.php:823
+msgid "The number of days that the resume will be active"
+msgstr ""
+
+#: inc/class-project-submit-form.php:184
+#: inc/class-service-submit-form.php:183
+#: inc/class-submit-form.php:184
+msgid "Sorry, your nonce did not verify."
+msgstr ""
+
+#: inc/class-project-submit-form.php:207
+#: inc/class-project-submit-form.php:210
+#: inc/class-project-submit-form.php:215
+#: inc/class-service-submit-form.php:206
+#: inc/class-service-submit-form.php:209
+#: inc/class-service-submit-form.php:214
+#: inc/class-submit-form.php:207
+#: inc/class-submit-form.php:210
+#: inc/class-submit-form.php:215
+msgid "Invalid Package"
+msgstr ""
+
+#: inc/class-project-submit-form.php:221
+#: inc/class-service-submit-form.php:220
+#: inc/class-submit-form.php:221
+msgid "You already have this subscription."
+msgstr ""
+
+#: inc/class-wc-cart.php:126
+#: inc/class-wc-cart.php:150
+msgid "Job Listing"
+msgstr ""
+
+#: inc/class-wc-cart.php:132
+#: inc/class-wc-cart.php:154
+msgid "Service"
+msgstr ""
+
+#: inc/class-wc-cart.php:138
+#: inc/class-wc-cart.php:158
+msgid "Project"
+msgstr ""
+
+#: inc/class-wc-order.php:44
+msgid "%s has been submitted successfully and will be visible once approved."
+msgstr ""
+
+#: inc/class-wc-order.php:48
+msgid "%s has been submitted successfully and will be visible once payment has been confirmed."
+msgstr ""
+
+#: inc/class-wc-order.php:51
+msgid "%s has been submitted successfully."
+msgstr ""
+
+#: inc/class-wc-order.php:58
+msgid "View Job"
+msgstr ""
+
+#: inc/class-wc-order.php:60
+msgid "View Dashboard"
+msgstr ""
+
+#: inc/post-types/class-post-type-job_package.php:29
+#: inc/post-types/class-post-type-job_package.php:30
+msgid "User Package"
+msgstr ""
+
+#: inc/post-types/class-post-type-job_package.php:31
+#: inc/post-types/class-post-type-job_package.php:32
+msgid "Add New Package"
+msgstr ""
+
+#: inc/post-types/class-post-type-job_package.php:33
+msgid "Edit Package"
+msgstr ""
+
+#: inc/post-types/class-post-type-job_package.php:34
+msgid "New Package"
+msgstr ""
+
+#: inc/post-types/class-post-type-job_package.php:35
+#: inc/post-types/class-post-type-job_package.php:41
+msgid "User Packages"
+msgstr ""
+
+#: inc/post-types/class-post-type-job_package.php:36
+msgid "View Package"
+msgstr ""
+
+#: inc/post-types/class-post-type-job_package.php:37
+msgid "Search Package"
+msgstr ""
+
+#: inc/post-types/class-post-type-job_package.php:38
+msgid "No Packages found"
+msgstr ""
+
+#: inc/post-types/class-post-type-job_package.php:39
+msgid "No Packages found in Trash"
+msgstr ""
+
+#: inc/post-types/class-post-type-job_package.php:79
+#: templates/choose-package-form.php:27
+#: templates/choose-project-package-form.php:27
+#: templates/choose-service-package-form.php:27
+msgid "Choose a package"
+msgstr ""
+
+#: inc/post-types/class-post-type-job_package.php:93
+msgid "Choose package type"
+msgstr ""
+
+#: inc/post-types/class-post-type-job_package.php:96
+msgid "General Options"
+msgstr ""
+
+#: inc/post-types/class-post-type-job_package.php:104
+msgid "Order Id"
+msgstr ""
+
+#: inc/post-types/class-post-type-job_package.php:109
+msgid "Employer/Freelancer user id"
+msgstr ""
+
+#: inc/post-types/class-post-type-job_package.php:114
+#: inc/post-types/class-post-type-job_package.php:507
+msgid "Package Type"
+msgstr ""
+
+#: inc/post-types/class-post-type-job_package.php:125
+msgid "Service Package Options"
+msgstr ""
+
+#: inc/post-types/class-post-type-job_package.php:133
+#: inc/post-types/class-post-type-job_package.php:196
+#: inc/post-types/class-post-type-job_package.php:259
+#: inc/post-types/class-post-type-job_package.php:322
+#: inc/post-types/class-post-type-job_package.php:369
+#: inc/post-types/class-post-type-job_package.php:416
+#: inc/post-types/class-post-type-job_package.php:463
+msgid "Package"
+msgstr ""
+
+#: inc/post-types/class-post-type-job_package.php:139
+#: inc/post-types/class-post-type-job_package.php:202
+#: inc/post-types/class-post-type-job_package.php:265
+msgid "Package Count"
+msgstr ""
+
+#: inc/post-types/class-post-type-job_package.php:149
+msgid "Urgent Services"
+msgstr ""
+
+#: inc/post-types/class-post-type-job_package.php:155
+msgid "Featured Services"
+msgstr ""
+
+#: inc/post-types/class-post-type-job_package.php:161
+msgid "Service duration"
+msgstr ""
+
+#: inc/post-types/class-post-type-job_package.php:169
+msgid "The number of days that the services will be active"
+msgstr ""
+
+#: inc/post-types/class-post-type-job_package.php:172
+msgid "Services limit"
+msgstr ""
+
+#: inc/post-types/class-post-type-job_package.php:180
+msgid "The number of services a user can post with this package"
+msgstr ""
+
+#: inc/post-types/class-post-type-job_package.php:188
+msgid "Project Package Options"
+msgstr ""
+
+#: inc/post-types/class-post-type-job_package.php:212
+msgid "Urgent Projects"
+msgstr ""
+
+#: inc/post-types/class-post-type-job_package.php:218
+msgid "Featured Projects"
+msgstr ""
+
+#: inc/post-types/class-post-type-job_package.php:224
+msgid "Project duration"
+msgstr ""
+
+#: inc/post-types/class-post-type-job_package.php:232
+msgid "The number of days that the projects will be active"
+msgstr ""
+
+#: inc/post-types/class-post-type-job_package.php:235
+msgid "Projects limit"
+msgstr ""
+
+#: inc/post-types/class-post-type-job_package.php:243
+msgid "The number of projects a user can post with this package"
+msgstr ""
+
+#: inc/post-types/class-post-type-job_package.php:251
+msgid "Job Package Options"
+msgstr ""
+
+#: inc/post-types/class-post-type-job_package.php:275
+msgid "Urgent Jobs"
+msgstr ""
+
+#: inc/post-types/class-post-type-job_package.php:281
+msgid "Featured Jobs"
+msgstr ""
+
+#: inc/post-types/class-post-type-job_package.php:287
+msgid "Job duration"
+msgstr ""
+
+#: inc/post-types/class-post-type-job_package.php:295
+#: inc/post-types/class-post-type-job_package.php:489
+msgid "The number of days that the jobs will be active"
+msgstr ""
+
+#: inc/post-types/class-post-type-job_package.php:298
+msgid "Jobs limit"
+msgstr ""
+
+#: inc/post-types/class-post-type-job_package.php:306
+msgid "The number of jobs a user can post with this package"
+msgstr ""
+
+#: inc/post-types/class-post-type-job_package.php:314
+msgid "CV Package Options"
+msgstr ""
+
+#: inc/post-types/class-post-type-job_package.php:328
+msgid "CV viewed"
+msgstr ""
+
+#: inc/post-types/class-post-type-job_package.php:331
+#: inc/post-types/class-post-type-job_package.php:378
+msgid "Enter freelancer ids separate by \",\""
+msgstr ""
+
+#: inc/post-types/class-post-type-job_package.php:361
+msgid "Contact Package Options"
+msgstr ""
+
+#: inc/post-types/class-post-type-job_package.php:375
+msgid "CV Contacts Sent"
+msgstr ""
+
+#: inc/post-types/class-post-type-job_package.php:408
+msgid "Freelancer Package Options"
+msgstr ""
+
+#: inc/post-types/class-post-type-job_package.php:422
+msgid "Freelancer applications"
+msgstr ""
+
+#: inc/post-types/class-post-type-job_package.php:425
+msgid "Enter applications ids separate by \",\""
+msgstr ""
+
+#: inc/post-types/class-post-type-job_package.php:439
+msgid "Number of applications"
+msgstr ""
+
+#: inc/post-types/class-post-type-job_package.php:447
+msgid "The number of applications to freelancer apply. Leave this field blank for unlimited"
+msgstr ""
+
+#: inc/post-types/class-post-type-job_package.php:455
+msgid "Resume Package Options"
+msgstr ""
+
+#: inc/post-types/class-post-type-job_package.php:469
+msgid "Urgent Resumes"
+msgstr ""
+
+#: inc/post-types/class-post-type-job_package.php:475
+msgid "Featured Resumes"
+msgstr ""
+
+#: inc/post-types/class-post-type-job_package.php:481
+msgid "Resume duration"
+msgstr ""
+
+#: inc/post-types/class-post-type-job_package.php:506
+msgid "Title"
+msgstr ""
+
+#: inc/post-types/class-post-type-job_package.php:508
+msgid "Author"
+msgstr ""
+
+#: inc/post-types/class-post-type-job_package.php:509
+msgid "Date"
+msgstr ""
+
+#: inc/post-types/class-post-type-job_package.php:546
+msgid "All package types"
+msgstr ""
+
+#: templates/choose-package-form.php:49
+msgid "Sorry, you can't post a job."
+msgstr ""
+
+#: templates/choose-project-package-form.php:49
+msgid "Sorry, you can't post a project."
+msgstr ""
+
+#: templates/choose-service-package-form.php:49
+msgid "Sorry, you can't post a service."
+msgstr ""
+
+#: templates/cv-packages.php:8
+msgid "Buy any cv package to get started"
+msgstr ""
+
+#: templates/cv-packages.php:24
+#: templates/packages.php:22
+#: templates/project-packages.php:22
+#: templates/resume-packages.php:23
+#: templates/service-packages.php:22
+msgid "Free"
+msgstr ""
+
+#: templates/packages.php:8
+#: templates/project-packages.php:8
+#: templates/resume-packages.php:8
+#: templates/service-packages.php:8
+msgid "Packages"
+msgstr ""
+
+#: templates/packages.php:41
+#: templates/project-packages.php:41
+#: templates/service-packages.php:41
+msgid "Get Started"
+msgstr ""
+
+#: templates/project-user-packages.php:7
+#: templates/service-user-packages.php:7
+#: templates/user-packages.php:7
+msgid "Your Packages"
+msgstr ""
+
+#: templates/project-user-packages.php:25
+msgid "%s project posted out of %d"
+msgid_plural "%s projects posted out of %d"
+msgstr[0] ""
+msgstr[1] ""
+
+#: templates/project-user-packages.php:31
+msgid "%s project posted"
+msgid_plural "%s projects posted"
+msgstr[0] ""
+msgstr[1] ""
+
+#: templates/project-user-packages.php:39
+#: templates/service-user-packages.php:39
+#: templates/user-packages.php:39
+msgid "listed for %s day"
+msgid_plural "listed for %s days"
+msgstr[0] ""
+msgstr[1] ""
+
+#: templates/project-user-packages.php:46
+msgid "Urgent Project: %s"
+msgstr ""
+
+#: templates/project-user-packages.php:46
+#: templates/project-user-packages.php:49
+#: templates/service-user-packages.php:46
+#: templates/service-user-packages.php:49
+#: templates/user-packages.php:46
+#: templates/user-packages.php:49
+msgid "Yes"
+msgstr ""
+
+#: templates/project-user-packages.php:46
+#: templates/project-user-packages.php:49
+#: templates/service-user-packages.php:46
+#: templates/service-user-packages.php:49
+#: templates/user-packages.php:46
+#: templates/user-packages.php:49
+msgid "No"
+msgstr ""
+
+#: templates/project-user-packages.php:49
+msgid "Featured Project: %s"
+msgstr ""
+
+#: templates/project-user-packages.php:54
+msgid "Add Project"
+msgstr ""
+
+#: templates/service-user-packages.php:25
+msgid "%s service posted out of %d"
+msgid_plural "%s services posted out of %d"
+msgstr[0] ""
+msgstr[1] ""
+
+#: templates/service-user-packages.php:31
+msgid "%s service posted"
+msgid_plural "%s services posted"
+msgstr[0] ""
+msgstr[1] ""
+
+#: templates/service-user-packages.php:46
+msgid "Urgent Service: %s"
+msgstr ""
+
+#: templates/service-user-packages.php:49
+msgid "Featured Service: %s"
+msgstr ""
+
+#: templates/service-user-packages.php:54
+msgid "Add Service"
+msgstr ""
+
+#: templates/user-packages.php:25
+msgid "%s job posted out of %d"
+msgid_plural "%s jobs posted out of %d"
+msgstr[0] ""
+msgstr[1] ""
+
+#: templates/user-packages.php:31
+msgid "%s job posted"
+msgid_plural "%s jobs posted"
+msgstr[0] ""
+msgstr[1] ""
+
+#: templates/user-packages.php:46
+msgid "Urgent Job: %s"
+msgstr ""
+
+#: templates/user-packages.php:49
+msgid "Featured Job: %s"
+msgstr ""
+
+#: templates/user-packages.php:54
+msgid "Add Job"
+msgstr ""

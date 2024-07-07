@@ -1,0 +1,285 @@
+
+---Downloaded files---
+The import files for: Home were successfully downloaded!
+Initial max execution time = 1200
+Files info:
+Site URL = http://shopico3.local
+Data file = /Users/asmac/Local Sites/shopico3/app/public/wp-content/themes/freeio/inc/vendors/one-click-demo-import/data/dummy-data.xml
+Widget file = /Users/asmac/Local Sites/shopico3/app/public/wp-content/themes/freeio/inc/vendors/one-click-demo-import/data/widgets.wie
+Customizer file = not defined!
+Redux files:
+not defined!
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+[ERROR] Failed to import "Attachment Image" (Media)
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+---ocdi/before_widgets_import---
+
+
+---Importing widgets---
+Sidebar Default : 
+
+Block - No Title - Imported
+Block - No Title - Imported
+Block - No Title - Imported
+Block - No Title - Imported
+Block - No Title - Imported
+
+Services filter sidebar : 
+
+Apus Show Elementor Template Widget - No Title - Imported
+
+Service single sidebar : 
+
+Service Single:: Service Price - No Title - Imported
+Service Single:: Service Author - About The Seller - Imported
+
+Projects filter sidebar : 
+
+Apus Show Elementor Template Widget - No Title - Imported
+
+Project single sidebar : 
+
+Project Single:: Project Price - No Title - Imported
+Project Single:: Project Author - About Seller - Imported
+
+Jobs filter sidebar : 
+
+Apus Show Elementor Template Widget - No Title - Imported
+
+Freelancers filter sidebar : 
+
+Apus Show Elementor Template Widget - No Title - Imported
+
+Freelancer single sidebar : 
+
+Freelancer Detail:: Information - No Title - Imported
+Freelancer Detail:: Tags - My Skills - Imported
+
+Employers filter sidebar : 
+
+Apus Show Elementor Template Widget - No Title - Imported
+
+Employer single sidebar : 
+
+Employer Detail:: Information - About Me - Imported
+
+User Profile sidebar : 
+
+Apus User Short Profile - No Title - Imported
+
+Blog sidebar : 
+
+Apus Search Widget - No Title - Imported
+Block - No Title - Imported
+Apus Recent Posts Widget - Recent Posts - Imported
+Block - No Title - Imported
+
+Shop sidebar : 
+
+Apus Search Widget - No Title - Imported
+Block - No Title - Imported
+Block - No Title - Imported
+
+
+
+---ocdi/after_import---
+

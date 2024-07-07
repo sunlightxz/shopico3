@@ -1,0 +1,83 @@
+
+.addons-wrapper {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.addons-wrapper .addon-select-item {
+  margin: 0 0 20px;
+  position: relative;
+}
+
+.addons-wrapper .addon-select-item:last-child {
+  margin-bottom: 0;
+}
+
+.addons-wrapper [type="checkbox"] {
+  position: absolute;
+  top: 16px;
+  left: 15px;
+  width: 16px;
+  height: 16px;
+}
+
+@media (min-width: 1200px) {
+  .addons-wrapper [type="checkbox"] {
+    top: 31px;
+    left: 30px;
+  }
+}
+
+
+.addons-wrapper label {
+  cursor: pointer;
+  display: block;
+  border: 1px solid #E9E9E9;
+  border-radius: 4px;
+  padding: 0.9375rem 0.9375rem 0.9375rem 40px;
+  color: var(--freeio-link-color);
+  -webkit-transition: all 0.2s ease-in-out 0s;
+  -o-transition: all 0.2s ease-in-out 0s;
+  transition: all 0.2s ease-in-out 0s;
+}
+
+@media (min-width: 1200px) {
+  .addons-wrapper label {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: flex;
+    align-items: center;
+  }
+}
+
+@media (min-width: 1200px) {
+  .addons-wrapper label {
+    padding: 1.875rem 1.875rem 1.875rem 3.75rem;
+  }
+}
+
+.addons-wrapper label .title {
+  font-weight: 500;
+  font-size: 0.9375rem;
+  margin: 0 0 3px;
+}
+
+.addons-wrapper label:hover {
+  border-color: #222;
+}
+
+.addons-wrapper .price {
+  font-weight: 700;
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+@media (min-width: 1200px) {
+  .addons-wrapper .price {
+    font-size: 28px;
+    margin: 0 0 0 auto;
+  }
+}

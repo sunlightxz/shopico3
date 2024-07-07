@@ -1,0 +1,128 @@
+/* block */
+.#{$block-selector} {
+    margin-bottom: $block-module-margin-bottom;
+    position: relative;
+    padding: $block-module-padding;
+    background: transparent;
+    .wc-block-price-filter__title,
+    .wp-block-group__inner-container > h1,
+    .wp-block-group__inner-container > h2,
+    .wp-block-group__inner-container > h3,
+    .wp-block-group__inner-container > h4,
+    .wp-block-group__inner-container > h5,
+    .wp-block-group__inner-container > h6{
+        margin:0 0 15px;
+        @media(min-width: 1200px){
+            margin-bottom: 23px;
+        }
+        font-weight: 500;
+        text-transform: capitalize;
+        + ul{
+            margin: 0;
+            padding-left: 0;
+            li{
+                list-style: none;
+                margin-bottom: 15px;
+                &:last-child{
+                    margin-bottom: 0;
+                }
+                &:hover > a,
+                &.current-cat-parent > a,
+                &.current-cat > a{
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+    .wc-block-price-filter__title,
+    .wp-block-group__inner-container > h2{
+        font-size: 20px;
+    }
+    .#{$block-heading-selector}{
+        font-size: 20px;
+        margin:0 0 15px;
+        font-weight: 500;
+        text-transform: capitalize;
+        @media(min-width: 1200px){
+            margin-bottom: 23px;
+        }
+        .urgent,
+        .featured{
+            font-size: 0.75rem;
+        }
+    }
+}
+// Sidebar
+.sidebar,
+.#{$app-prefix}-sidebar {
+    .widget{
+        margin: 0 0 $theme-margin;
+        padding: 20px;
+        @include box-shadow( 0 6px 15px 0 rgba(#404F68,0.05));
+        @media(min-width: 1200px){
+            padding: 25px $theme-margin;
+        }
+        @include border-radius($border-radius);
+        border: 1px solid $border-color;
+        &#calendar_wrap{
+            padding:0;
+        }
+        &[class*="search"]{
+            padding: 0;
+            border:0;
+        }
+    }
+    .widget_calendar{
+        @include box-shadow(none);
+        padding: 0;
+        border: 0;
+    }
+    // widet porducts list
+    .apus-products-list{
+        border-style: solid;
+        border-color: $border-color;
+        border-width:0 1px 1px;
+        .product-block{
+            padding: 20px;
+            margin: 0;
+        }
+    }
+    // widget instagram
+    .row.instagram-pics{
+        margin-left: -6px;
+        margin-right: -6px;
+        > [class*="col-md"]{
+            padding-left: 6px;
+            padding-right: 6px;
+            margin-bottom: 12px;
+        }
+    }
+    // widget single images
+    .widget_apus_single_image{
+        margin-bottom: 30px;
+    }
+}
+.sidebar-shop{
+    .widget{
+        padding: 0 0 $theme-margin;
+        margin: 0 0 $theme-margin;
+        border-width: 0 0 1px;
+        @include border-radius(0);
+        &:not(.widget_apus_search){
+            @include box-shadow(none);
+        }
+        &:last-child{
+            border: 0;
+        }
+    }
+}
+// footer 
+.apus-footer{
+    .widget{
+        .widget-title{
+            @media(min-width: 1200px){
+               margin:0 0 22px; 
+            }
+        }
+    }
+}
