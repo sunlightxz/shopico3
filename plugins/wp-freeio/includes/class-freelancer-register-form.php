@@ -12,28 +12,23 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 class WP_Freeio_Freelancer_Register_Form extends WP_Freeio_Abstract_Register_Form {
-	public $form_name = 'wp_freeio_register_freelancer_form';
-	
-	public $post_type = 'freelancer';
-	public $prefix = WP_FREEIO_FREELANCER_PREFIX;
+    public $form_name = 'wp_freeio_register_freelancer_form';
+    public $post_type = 'freelancer';
+    public $prefix = WP_FREEIO_FREELANCER_PREFIX;
+    private static $_instance = null;
 
-	private static $_instance = null;
+    public static function get_instance($driver_type = '') {
+        if (is_null(self::$_instance)) {
+            self::$_instance = new self($driver_type);
+        }
+        return self::$_instance;
+    }
 
-	public static function get_instance() {
-		if ( is_null( self::$_instance ) ) {
-			self::$_instance = new self();
-		}
-		return self::$_instance;
-	}
-
-	public function __construct() {
-
-		// add_action( 'wpfi_ajax_wp_freeio_ajax_registernew',  array( $this, 'process_register_new' ) );
-
-		add_filter( 'cmb2_meta_boxes', array( $this, 'fields_front' ) );
-
-		add_action('wp_freeio_freelancer_signup_custom_fields_save', array($this, 'submit_process'));
-	}
+    public function __construct($driver_type = '') {
+        parent::__construct($driver_type); // Pass the driver_type to the parent constructor
+        add_filter('cmb2_meta_boxes', array($this, 'fields_front'));
+        add_action('wp_freeio_freelancer_signup_custom_fields_save', array($this, 'submit_process'));
+    }
 
 	public function process_register_new() {
 		
@@ -74,3 +69,4 @@ function wp_freeio_freelancer_register_form() {
 }
 
 add_action( 'init', 'wp_freeio_freelancer_register_form' );
+

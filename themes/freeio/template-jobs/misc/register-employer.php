@@ -32,6 +32,9 @@ if ( ! defined( 'ABSPATH' ) ) {
 			</ul>
 		<?php endif; ?>
 
+		<div class="">
+			
+		</div>
   		<?php
   			$html_output = '';
   			if ( WP_Freeio_Recaptcha::is_recaptcha_enabled() ) {

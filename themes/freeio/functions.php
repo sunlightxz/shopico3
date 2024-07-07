@@ -766,25 +766,18 @@ add_action('init', 'custom_register_user_meta_fields');
 
 
 // Enqueue scripts and styles
-function theme_enqueue_scripts() {
-    wp_enqueue_script( 'custom-scripts', get_template_directory_uri() . '/js/custom-scripts.js', array( 'jquery' ), '1.0', true );
+// function theme_enqueue_scripts() {
+//     wp_enqueue_script( 'custom-scripts', get_template_directory_uri() . '/js/custom-scripts.js', array( 'jquery' ), '1.0', true );
+// }
+// add_action( 'wp_enqueue_scripts', 'theme_enqueue_scripts' );
+
+
+
+function enqueue_custom_scripts() {
+    // Enqueue custom.js file
+    wp_enqueue_script('custom-script', get_template_directory_uri() . '/custom.js', array('jquery'), '1.0', true);
 }
-add_action( 'wp_enqueue_scripts', 'theme_enqueue_scripts' );
+add_action('wp_enqueue_scripts', 'enqueue_custom_scripts');
 
 
-
-//
-
-// Check if the form has been submitted and handle the data
-if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['myvalue'])) {
-    $myvalue = sanitize_text_field($_POST['myvalue']);
-
-    // Use $myvalue as needed, e.g., save it in a session or pass it to another function
-    // Example: Save it in a session variable
-    session_start();
-    $_SESSION['myvalue'] = $myvalue;
-
-    // Optionally, redirect to another page
-    exit;
-}
-
+// Add this in your theme's functions.php or custom plugin file
