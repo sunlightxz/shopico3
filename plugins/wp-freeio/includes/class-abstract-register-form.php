@@ -17,11 +17,10 @@ class WP_Freeio_Abstract_Register_Form {
     public $prefix = '';
     public $errors = array();
     public $success_msg = array();
-    private $selected_driver_type;
 
-    public function __construct($driver_type = '') {
-        $this->selected_driver_type = $driver_type;
-        add_filter('cmb2_meta_boxes', array($this, 'fields_front'));
+    public function __construct() {
+        add_action('admin_post_nopriv_custom_register_action', [$this, 'handle_register_form']);
+        add_action('admin_post_custom_register_action', [$this, 'handle_register_form']);
     }
 
     public function get_form_action() {
@@ -37,20 +36,9 @@ class WP_Freeio_Abstract_Register_Form {
     }
 
     public function fields_front($metaboxes) {
-        $myvalue = $this->selected_driver_type;
-
         // Default fields (common for all types)
         $fields = array(
-			array(
-                'name' => __( 'Username', 'wp-freeio' ),
-                'id' => $this->prefix . 'username',
-                'type' => 'text',
-                'priority' => 0,
-                'attributes' => array(
-                    'placeholder' => esc_html__('Username', 'wp-freeio'),
-                    'required' => true
-                )
-            ),
+         
             array(
                 'name' => __( 'Email', 'wp-freeio' ),
                 'id' => $this->prefix . 'email',
@@ -90,32 +78,8 @@ class WP_Freeio_Abstract_Register_Form {
                     'placeholder' => esc_html__('Phone Number', 'wp-freeio'),
                     'required' => true
                 )
-            ),
-            array(
-                'name' => __( 'Address', 'wp-freeio' ),
-                'id' => $this->prefix . 'address',
-                'type' => 'text',
-                'priority' => 0,
-                'attributes' => array(
-                    'placeholder' => esc_html__('Address', 'wp-freeio'),
-                    'required' => true
-                )
-            ),
+            )
         );
-
-        // Add username field only for freelancer type
-        if ($myvalue === 'freelancer') {
-            $fields[] = array(
-                'name' => __( 'Username', 'wp-freeio' ),
-                'id' => $this->prefix . 'username',
-                'type' => 'text',
-                'priority' => 0,
-                'attributes' => array(
-                    'placeholder' => esc_html__('Username', 'wp-freeio'),
-                    'required' => true,
-                ),
-            );
-        }
 
         $metaboxes[$this->prefix . 'register_fields'] = array(
             'id' => $this->prefix . 'register_fields',
@@ -146,6 +110,23 @@ class WP_Freeio_Abstract_Register_Form {
             'form_obj'       => $this,
             'submit_button_text' => apply_filters( 'wp_freeio_register_'.$this->post_type.'_form_submit_button_text', __( 'Register now', 'wp-freeio' ) ),
         ) );
+    }
+
+    public function handle_register_form() {
+        if ( ! isset( $_POST['custom_value'] ) ) {
+            $this->add_error( __( 'Custom value is required.', 'wp-freeio' ) );
+            wp_redirect( home_url( '/register' ) ); // Redirect to the registration page with error
+            exit;
+        }
+
+        $custom_value = sanitize_text_field( $_POST['custom_value'] );
+
+        // Process the custom value
+        // For example, you can save it to the database or do other operations here
+
+        $this->success_msg[] = __( 'Registration successful.', 'wp-freeio' );
+        wp_redirect( home_url( '/register' ) ); // Redirect to the registration page with success message
+        exit;
     }
 }
 

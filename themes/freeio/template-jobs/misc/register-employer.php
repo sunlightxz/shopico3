@@ -37,6 +37,13 @@ if ( ! defined( 'ABSPATH' ) ) {
 		</div>
   		<?php
   			$html_output = '';
+			//username 
+			  $html_output .= '<div class="form-group" id="username">
+			  <label for="_employer_username">'.__('Username:', 'wp-freeio').'</label>
+			  <input type="text" name="_employer_username" id="_employer_username" class="form-control" placeholder="username" required>
+		   </div>';
+
+		
   			if ( WP_Freeio_Recaptcha::is_recaptcha_enabled() ) {
             	$html_output .= '<div id="recaptcha-register-freelancer" class="ga-recaptcha margin-bottom-25" data-sitekey="'.esc_attr(wp_freeio_get_option( 'recaptcha_site_key' )).'"></div>';
       		}
