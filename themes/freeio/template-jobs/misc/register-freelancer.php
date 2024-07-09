@@ -1,5 +1,5 @@
 <?php
-if ( ! defined( 'ABSPATH' ) ) {
+if (!defined('ABSPATH')) {
     exit;
 }
 ?>
@@ -7,21 +7,21 @@ if ( ! defined( 'ABSPATH' ) ) {
 <div class="register-form-wrapper">
     <div class="container-form">
 
-        <?php if ( sizeof($form_obj->errors) ) : ?>
+        <?php if (sizeof($form_obj->errors)) : ?>
             <ul class="alert alert-danger errors">
-                <?php foreach ( $form_obj->errors as $message ) { ?>
+                <?php foreach ($form_obj->errors as $message) { ?>
                     <div class="message_line danger">
-                        <?php echo wp_kses_post( $message ); ?>
+                        <?php echo wp_kses_post($message); ?>
                     </div>
                 <?php } ?>
             </ul>
         <?php endif; ?>
 
-        <?php if ( sizeof($form_obj->success_msg) ) : ?>
+        <?php if (sizeof($form_obj->success_msg)) : ?>
             <ul class="alert alert-info success">
-                <?php foreach ( $form_obj->success_msg as $message ) { ?>
+                <?php foreach ($form_obj->success_msg as $message) { ?>
                     <div class="message_line info">
-                        <?php echo wp_kses_post( $message ); ?>
+                        <?php echo wp_kses_post($message); ?>
                     </div>
                 <?php } ?>
             </ul>
@@ -35,38 +35,39 @@ if ( ! defined( 'ABSPATH' ) ) {
 
         <?php
             $html_output = '';
-			// Username or Society Name field based on radio button selection
-			$html_output .= '<div class="form-group" id="username_or_society_name">
-			<label for="_freelancer_username">'.__('Username:', 'wp-freeio').'</label>
-			<input type="text" name="_freelancer_username" id="_freelancer_username" class="form-control" required>
-		 </div>';
-            if ( WP_Freeio_Recaptcha::is_recaptcha_enabled() ) {
-                $html_output .= '<div id="recaptcha-register-freelancer" class="ga-recaptcha margin-bottom-25" data-sitekey="'.esc_attr(wp_freeio_get_option( 'recaptcha_site_key' )).'"></div>';
+            // Username or Society Name field based on radio button selection
+            $html_output .= '<div class="form-group" id="username_or_society_name">
+                <label for="_freelancer_username">'.__('Username:', 'wp-freeio').'</label>
+                <input type="text" name="_freelancer_username" id="_freelancer_username" class="form-control" required>
+            </div>';
+            if (WP_Freeio_Recaptcha::is_recaptcha_enabled()) {
+                $html_output .= '<div id="recaptcha-register-freelancer" class="ga-recaptcha margin-bottom-25" data-sitekey="'.esc_attr(wp_freeio_get_option('recaptcha_site_key')).'"></div>';
             }
 
-              //addresse city 
-			  $html_output .= '
-			  <div class="form-group">
-				  <label for="_freelancer_address">' . esc_html__('City', 'wp-freeio') . '</label>
-				  <select name="_freelancer_address[city]" id="_freelancer_address_city" class="form-control" required>
-					  <option value="">' . esc_html__('Select City', 'wp-freeio') . '</option>
-					  <option value="rabat">' . esc_html__('Rabat', 'wp-freeio') . '</option>
-					  <option value="casa">' . esc_html__('Casablanca', 'wp-freeio') . '</option>
-					  <option value="marrakech">' . esc_html__('Marrakech', 'wp-freeio') . '</option>
-				  </select>
-			  </div>
-			  <div class="form-group">
-				  <label for="_freelancer_address_county">' . esc_html__('County', 'wp-freeio') . '</label>
-				  <select name="_freelancer_address[county]" id="_freelancer_address_county" class="form-control" required>
-					  <option value="">' . esc_html__('Select County', 'wp-freeio') . '</option>
-				  </select>
-			  </div>';
-   
+            // Address city and county select fields
+            $html_output .= '
+            <div class="form-group">
+                <label for="city_select">' . esc_html__('City', 'wp-freeio') . '</label>
+                <select id="city_select" class="form-control" required>
+                    <option value="">' . esc_html__('Select City', 'wp-freeio') . '</option>
+                    <option value="rabat">' . esc_html__('Rabat', 'wp-freeio') . '</option>
+                    <option value="casa">' . esc_html__('Casablanca', 'wp-freeio') . '</option>
+                    <option value="marrakech">' . esc_html__('Marrakech', 'wp-freeio') . '</option>
+                </select>
+                <input type="hidden" name="_freelancer_address[city]" id="_freelancer_address_city" value="">
+            </div>
+            <div class="form-group">
+                <label for="county_select">' . esc_html__('County', 'wp-freeio') . '</label>
+                <select id="county_select" name="_freelancer_address[county]" class="form-control" required>
+                    <option value="">' . esc_html__('Select County', 'wp-freeio') . '</option>
+                </select>
+                <input type="hidden" name="_freelancer_address" id="_freelancer_address_county" value="">
+            </div>';
 
             // Terms and Conditions
             $page_id = wp_freeio_get_option('terms_conditions_page_id');
             $page_id = WP_Freeio_Mixes::get_lang_post_id($page_id);
-            if ( !empty($page_id) ) {
+            if (!empty($page_id)) {
                 $page_url = get_permalink($page_id);
                 $html_output .= '
                 <div class="form-group">
@@ -77,10 +78,10 @@ if ( ! defined( 'ABSPATH' ) ) {
                 </div>';
             }
 
-            echo cmb2_get_metabox_form( $metaboxes_form, $post_id, array(
+            echo cmb2_get_metabox_form($metaboxes_form, $post_id, array(
                 'form_format' => '<form action="" class="cmb-form %1$s" method="post" id="%1$s_'.rand(0000,9999).'" enctype="multipart/form-data" encoding="multipart/form-data"><input type="hidden" name="'.$form_obj->get_form_name().'" value="'.$form_obj->get_form_name().'"><input type="hidden" name="object_id" value="%2$s">%3$s'.$html_output.'<button type="submit" name="submit-cmb-register-freelancer" class="btn btn-theme w-100">%4$s<i class="flaticon-right-up next"></i></button></form>',
                 'save_button' => $submit_button_text,
-            ) );
+            ));
         ?>
     </div>
 </div>
@@ -105,29 +106,46 @@ if ( ! defined( 'ABSPATH' ) ) {
         });
     });
 
-	document.addEventListener('DOMContentLoaded', function() {
-    const citySelect = document.getElementById('_freelancer_address_city');
-    const countySelect = document.getElementById('_freelancer_address_county');
+    document.addEventListener('DOMContentLoaded', function() {
+        const citySelect = document.getElementById('city_select');
+        const hiddenCityInput = document.getElementById('_freelancer_address_city');
+        const countySelect = document.getElementById('county_select');
+        const hiddenCountyInput = document.getElementById('_freelancer_address_county');
 
-    const counties = {
-        'rabat': ['County 1', 'County 2', 'County 3'],
-        'casa': ['County A', 'County B', 'County C'],
-        'marrakech': ['County X', 'County Y', 'County Z']
-        // Add more cities and their respective counties as needed
-    };
+        const counties = {
+            'rabat': ['County 1', 'County 2', 'County 3'],
+            'casa': ['County A', 'County B', 'County C'],
+            'marrakech': ['County X', 'County Y', 'County Z']
+        };
 
-    citySelect.addEventListener('change', function() {
-        const _freelancer_address_city = this.value;
-        countySelect.innerHTML = '<option value=""><?php esc_html_e('Select County', 'wp-freeio'); ?></option>';
+        citySelect.addEventListener('change', function() {
+            const selectedCity = this.value;
+            countySelect.innerHTML = '<option value=""><?php esc_html_e('Select County', 'wp-freeio'); ?></option>';
 
-        if (counties[_freelancer_address_city]) {
-            counties[selectedCity].forEach(function(county) {
-                const option = document.createElement('option');
-                option.value = county;
-                option.textContent = county;
-                countySelect.appendChild(option);
-            });
-        }
+            if (counties[selectedCity]) {
+                counties[selectedCity].forEach(function(county) {
+                    const option = document.createElement('option');
+                    option.value = county;
+                    option.textContent = county;
+                    countySelect.appendChild(option);
+                });
+            }
+
+            // Set the value of the hidden input field for the city
+            hiddenCityInput.value = selectedCity;
+
+            // Log the selected city value to the console
+            console.log( selectedCity);
+        });
+
+        countySelect.addEventListener('change', function() {
+            const selectedCounty = this.value;
+
+            // Set the value of the hidden input field for the county
+            hiddenCountyInput.value = selectedCounty;
+
+            // Log the selected county value to the console
+            console.log( selectedCounty);
+        });
     });
-});
 </script>
