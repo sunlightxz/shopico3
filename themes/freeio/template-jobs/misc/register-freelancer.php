@@ -27,61 +27,92 @@ if (!defined('ABSPATH')) {
             </ul>
         <?php endif; ?>
 
-        <div class="form-group">
-            <label><input type="radio" name="driver_type" value="society" required> Society</label>&nbsp;&nbsp;
-            <label><input type="radio" name="driver_type" value="entrepreneur"> Entrepreneur</label>&nbsp;&nbsp;
-            <label><input type="radio" name="driver_type" value="other"> Other</label>
-        </div>
-
         <?php
-            $html_output = '';
-            // Username or Society Name field based on radio button selection
-            $html_output .= '<div class="form-group" id="username_or_society_name">
-                <label for="_freelancer_username">'.__('Username:', 'wp-freeio').'</label>
-                <input type="text" name="_freelancer_username" id="_freelancer_username" class="form-control" required>
-            </div>';
-            if (WP_Freeio_Recaptcha::is_recaptcha_enabled()) {
-                $html_output .= '<div id="recaptcha-register-freelancer" class="ga-recaptcha margin-bottom-25" data-sitekey="'.esc_attr(wp_freeio_get_option('recaptcha_site_key')).'"></div>';
-            }
+        $html_output = '';
+        $html_output = '<div class="form-group">
+        <label><input type="radio" name="driver_type" value="society" required> Society</label>&nbsp;&nbsp;
+        <label><input type="radio" name="driver_type" value="entrepreneur"> Entrepreneur</label>&nbsp;&nbsp;
+        <label><input type="radio" name="driver_type" value="other"> Other</label>
+    </div>';
 
-            // Address city and county select fields
+        // Username or Society Name field based on radio button selection
+        $html_output .= '<div class="form-group" id="username_or_society_name">
+            <label for="_freelancer_username">'.__('Username:', 'wp-freeio').'</label>
+            <input type="text" name="_freelancer_username" id="_freelancer_username" class="form-control" placeholder="' . esc_attr(__('Enter your username', 'wp-freeio')) . '" required>
+        </div>';
+
+        // Email field
+        $html_output .= '<div class="form-group">
+            <label for="_freelancer_email">'.__('Email:', 'wp-freeio').'</label>
+            <input type="email" name="_freelancer_email" id="_freelancer_email" class="form-control" placeholder="' . esc_attr(__('Enter your email', 'wp-freeio')) . '" required>
+        </div>';
+
+        // Password field with toggle show/hide functionality
+        $html_output .= '<div class="form-group cmb2-wrap">
+            <label for="hide_show_password">' . __('Password:', 'wp-freeio') . '</label>
+            <span class="show_hide_password_wrapper">
+                <input type="password" class="form-control" name="_freelancer_password" id="hide_show_password" value="" data-lpignore="1" autocomplete="off" data-hash="gl70hk4g8ss0" placeholder="' . esc_attr(__('Password', 'wp-freeio')) . '" required>
+                <a class="toggle-password" title="' . esc_attr(__('Show', 'wp-freeio')) . '"><span class="dashicons dashicons-hidden"></span></a>
+            </span>
+        </div>';
+
+        // Confirm Password field
+        $html_output .= '<div class="form-group cmb2-wrap">
+            <label for="_freelancer_confirmpassword">' . __('Confirm Password:', 'wp-freeio') . '</label>
+            <span class="show_hide_password_wrapper">
+            <input type="password" class="form-control" name="_freelancer_confirmpassword" id="hide_show_password" value="" data-lpignore="1" autocomplete="off" data-hash="gl70hk4g8ss0" placeholder="' . esc_attr(__('Confirm Password', 'wp-freeio')) . '" required>
+            <a class="toggle-password" title="' . esc_attr(__('Show', 'wp-freeio')) . '"><span class="dashicons dashicons-hidden"></span></a>
+        </span>
+        </div>';
+
+        // Phone number field
+        $html_output .= '<div class="form-group">
+            <label for="_freelancer_phone">'.__('Whatsapp Phone Number:', 'wp-freeio').'</label>
+            <input type="tel" name="_freelancer_phone" id="_freelancer_phone" class="form-control" placeholder="' . esc_attr(__('Enter your whatsapp phone Number', 'wp-freeio')) . '" required>
+        </div>';
+
+        if (WP_Freeio_Recaptcha::is_recaptcha_enabled()) {
+            $html_output .= '<div id="recaptcha-register-freelancer" class="ga-recaptcha margin-bottom-25" data-sitekey="'.esc_attr(wp_freeio_get_option('recaptcha_site_key')).'"></div>';
+        }
+
+        // Address city and county select fields
+        $html_output .= '
+        <div class="form-group">
+            <label for="city_select">' . esc_html__('City', 'wp-freeio') . '</label>
+            <select id="city_select" class="form-control" required>
+                <option value="">' . esc_html__('Select City', 'wp-freeio') . '</option>
+                <option value="rabat">' . esc_html__('Rabat', 'wp-freeio') . '</option>
+                <option value="casa">' . esc_html__('Casablanca', 'wp-freeio') . '</option>
+                <option value="marrakech">' . esc_html__('Marrakech', 'wp-freeio') . '</option>
+            </select>
+            <input type="hidden" name="_freelancer_address[city]" id="_freelancer_address_city" value="">
+        </div>
+        <div class="form-group">
+            <label for="county_select">' . esc_html__('County', 'wp-freeio') . '</label>
+            <select id="county_select" name="_freelancer_address[county]" class="form-control" required>
+                <option value="">' . esc_html__('Select County', 'wp-freeio') . '</option>
+            </select>
+            <input type="hidden" name="_freelancer_address[county]" id="_freelancer_address_county" value="">
+        </div>';
+
+        // Terms and Conditions
+        $page_id = wp_freeio_get_option('terms_conditions_page_id');
+        $page_id = WP_Freeio_Mixes::get_lang_post_id($page_id);
+        if (!empty($page_id)) {
+            $page_url = get_permalink($page_id);
             $html_output .= '
             <div class="form-group">
-                <label for="city_select">' . esc_html__('City', 'wp-freeio') . '</label>
-                <select id="city_select" class="form-control" required>
-                    <option value="">' . esc_html__('Select City', 'wp-freeio') . '</option>
-                    <option value="rabat">' . esc_html__('Rabat', 'wp-freeio') . '</option>
-                    <option value="casa">' . esc_html__('Casablanca', 'wp-freeio') . '</option>
-                    <option value="marrakech">' . esc_html__('Marrakech', 'wp-freeio') . '</option>
-                </select>
-                <input type="hidden" name="_freelancer_address[city]" id="_freelancer_address_city" value="">
-            </div>
-            <div class="form-group">
-                <label for="county_select">' . esc_html__('County', 'wp-freeio') . '</label>
-                <select id="county_select" name="_freelancer_address[county]" class="form-control" required>
-                    <option value="">' . esc_html__('Select County', 'wp-freeio') . '</option>
-                </select>
-                <input type="hidden" name="_freelancer_address" id="_freelancer_address_county" value="">
+                <label for="register-terms-and-conditions">
+                    <input type="checkbox" name="terms_and_conditions" value="on" id="register-terms-and-conditions" required>
+                    '.sprintf(__('You accept our <a href="%s">Terms and Conditions and Privacy Policy</a>', 'freeio'), esc_url($page_url)).'
+                </label>
             </div>';
+        }
 
-            // Terms and Conditions
-            $page_id = wp_freeio_get_option('terms_conditions_page_id');
-            $page_id = WP_Freeio_Mixes::get_lang_post_id($page_id);
-            if (!empty($page_id)) {
-                $page_url = get_permalink($page_id);
-                $html_output .= '
-                <div class="form-group">
-                    <label for="register-terms-and-conditions">
-                        <input type="checkbox" name="terms_and_conditions" value="on" id="register-terms-and-conditions" required>
-                        '.sprintf(__('You accept our <a href="%s">Terms and Conditions and Privacy Policy</a>', 'freeio'), esc_url($page_url)).'
-                    </label>
-                </div>';
-            }
-
-            echo cmb2_get_metabox_form($metaboxes_form, $post_id, array(
-                'form_format' => '<form action="" class="cmb-form %1$s" method="post" id="%1$s_'.rand(0000,9999).'" enctype="multipart/form-data" encoding="multipart/form-data"><input type="hidden" name="'.$form_obj->get_form_name().'" value="'.$form_obj->get_form_name().'"><input type="hidden" name="object_id" value="%2$s">%3$s'.$html_output.'<button type="submit" name="submit-cmb-register-freelancer" class="btn btn-theme w-100">%4$s<i class="flaticon-right-up next"></i></button></form>',
-                'save_button' => $submit_button_text,
-            ));
+        echo cmb2_get_metabox_form($metaboxes_form, $post_id, array(
+            'form_format' => '<form action="" class="cmb-form %1$s" method="post" id="%1$s_'.rand(0000,9999).'" enctype="multipart/form-data" encoding="multipart/form-data"><input type="hidden" name="'.$form_obj->get_form_name().'" value="'.$form_obj->get_form_name().'"><input type="hidden" name="object_id" value="%2$s">%3$s'.$html_output.'<button type="submit" name="submit-cmb-register-freelancer" class="btn btn-theme w-100">%4$s<i class="flaticon-right-up next"></i></button></form>',
+            'save_button' => $submit_button_text,
+        ));
         ?>
     </div>
 </div>
@@ -104,9 +135,7 @@ if (!defined('ABSPATH')) {
                 }
             });
         });
-    });
 
-    document.addEventListener('DOMContentLoaded', function() {
         const citySelect = document.getElementById('city_select');
         const hiddenCityInput = document.getElementById('_freelancer_address_city');
         const countySelect = document.getElementById('county_select');
@@ -133,9 +162,6 @@ if (!defined('ABSPATH')) {
 
             // Set the value of the hidden input field for the city
             hiddenCityInput.value = selectedCity;
-
-            // Log the selected city value to the console
-            console.log( selectedCity);
         });
 
         countySelect.addEventListener('change', function() {
@@ -143,9 +169,6 @@ if (!defined('ABSPATH')) {
 
             // Set the value of the hidden input field for the county
             hiddenCountyInput.value = selectedCounty;
-
-            // Log the selected county value to the console
-            console.log( selectedCounty);
         });
     });
 </script>

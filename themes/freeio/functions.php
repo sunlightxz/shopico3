@@ -734,7 +734,6 @@ function log_current_user_data() {
             'Email' => $current_user->user_email,
             'Phone' => $phone,
             'Address' => $address,
-            // Add more fields as needed
         );
 
         // Output to browser console
@@ -763,16 +762,40 @@ function custom_register_user_meta_fields() {
     ));
 }
 add_action('init', 'custom_register_user_meta_fields');
+// Add this code to your theme's functions.php file
+
+// Function to handle form submission and update user meta
+function handle_freelancer_registration_form_submission() {
+    if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['submit-cmb-register-freelancer'])) {
+        // Sanitize and validate inputs
+        $username = sanitize_text_field($_POST['_freelancer_username']);
+        $email = sanitize_email($_POST['_freelancer_email']);
+        $phone = sanitize_text_field($_POST['_freelancer_phone']);
+        $city = sanitize_text_field($_POST['_freelancer_address']['city']);
+        $county = sanitize_text_field($_POST['_freelancer_address']['county']);
+
+        // Assuming you have $current_user available
+        $current_user = wp_get_current_user();
+
+        // Save to user meta
+        update_user_meta($current_user->ID, 'username', $username);
+        update_user_meta($current_user->ID, 'email', $email);
+        update_user_meta($current_user->ID, 'phone', $phone);
+        update_user_meta($current_user->ID, 'city', $city); // Assuming you have a 'city' user meta field
+        update_user_meta($current_user->ID, 'address', $county); // Saving county to 'address' user meta field
+
+        // Handle other form processing and redirection as needed
+        // Example redirect after form submission
+        wp_redirect(home_url('/thank-you'));
+        exit;
+    }
+}
+
+// Hook the form submission handler to a WordPress action
+add_action('init', 'handle_freelancer_registration_form_submission');
 
 
 // Enqueue scripts and styles
-// function theme_enqueue_scripts() {
-//     wp_enqueue_script( 'custom-scripts', get_template_directory_uri() . '/js/custom-scripts.js', array( 'jquery' ), '1.0', true );
-// }
-// add_action( 'wp_enqueue_scripts', 'theme_enqueue_scripts' );
-
-
-
 function enqueue_custom_scripts() {
     // Enqueue custom.js file
     wp_enqueue_script('custom-script', get_template_directory_uri() . '/custom.js', array('jquery'), '1.0', true);

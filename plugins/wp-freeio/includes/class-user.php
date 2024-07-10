@@ -632,7 +632,7 @@ class WP_Freeio_User {
 			$prefix = WP_FREEIO_FREELANCER_PREFIX;
 			$role = 'wp_freeio_freelancer';
 		}
-
+ 
 
         self::registration_validation( $_POST[$prefix.'email'], $_POST[$prefix.'password'], $_POST[$prefix.'confirmpassword'],$_POST[$prefix.'phone'],$_POST[$prefix.'address'] );
         do_action( 'wp-freeio-registration-validation-after', $prefix );
@@ -842,6 +842,7 @@ class WP_Freeio_User {
 			$reg_errors->add( 'email', esc_html__( 'Email Already in use', 'wp-freeio' ) );
 		}
 	
+
 		// Add phone number validation
 		if (empty($phone)) {
 			$reg_errors->add('phone', esc_html__( 'Phone number is required', 'wp-freeio' ) );
