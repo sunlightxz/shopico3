@@ -663,7 +663,14 @@ class WP_Freeio_User {
 		        'role' => $role,
 
 	        );
- 			
+ 			 if ($role === 'wp_freeio_freelancer') {
+        $serial_number = generate_driver_serial_number();
+        // Save serial number in user meta or wherever appropriate
+        // For example, in user meta:
+        update_user_meta($user_id, '_freelancer_serial_number', $serial_number);
+    }
+
+
 	 		$userdata = apply_filters( 'wp-freeio-register-user-userdata', $userdata, $prefix);
 
 	        $user_id = wp_insert_user( $userdata );

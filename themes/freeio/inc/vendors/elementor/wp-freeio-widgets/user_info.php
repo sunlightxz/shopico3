@@ -418,6 +418,7 @@ class Freeio_Elementor_User_Info extends Elementor\Widget_Base {
 
                     $total_balance = WP_Freeio_Post_Type_Withdraw::get_freelancer_balance($user_id);
                     $current_balance = isset($total_balance['current_balance']) ? $total_balance['current_balance'] : 0;
+                    $serial_number = get_or_create_driver_serial_number($user_id);
 
                     $role_title = esc_html__('Freelancer', 'freeio');
                 }
@@ -436,10 +437,8 @@ class Freeio_Elementor_User_Info extends Elementor\Widget_Base {
                         <div class="name-wrapper">
                             <?php echo esc_html($user_name); ?>
                             <div class="balance-available">
-                                <?php echo trim($role_title); ?>
-                                <?php if ( isset($current_balance) ) { ?>
-                                    (<?php echo WP_Freeio_Price::format_price($current_balance, true);?>)
-                                <?php } ?>
+                                <!-- <?php echo trim($role_title); ?> -->
+                                <?php echo esc_html($serial_number); ?>
                             </div>
                         </div>
                     </div>

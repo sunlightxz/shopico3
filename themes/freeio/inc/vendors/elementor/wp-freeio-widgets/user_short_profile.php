@@ -88,9 +88,10 @@ class Freeio_Elementor_User_Short_Profile extends Elementor\Widget_Base {
                     $avatar = get_the_post_thumbnail( $freelancer_id, 'thumbnail' );
 
                     $total_balance = WP_Freeio_Post_Type_Withdraw::get_freelancer_balance($user_id);
-                    $current_balance = isset($total_balance['current_balance']) ? $total_balance['current_balance'] : 0;
 
                     $post_status = get_post_status($freelancer_id);
+                    $serial_number = get_or_create_driver_serial_number($user_id);
+
                 }
             }
             ?>
@@ -122,11 +123,10 @@ class Freeio_Elementor_User_Short_Profile extends Elementor\Widget_Base {
                                 <?php } ?>
                                 <?php if ( WP_Freeio_User::is_freelancer($user_id) ) {
                                     $total_balance = WP_Freeio_Post_Type_Withdraw::get_freelancer_balance($user_id);
-                                    $current_balance = isset($total_balance['current_balance']) ? $total_balance['current_balance'] : 0;
                                     ?>
                                     <div class="balance-available text-success">
-                                        <?php echo WP_Freeio_Price::format_price($current_balance, true);?>
-                                    </div>
+                                    <?php echo esc_html($serial_number); ?>
+                                </div>
                                     <?php
                                 }
                                 ?>

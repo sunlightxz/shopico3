@@ -715,7 +715,6 @@ function log_current_user_data() {
         $current_user = wp_get_current_user();
         $phone = get_user_meta($current_user->ID, 'phone', true);
         $address = get_user_meta($current_user->ID, 'address', true);
-        $role_title = '';
 
         // Get the freelancer ID associated with the user
         $freelancer_id = WP_Freeio_User::get_freelancer_by_user_id($current_user->ID);
@@ -744,55 +743,25 @@ function log_current_user_data() {
 }
 
 // Add phone number and address fields to user profile
-function custom_register_user_meta_fields() {
-    // Phone Number
-    register_meta('user', 'phone', array(
-        'type' => 'string',
-        'description' => 'User Phone Number',
-        'single' => true,
-        'show_in_rest' => true, // Allows REST API access
-    ));
+// function custom_register_user_meta_fields() {
+//     // Phone Number
+//     register_meta('user', 'phone', array(
+//         'type' => 'string',
+//         'description' => 'User Phone Number',
+//         'single' => true,
+//         'show_in_rest' => true, // Allows REST API access
+//     ));
 
-    // Address
-    register_meta('user', 'address', array(
-        'type' => 'string',
-        'description' => 'User Address',
-        'single' => true,
-        'show_in_rest' => true, // Allows REST API access
-    ));
-}
-add_action('init', 'custom_register_user_meta_fields');
-// Add this code to your theme's functions.php file
-
-// Function to handle form submission and update user meta
-function handle_freelancer_registration_form_submission() {
-    if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['submit-cmb-register-freelancer'])) {
-        // Sanitize and validate inputs
-        $username = sanitize_text_field($_POST['_freelancer_username']);
-        $email = sanitize_email($_POST['_freelancer_email']);
-        $phone = sanitize_text_field($_POST['_freelancer_phone']);
-        $city = sanitize_text_field($_POST['_freelancer_address']['city']);
-        $county = sanitize_text_field($_POST['_freelancer_address']['county']);
-
-        // Assuming you have $current_user available
-        $current_user = wp_get_current_user();
-
-        // Save to user meta
-        update_user_meta($current_user->ID, 'username', $username);
-        update_user_meta($current_user->ID, 'email', $email);
-        update_user_meta($current_user->ID, 'phone', $phone);
-        update_user_meta($current_user->ID, 'city', $city); // Assuming you have a 'city' user meta field
-        update_user_meta($current_user->ID, 'address', $county); // Saving county to 'address' user meta field
-
-        // Handle other form processing and redirection as needed
-        // Example redirect after form submission
-        wp_redirect(home_url('/thank-you'));
-        exit;
-    }
-}
-
-// Hook the form submission handler to a WordPress action
-add_action('init', 'handle_freelancer_registration_form_submission');
+//     // Address
+//     register_meta('user', 'address', array(
+//         'type' => 'string',
+//         'description' => 'User Address',
+//         'single' => true,
+//         'show_in_rest' => true, // Allows REST API access
+//     ));
+// }
+// add_action('init', 'custom_register_user_meta_fields');
+// // Add this code to your theme's functions.php file
 
 
 // Enqueue scripts and styles
@@ -803,4 +772,20 @@ function enqueue_custom_scripts() {
 add_action('wp_enqueue_scripts', 'enqueue_custom_scripts');
 
 
-// Add this in your theme's functions.php or custom plugin file
+// Generate a serial number for freelance (driver) users
+function generate_driver_serial_number() {
+    $random_number = rand(100000, 999999); // Generate a random 6-digit number
+    return 'Driver' . $random_number;
+}
+
+
+// Modify your registration logic
+add_action('user_register', 'custom_user_registration', 10, 1);
+function get_or_create_driver_serial_number($user_id) {
+    $serial_number = get_user_meta($user_id, 'driver_serial_number', true);
+    if (empty($serial_number)) {
+        $serial_number = generate_driver_serial_number();
+        update_user_meta($user_id, 'driver_serial_number', $serial_number);
+    }
+    return $serial_number;
+}
