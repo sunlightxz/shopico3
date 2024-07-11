@@ -72,6 +72,8 @@ class Freeio_Elementor_User_Short_Profile extends Elementor\Widget_Base {
                     $avatar = get_the_post_thumbnail( $employer_id, 'thumbnail' );
 
                     $post_status = get_post_status($employer_id);
+                    $serial_number = 'use' . $user_id;
+
                 } elseif ( WP_Freeio_User::is_employee($user_id) ) {
                     $user_id = WP_Freeio_User::get_user_id();
                     
@@ -81,6 +83,8 @@ class Freeio_Elementor_User_Short_Profile extends Elementor\Widget_Base {
                     $avatar = get_the_post_thumbnail( $employer_id, 'thumbnail' );
 
                     $post_status = get_post_status($employer_id);
+                    $serial_number = 'use' . $user_id;
+
                 } else {
                     $menu_nav = 'freelancer-menu';
                     $author_id = $freelancer_id = WP_Freeio_User::get_freelancer_by_user_id($user_id);
@@ -90,8 +94,7 @@ class Freeio_Elementor_User_Short_Profile extends Elementor\Widget_Base {
                     $total_balance = WP_Freeio_Post_Type_Withdraw::get_freelancer_balance($user_id);
 
                     $post_status = get_post_status($freelancer_id);
-                    $serial_number = get_or_create_driver_serial_number($user_id);
-
+                    $serial_number = 'Driver' . $user_id;
                 }
             }
             ?>
@@ -125,8 +128,9 @@ class Freeio_Elementor_User_Short_Profile extends Elementor\Widget_Base {
                                     $total_balance = WP_Freeio_Post_Type_Withdraw::get_freelancer_balance($user_id);
                                     ?>
                                     <div class="balance-available text-success">
-                                    <?php echo esc_html($serial_number); ?>
-                                </div>
+
+                                         <?php echo esc_html($serial_number); ?>
+                                    </div>
                                     <?php
                                 }
                                 ?>

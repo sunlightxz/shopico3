@@ -35,14 +35,45 @@ if ( ! defined( 'ABSPATH' ) ) {
 
   		<?php
   			$html_output = '';
+			
+			//username field
 			  $html_output .= '<div class="form-group" id="username">
 			  <label for="_employer_username">'.__('Username:', 'wp-freeio').'</label>
 			  <input type="text" name="_employer_username" id="_employer_username" class="form-control" placeholder="username" required>
 		   </div>';
-		   
+
+		//email field
+		   $html_output .= '<div class="form-group">
+		   <label for="_employer_email">'.__('Email:', 'wp-freeio').'</label>
+		   <input type="email" name="_employer_email" id="_employer_email" class="form-control" placeholder="' . esc_attr(__('Enter your email', 'wp-freeio')) . '" required>
+	   </div>';
+
+	   // Password field with toggle show/hide functionality
+	   $html_output .= '<div class="form-group cmb2-wrap">
+		   <label for="hide_show_password">' . __('Password:', 'wp-freeio') . '</label>
+		   <span class="show_hide_password_wrapper">
+			   <input type="password" class="form-control" name="_employer_password" id="hide_show_password" value="" data-lpignore="1" autocomplete="off" data-hash="gl70hk4g8ss0" placeholder="' . esc_attr(__('Password', 'wp-freeio')) . '" required>
+			   <a class="toggle-password" title="' . esc_attr(__('Show', 'wp-freeio')) . '"><span class="dashicons dashicons-hidden"></span></a>
+		   </span>
+	   </div>';
+
+	   // Confirm Password field
+	   $html_output .= '<div class="form-group cmb2-wrap">
+		   <label for="_employer_confirmpassword">' . __('Confirm Password:', 'wp-freeio') . '</label>
+		   <span class="show_hide_password_wrapper">
+		   <input type="password" class="form-control" name="_employer_confirmpassword" id="hide_show_password" value="" data-lpignore="1" autocomplete="off" data-hash="gl70hk4g8ss0" placeholder="' . esc_attr(__('Confirm Password', 'wp-freeio')) . '" required>
+		   <a class="toggle-password" title="' . esc_attr(__('Show', 'wp-freeio')) . '"><span class="dashicons dashicons-hidden"></span></a>
+	   </span>
+	   </div>';
+
+	   // Phone number field
+	   $html_output .= '<div class="form-group">
+		   <label for="_employer_phone">'.__('Whatsapp Phone Number:', 'wp-freeio').'</label>
+		   <input type="tel" name="_employer_phone" id="_employer_phone" class="form-control" placeholder="' . esc_attr(__('Enter your whatsapp phone Number', 'wp-freeio')) . '" required>
+	   </div>';
 		   $html_output .= '<div class="form-group" id="_employer_address">
-		   <label for="address">'.__('address:', 'wp-freeio').'</label>
-		   <input type="text" name="address" id="address" class="form-control" placeholder="your address" required>
+		   <label for="_employer_address">'.__('address:', 'wp-freeio').'</label>
+		   <input type="text" name="_employer_address" id="_employer_address" class="form-control" placeholder="your address" required>
 		</div>';
   			if ( WP_Freeio_Recaptcha::is_recaptcha_enabled() ) {
             	$html_output .= '<div id="recaptcha-register-freelancer" class="ga-recaptcha margin-bottom-25" data-sitekey="'.esc_attr(wp_freeio_get_option( 'recaptcha_site_key' )).'"></div>';

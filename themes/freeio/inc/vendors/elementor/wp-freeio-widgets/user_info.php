@@ -401,6 +401,8 @@ class Freeio_Elementor_User_Info extends Elementor\Widget_Base {
                     $user_name = get_post_field('post_title', $employer_id);
                     $avatar = get_the_post_thumbnail( $employer_id, 'thumbnail' );
                     $role_title = esc_html__('Employer', 'freeio');
+                    $serial_number = 'user' . $user_id;
+
                 } elseif ( WP_Freeio_User::is_employee($user_id) ) {
                     $user_id = WP_Freeio_User::get_user_id();
                     
@@ -408,6 +410,7 @@ class Freeio_Elementor_User_Info extends Elementor\Widget_Base {
                     $employer_id = WP_Freeio_User::get_employer_by_user_id($user_id);
                     $user_name = get_post_field('post_title', $employer_id);
                     $avatar = get_the_post_thumbnail( $employer_id, 'thumbnail' );
+                    $serial_number = 'use' . $user_id;
 
                     $role_title = esc_html__('Employer', 'freeio');
                 } else {
@@ -418,7 +421,7 @@ class Freeio_Elementor_User_Info extends Elementor\Widget_Base {
 
                     $total_balance = WP_Freeio_Post_Type_Withdraw::get_freelancer_balance($user_id);
                     $current_balance = isset($total_balance['current_balance']) ? $total_balance['current_balance'] : 0;
-                    $serial_number = get_or_create_driver_serial_number($user_id);
+                    $serial_number = 'Driver'.$user_id;
 
                     $role_title = esc_html__('Freelancer', 'freeio');
                 }
