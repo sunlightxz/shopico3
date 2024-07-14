@@ -772,20 +772,22 @@ function enqueue_custom_scripts() {
 add_action('wp_enqueue_scripts', 'enqueue_custom_scripts');
 
 
-// Generate a serial number for freelance (driver) users
-function generate_driver_serial_number() {
-    $random_number = rand(100000, 999999); // Generate a random 6-digit number
-    return 'Driver' . $random_number;
-}
+// // Generate a serial number for freelance (driver) users
+// function generate_driver_serial_number() {
+//     $random_number = rand(100000, 999999); // Generate a random 6-digit number
+//     return 'Driver' . $random_number;
+// }
 
 
-// Modify your registration logic
-add_action('user_register', 'custom_user_registration', 10, 1);
-function get_or_create_driver_serial_number($user_id) {
-    $serial_number = get_user_meta($user_id, 'driver_serial_number', true);
-    if (empty($serial_number)) {
-        $serial_number = generate_driver_serial_number();
-        update_user_meta($user_id, 'driver_serial_number', $serial_number);
-    }
-    return $serial_number;
-}
+// // Modify your registration logic
+// add_action('user_register', 'custom_user_registration', 10, 1);
+// function get_or_create_driver_serial_number($user_id) {
+//     $serial_number = get_user_meta($user_id, 'driver_serial_number', true);
+//     if (empty($serial_number)) {
+//         $serial_number = generate_driver_serial_number();
+//         update_user_meta($user_id, 'driver_serial_number', $serial_number);
+//     }
+//     return $serial_number;
+// }
+// =======
+// Add this in your theme's functions.php or custom plugin file
