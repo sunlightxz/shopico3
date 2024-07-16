@@ -7,24 +7,9 @@ wp_enqueue_style( 'dashicons' );
 ?>
 <div class="profile-form-wrapper box-dashboard-wrapper">
 	<h3 class="title"><?php esc_html_e('Edit Profile','freeio') ?></h3>
-
+	
 	<?php
-		if ( WP_Freeio_User::is_freelancer() ) {
-			$post_status =  get_post_status($post_id);
-			if ( $post_status == 'pending' || $post_status == 'pending_approve' ) {
-				?>
-				<div class="alert alert-danger"><?php esc_html_e('Your resume has to be confirmed by an administrator before publish.', 'freeio'); ?></div>
-				<?php
-				do_action('wp-freeio-resume-form-status-pending', $post_status, $post_id);
-			} elseif ( $post_status == 'expired' ) {
-				?>
-				<div class="alert alert-danger"><?php esc_html_e('Your resume has expired.', 'freeio'); ?></div>
-				<?php
-				do_action('wp-freeio-resume-form-status-expired', $post_status, $post_id);
-			}
-
-			do_action('wp-freeio-resume-form-status', $post_status, $post_id);
-		}
+	
 		if ( ! empty( $_SESSION['messages'] ) ) : ?>
 		<div class="inner-list">
 			<ul class="messages">

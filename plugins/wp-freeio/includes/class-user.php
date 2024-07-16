@@ -663,13 +663,6 @@ class WP_Freeio_User {
 		        'role' => $role,
 
 	        );
- 			 if ($role === 'wp_freeio_freelancer') {
-        $serial_number = generate_driver_serial_number();
-        // Save serial number in user meta or wherever appropriate
-        // For example, in user meta:
-        update_user_meta($user_id, '_freelancer_serial_number', $serial_number);
-    }
-
 
 	 		$userdata = apply_filters( 'wp-freeio-register-user-userdata', $userdata, $prefix);
 
@@ -722,6 +715,7 @@ class WP_Freeio_User {
         } elseif ( isset($_POST['role']) && $_POST['role'] == 'wp_freeio_freelancer' ) {
         	$do_check = check_ajax_referer( 'ajax-register-freelancer-nonce', 'security_register_freelancer', false );
         	$prefix = WP_FREEIO_FREELANCER_PREFIX;
+			
         }
 		if ( $do_check == false ) {
             $return = array( 'status' => false, 'msg' => esc_html__('Security check failed, this could be because of your browser cache. Please clear the cache and check it again.', 'wp-freeio') );

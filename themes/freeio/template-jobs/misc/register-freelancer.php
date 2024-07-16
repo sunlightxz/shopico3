@@ -34,7 +34,7 @@ if (!defined('ABSPATH')) {
         <label><input type="radio" checked name="driver_type" value="society" required> Society</label>&nbsp;&nbsp;
         <label><input type="radio" name="driver_type" value="entrepreneur"> Entrepreneur</label>&nbsp;&nbsp;
         <label><input type="radio" name="driver_type" value="other"> Other</label>
-    </div>';
+        </div>';
         // Username or Society Name field based on radio button selection
         $html_output .= '<div class="form-group" id="username_or_society_name">
             <label for="_freelancer_username">' . __('Username:', 'wp-freeio') . '</label>
@@ -95,7 +95,6 @@ if (!defined('ABSPATH')) {
         </div>';
 
         // Hidden field for serial number (if needed)
-        $html_output .= '<input type="hidden" name="_freelancer_serial_number" id="_freelancer_serial_number" value="">';
 
         // Terms and Conditions
         $page_id = wp_freeio_get_option('terms_conditions_page_id');

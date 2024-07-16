@@ -138,7 +138,7 @@ $total_reviews = WP_Freeio_Review::get_total_reviews($employer_id);
 					$class_second_column = 'with-employer';
 			?>
 				<div class="inner-list">
-					<h3 class="title-small"><?php echo esc_html__( 'Page Views', 'freeio' ); ?></h3>
+					<h3 class="title-small"><?php echo esc_html__( 'Pagess Views', 'freeio' ); ?></h3>
 					<div class="page_views-wrapper">
 						
 						<div class="page_views-wrapper">

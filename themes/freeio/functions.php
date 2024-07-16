@@ -715,7 +715,7 @@ function log_current_user_data() {
         $current_user = wp_get_current_user();
         $phone = get_user_meta($current_user->ID, 'phone', true);
         $address = get_user_meta($current_user->ID, 'address', true);
-
+        $role_title = '';
         // Get the freelancer ID associated with the user
         $freelancer_id = WP_Freeio_User::get_freelancer_by_user_id($current_user->ID);
 
@@ -791,3 +791,9 @@ add_action('wp_enqueue_scripts', 'enqueue_custom_scripts');
 // }
 // =======
 // Add this in your theme's functions.php or custom plugin file
+
+
+
+
+
+
