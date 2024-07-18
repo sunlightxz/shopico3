@@ -27,7 +27,6 @@ if (!defined('ABSPATH')) {
             </ul>
         <?php endif; ?>
 
-
         <?php
         $html_output = '';
         $html_output = '<div class="form-group">
