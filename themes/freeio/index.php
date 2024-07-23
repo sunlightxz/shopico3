@@ -1,5 +1,16 @@
 <?php
 /**
+ * 
+ * Theme Name: Freeio
+*Theme URI: https://themeforest.net/item/freeio-freelance-marketplace-wordpress-theme/42045416
+*Author: ApusTheme
+*Author URI: https://themeforest.net/user/apustheme
+*Description: Freeio is a Freelance Marketplace WordPress theme with some exciting features and excellent code quality.
+*Version: 1.3.3
+*License: GNU General Public License v2 or later
+*License URI: http://www.gnu.org/licenses/gpl-2.0.html
+*Tags: custom-background, custom-colors, custom-header, custom-menu, editor-style, featured-images, microformats, post-formats, rtl-language-support, sticky-post, threaded-comments, translation-ready
+*Text Domain: freeio
  * The main template file
  *
  * This is the most generic template file in a WordPress theme

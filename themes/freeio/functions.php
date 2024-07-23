@@ -772,6 +772,13 @@ function enqueue_custom_scripts() {
 add_action('wp_enqueue_scripts', 'enqueue_custom_scripts');
 
 
+//dasch Icons import
+function enqueue_dashicons() {
+    wp_enqueue_style('dashicons');
+}
+add_action('wp_enqueue_scripts', 'enqueue_dashicons');
+
+
 // // Generate a serial number for freelance (driver) users
 // function generate_driver_serial_number() {
 //     $random_number = rand(100000, 999999); // Generate a random 6-digit number

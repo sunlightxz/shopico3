@@ -74,11 +74,15 @@ if (!defined('ABSPATH')) {
             $html_output .= '<div id="recaptcha-register-freelancer" class="ga-recaptcha margin-bottom-25" data-sitekey="' . esc_attr(wp_freeio_get_option('recaptcha_site_key')) . '"></div>';
         }
 
+
+
         // Address city and county select fields
         $html_output .= '
         <div class="form-group">
             <label for="city_select">' . esc_html__('City', 'wp-freeio') . '</label>
             <select id="city_select" class="form-control" required>
+            <a class="toggle-password" title="' . esc_attr(__('Show', 'wp-freeio')) . '"><span class="dashicons dashicons-hidden"></span></a>
+
                 <option value="">' . esc_html__('Select City', 'wp-freeio') . '</option>
                 <option value="rabat">' . esc_html__('Rabat', 'wp-freeio') . '</option>
                 <option value="casa">' . esc_html__('Casablanca', 'wp-freeio') . '</option>
@@ -118,13 +122,13 @@ if (!defined('ABSPATH')) {
 </div>
 
 <script>
-    document.addEventListener('DOMContentLoaded', function () {
+    document.addEventListener('DOMContentLoaded', function() {
         var driverTypeRadios = document.querySelectorAll('input[name="driver_type"]');
         var usernameOrSocietyNameField = document.getElementById('_freelancer_username');
         var usernameOrSocietyNameLabel = document.querySelector('#username_or_society_name label');
 
-        driverTypeRadios.forEach(function (radio) {
-            radio.addEventListener('change', function () {
+        driverTypeRadios.forEach(function(radio) {
+            radio.addEventListener('change', function() {
                 if (this.value === 'society') {
                     usernameOrSocietyNameLabel.textContent = '<?php echo esc_js(__('Society Name:', 'wp-freeio')); ?>';
                     usernameOrSocietyNameField.setAttribute('placeholder', '<?php echo esc_attr(__('Enter society name', 'wp-freeio')); ?>');
@@ -145,12 +149,12 @@ if (!defined('ABSPATH')) {
             'marrakech': ['County X', 'County Y', 'County Z']
         };
 
-        citySelect.addEventListener('change', function () {
+        citySelect.addEventListener('change', function() {
             const selectedCity = this.value;
             countySelect.innerHTML = '<option value=""><?php esc_html_e('Select County', 'wp-freeio'); ?></option>';
 
             if (counties[selectedCity]) {
-                counties[selectedCity].forEach(function (county) {
+                counties[selectedCity].forEach(function(county) {
                     const option = document.createElement('option');
                     option.value = county;
                     option.textContent = county;
@@ -162,7 +166,7 @@ if (!defined('ABSPATH')) {
             updateAddress();
         });
 
-        countySelect.addEventListener('change', function () {
+        countySelect.addEventListener('change', function() {
             // Update address field with selected county
             updateAddress();
         });
@@ -177,5 +181,27 @@ if (!defined('ABSPATH')) {
                 addressInput.value = '';
             }
         }
+
+        // Toggle password visibility
+        var togglePassword = document.querySelectorAll('.toggle-password');
+
+        togglePassword.forEach(function(toggle) {
+            toggle.addEventListener('click', function() {
+                var passwordInput = this.previousElementSibling;
+                var icon = this.querySelector('span');
+
+                if (passwordInput.type === 'password') {
+                    passwordInput.type = 'text';
+                    passwordInput.style.marginBottom = '20px'; // Add margin-bottom
+                    icon.classList.remove('dashicons-hidden');
+                    icon.classList.add('dashicons-visibility');
+                } else {
+                    passwordInput.type = 'password';
+                    passwordInput.style.marginBottom = '0'; // Remove margin-bottom
+                    icon.classList.remove('dashicons-visibility');
+                    icon.classList.add('dashicons-hidden');
+                }
+            });
+        });
     });
 </script>
