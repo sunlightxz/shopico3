@@ -801,6 +801,92 @@ add_action('wp_enqueue_scripts', 'enqueue_dashicons');
 
 
 
+// Function to send verification email
+function send_verification_email($user_id, $user_email) {
+    $token = bin2hex(random_bytes(16)); // Generate a unique token
+    update_user_meta($user_id, 'email_verification_token', $token);
+    update_user_meta($user_id, 'email_verified', false);
+
+    $verification_url = add_query_arg([
+        'user_id' => $user_id,
+        'token' => $token
+    ], site_url('/verify-email'));
+
+    $subject = 'Verify your email address';
+    $message = 'Please verify your email address by clicking on the following link: ' . $verification_url;
+    wp_mail($user_email, $subject, $message);
+}
+
+// Hook into user registration to send the email
+add_action('user_register', function($user_id) {
+    $user = get_userdata($user_id);
+    send_verification_email($user_id, $user->user_email);
+});
+
+// Function to handle email verification
+function handle_email_verification() {
+    if (isset($_GET['user_id']) && isset($_GET['token'])) {
+        $user_id = intval($_GET['user_id']);
+        $token = sanitize_text_field($_GET['token']);
+        $stored_token = get_user_meta($user_id, 'email_verification_token', true);
+
+        if ($stored_token === $token) {
+            update_user_meta($user_id, 'email_verified', true);
+            delete_user_meta($user_id, 'email_verification_token');
+
+            // Auto-login the user
+            wp_set_current_user($user_id);
+            wp_set_auth_cookie($user_id);
+
+            // Redirect to a welcome page or dashboard
+            wp_redirect(site_url('/'));
+            exit;
+        } else {
+            echo 'Invalid verification token.';
+        }
+    }
+}
+add_action('init', 'handle_email_verification');
 
 
 
+function my_theme_setup() {
+    load_theme_textdomain('freeio', get_template_directory() . '/languages');
+}
+add_action('after_setup_theme', 'my_theme_setup');
+
+add_action('after_setup_theme', function() {
+    if (load_theme_textdomain('freeio', get_template_directory() . '/languages')) {
+        error_log('Theme translations loaded successfully.');
+    } else {
+        error_log('Failed to load theme translations.');
+    }
+});
+function my_custom_translations($translated_text, $text, $domain) {
+    // Check the domain to ensure we only filter our theme's text domain
+    if ($domain === 'freeio') {
+        // List of translations to override
+        $translations = array(
+            'Hello, World!' => array(
+                'fr_FR' => 'Bonjour, le monde!',
+                'ar' => 'مرحبا بالعالم'
+            ),
+            // Add more translations as needed
+            'Some Other String' => array(
+                'fr_FR' => 'Un autre texte en français',
+                'ar' => 'نص آخر باللغة العربية'
+            )
+        );
+
+        // Get the current locale
+        $locale = get_locale();
+
+        // Check if the text is in the list of translations to override
+        if (isset($translations[$text]) && isset($translations[$text][$locale])) {
+            return $translations[$text][$locale];
+        }
+    }
+
+    return $translated_text;
+}
+add_filter('gettext', 'my_custom_translations', 10, 3);

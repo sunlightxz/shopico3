@@ -29,16 +29,30 @@ if (!defined('ABSPATH')) {
 
         <?php
         $html_output = '';
-        $html_output = '<div class="form-group">
-        <label><input type="radio" checked name="driver_type" value="society" required> Society</label>&nbsp;&nbsp;
-        <label><input type="radio" name="driver_type" value="entrepreneur"> Entrepreneur</label>&nbsp;&nbsp;
-        <label><input type="radio" name="driver_type" value="other"> Other</label>
+        $html_output .= '<div class="form-group">
+        <label><input type="radio" checked name="driver_type" value="society" required> '. __('Society:', 'wp-freeio') . '</label>&nbsp;&nbsp;
+        <label><input type="radio" name="driver_type" value="entrepreneur"> '. __('Entrepreneur:', 'wp-freeio') . '</label>&nbsp;&nbsp;
+        <label><input type="radio" name="driver_type" value="other"> '. __('Other:', 'wp-freeio') . '</label>
         </div>';
-        // Username or Society Name field based on radio button selection
-        $html_output .= '<div class="form-group" id="username_or_society_name">
-            <label for="_freelancer_username">' . __('Username:', 'wp-freeio') . '</label>
-            <input type="text" name="_freelancer_username" id="_freelancer_username" class="form-control" placeholder="' . esc_attr(__('Enter your username', 'wp-freeio')) . '" required>
-        </div>';
+
+         // Full Name or First & Last Name fields
+         $html_output .= '<div class="form-group" id="name_fields">
+         <div id="full_name_field" style="display: block;">
+             <label for="_freelancer_name">' . __('Full Name:', 'wp-freeio') . '</label>
+             <input type="text" name="_freelancer_name" id="_freelancer_name" class="form-control" placeholder="' . esc_attr(__('Enter full name', 'wp-freeio')) . '" required>
+         </div>
+         <div id="first_last_name_fields" style="display: none;">
+             <label for="_freelancer_first_name">' . __('First Name:', 'wp-freeio') . '</label>
+             <input type="text" name="_freelancer_first_name" id="_freelancer_first_name" class="form-control" placeholder="' . esc_attr(__('Enter first name', 'wp-freeio')) . '" required>
+             <label for="_freelancer_last_name">' . __('Last Name:', 'wp-freeio') . '</label>
+             <input type="text" name="_freelancer_last_name" id="_freelancer_last_name" class="form-control" placeholder="' . esc_attr(__('Enter last name', 'wp-freeio')) . '" required>
+         </div>
+     </div>';
+
+     // Hidden input to store the combined name value
+     $html_output .= '<div id="hidden_name_container" style="display: none;">
+         <input type="text" id="_freelancer_username" name="_freelancer_username" value="">
+     </div>';
 
         // Email field
         $html_output .= '<div class="form-group">
@@ -59,7 +73,7 @@ if (!defined('ABSPATH')) {
         $html_output .= '<div class="form-group cmb2-wrap">
             <label for="_freelancer_confirmpassword">' . __('Confirm Password:', 'wp-freeio') . '</label>
             <span class="show_hide_password_wrapper">
-            <input type="password" class="form-control" name="_freelancer_confirmpassword" id="hide_show_password" value="" data-lpignore="1" autocomplete="off" data-hash="gl70hk4g8ss0" placeholder="' . esc_attr(__('Confirm Password', 'wp-freeio')) . '" required>
+            <input type="password" class="form-control" name="_freelancer_confirmpassword" id="hide_show_password_confirm" value="" data-lpignore="1" autocomplete="off" data-hash="gl70hk4g8ss0" placeholder="' . esc_attr(__('Confirm Password', 'wp-freeio')) . '" required>
             <a class="toggle-password" title="' . esc_attr(__('Show', 'wp-freeio')) . '"><span class="dashicons dashicons-hidden"></span></a>
         </span>       
          </div>';
@@ -67,22 +81,18 @@ if (!defined('ABSPATH')) {
         // Phone number field
         $html_output .= '<div class="form-group">
             <label for="_freelancer_phone">' . __('Whatsapp Phone Number:', 'wp-freeio') . '</label>
-            <input type="tel" name="_freelancer_phone" id="WP_FREEIO_EMPLOYER_PREFIX.phone" class="form-control" placeholder="' . esc_attr(__('Enter your whatsapp phone Number', 'wp-freeio')) . '" required>
+            <input type="tel" name="_freelancer_phone" id="_freelancer_phone" class="form-control" placeholder="' . esc_attr(__('Enter your whatsapp phone Number', 'wp-freeio')) . '" required>
         </div>';
 
         if (WP_Freeio_Recaptcha::is_recaptcha_enabled()) {
             $html_output .= '<div id="recaptcha-register-freelancer" class="ga-recaptcha margin-bottom-25" data-sitekey="' . esc_attr(wp_freeio_get_option('recaptcha_site_key')) . '"></div>';
         }
 
-
-
         // Address city and county select fields
         $html_output .= '
         <div class="form-group">
             <label for="city_select">' . esc_html__('City', 'wp-freeio') . '</label>
             <select id="city_select" class="form-control" required>
-            <a class="toggle-password" title="' . esc_attr(__('Show', 'wp-freeio')) . '"><span class="dashicons dashicons-hidden"></span></a>
-
                 <option value="">' . esc_html__('Select City', 'wp-freeio') . '</option>
                 <option value="rabat">' . esc_html__('Rabat', 'wp-freeio') . '</option>
                 <option value="casa">' . esc_html__('Casablanca', 'wp-freeio') . '</option>
@@ -96,8 +106,6 @@ if (!defined('ABSPATH')) {
             </select>
             <input type="hidden" name="_freelancer_address" id="_freelancer_address" value="">
         </div>';
-
-        // Hidden field for serial number (if needed)
 
         // Terms and Conditions
         $page_id = wp_freeio_get_option('terms_conditions_page_id');
@@ -121,22 +129,50 @@ if (!defined('ABSPATH')) {
     </div>
 </div>
 
+
 <script>
     document.addEventListener('DOMContentLoaded', function() {
         var driverTypeRadios = document.querySelectorAll('input[name="driver_type"]');
-        var usernameOrSocietyNameField = document.getElementById('_freelancer_username');
-        var usernameOrSocietyNameLabel = document.querySelector('#username_or_society_name label');
+        var fullNameField = document.getElementById('full_name_field');
+        var firstLastNameFields = document.getElementById('first_last_name_fields');
+        var hiddenNameInput = document.getElementById('_freelancer_username');
+        var nameInput = document.getElementById('_freelancer_name');
+        var firstNameInput = document.getElementById('_freelancer_first_name');
+        var lastNameInput = document.getElementById('_freelancer_last_name');
 
         driverTypeRadios.forEach(function(radio) {
             radio.addEventListener('change', function() {
                 if (this.value === 'society') {
-                    usernameOrSocietyNameLabel.textContent = '<?php echo esc_js(__('Society Name:', 'wp-freeio')); ?>';
-                    usernameOrSocietyNameField.setAttribute('placeholder', '<?php echo esc_attr(__('Enter society name', 'wp-freeio')); ?>');
+                    fullNameField.style.display = 'block';
+                    firstLastNameFields.style.display = 'none';
+                    hiddenNameInput.value = nameInput.value;
                 } else {
-                    usernameOrSocietyNameLabel.textContent = '<?php echo esc_js(__('Username:', 'wp-freeio')); ?>';
-                    usernameOrSocietyNameField.setAttribute('placeholder', '<?php echo esc_attr(__('Enter username', 'wp-freeio')); ?>');
+                    fullNameField.style.display = 'none';
+                    firstLastNameFields.style.display = 'block';
+                    var firstName = firstNameInput.value || '';
+                    var lastName = lastNameInput.value || '';
+                    hiddenNameInput.value = firstName + ' ' + lastName;
                 }
             });
+        });
+
+        // Update hidden input value on input change
+        nameInput.addEventListener('input', function() {
+            if (document.querySelector('input[name="driver_type"]:checked').value === 'society') {
+                hiddenNameInput.value = this.value;
+            }
+        });
+
+        firstNameInput.addEventListener('input', function() {
+            if (document.querySelector('input[name="driver_type"]:checked').value !== 'society') {
+                hiddenNameInput.value = this.value + ' ' + (lastNameInput.value || '');
+            }
+        });
+
+        lastNameInput.addEventListener('input', function() {
+            if (document.querySelector('input[name="driver_type"]:checked').value !== 'society') {
+                hiddenNameInput.value = (firstNameInput.value || '') + ' ' + this.value;
+            }
         });
 
         const citySelect = document.getElementById('city_select');
@@ -197,11 +233,12 @@ if (!defined('ABSPATH')) {
                     icon.classList.add('dashicons-visibility');
                 } else {
                     passwordInput.type = 'password';
-                    passwordInput.style.marginBottom = '0'; // Remove margin-bottom
+                    passwordInput.style.marginBottom = '20'; // Remove margin-bottom
                     icon.classList.remove('dashicons-visibility');
                     icon.classList.add('dashicons-hidden');
                 }
             });
         });
+
     });
 </script>

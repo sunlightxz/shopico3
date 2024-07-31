@@ -1,26 +1,23 @@
-#
 msgid ""
 msgstr ""
-"Project-Id-Version: Freeio 1.3.0\n"
+"Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/theme/freeio\n"
-"POT-Creation-Date: 2024-07-19 15:16+0100\n"
-"PO-Revision-Date: 2024-07-19 17:20+0100\n"
+"POT-Creation-Date: 2024-07-25 12:55+0100\n"
+"PO-Revision-Date: 2024-07-26 14:00+0000\n"
 "Last-Translator: \n"
 "Language-Team: Arabic\n"
 "Language: ar\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=6; plural=(n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 && "
-"n%100<=10 ? 3 : n%100>=11 && n%100<=99 ? 4 : 5);\n"
-"X-Domain: freeio\n"
-"X-Generator: Poedit 3.4.4\n"
-"X-Loco-Parser: loco_parse_po\n"
-"X-Loco-Source-Locale: en_SG\n"
+"X-Generator: Loco https://localise.biz/\n"
 "X-Poedit-Basepath: ../../..\n"
-"X-Poedit-KeywordsList: __;esc_html__;esc_attr;esc_attr__\n"
+"X-Poedit-KeywordsList: __;__e\n"
 "X-Poedit-SearchPath-0: themes/freeio\n"
 "X-Poedit-SearchPath-1: plugins/wp-freeio\n"
+"Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100 >= 3 "
+"&& n%100<=10 ? 3 : n%100 >= 11 && n%100<=99 ? 4 : 5;\n"
+"X-Loco-Version: 2.6.11; wp-6.6.1"
 
 #: plugins/wp-freeio/includes/3rd-party/class-polylang.php:111
 #: plugins/wp-freeio/includes/3rd-party/class-wpml.php:111
@@ -33,7 +30,7 @@ msgstr "الصفحة لم يتم تعيينها"
 #: plugins/wp-freeio/includes/3rd-party/class-wpml.php:123
 #, php-format
 msgid "<a href=\"%s\">Switch to primary language</a> to edit this setting."
-msgstr ""
+msgstr "<a href=\"٪S\"> قم بالتبديل إلى اللغة الأولية </a> لتحرير هذا الإعداد."
 
 #: plugins/wp-freeio/includes/admin/class-permalink-settings.php:24
 msgid "Job base"
@@ -371,7 +368,7 @@ msgstr "واجهة برمجة تطبيقات الاجتماعية"
 
 #: plugins/wp-freeio/includes/admin/class-settings.php:105
 msgid "ReCaptcha API"
-msgstr "‫recaptcha API"
+msgstr "recaptcha API"
 
 #: plugins/wp-freeio/includes/admin/class-settings.php:106
 #: plugins/wp-freeio/includes/admin/class-settings.php:2477
@@ -455,13 +452,15 @@ msgstr "Google MAP API"
 
 #: plugins/wp-freeio/includes/admin/class-settings.php:233
 msgid ""
-"Google requires an API key to retrieve location information for job listings. "
-"Acquire an API key from the <a href=\"https://developers.google.com/maps/"
-"documentation/geocoding/get-api-key\">Google Maps API developer site.</a>"
+"Google requires an API key to retrieve location information for job listings."
+" Acquire an API key from the <a href=\"https://developers.google."
+"com/maps/documentation/geocoding/get-api-key\">Google Maps API developer "
+"site.</a>"
 msgstr ""
-"تتطلب Google مفتاح API لاسترداد معلومات الموقع لقوائم الوظائف.الحصول على مفتاح API "
-"من <a href=\"https://developers.google.com/maps/documentation/geocoding/get-api-"
-"key\"> موقع مطور API خرائط Google. </a>"
+"تتطلب Google مفتاح API لاسترداد معلومات الموقع لقوائم الوظائف.الحصول على "
+"مفتاح API من <a href=\"https://developers.google."
+"com/maps/documentation/geocoding/get-api-key\"> موقع مطور API خرائط Google. "
+"</a>"
 
 #: plugins/wp-freeio/includes/admin/class-settings.php:243
 msgid "Google Maps Style"
@@ -469,11 +468,11 @@ msgstr "أسلوب خرائط جوجل"
 
 #: plugins/wp-freeio/includes/admin/class-settings.php:244
 msgid ""
-"<a href=\"//snazzymaps.com/\">Get custom style</a> and paste it below. If there is "
-"nothing added, we will fallback to the Google Maps service."
+"<a href=\"//snazzymaps.com/\">Get custom style</a> and paste it below. If "
+"there is nothing added, we will fallback to the Google Maps service."
 msgstr ""
-"<a href=\"//snazzymaps.com/\"> احصل على نمط مخصص </a> ولصقه أدناه.إذا لم يكن هناك "
-"شيء مضاف ، فسنقود إلى خدمة خرائط Google."
+"<a href=\"//snazzymaps.com/\"> احصل على نمط مخصص </a> ولصقه أدناه.إذا لم يكن "
+"هناك شيء مضاف ، فسنقود إلى خدمة خرائط Google."
 
 #: plugins/wp-freeio/includes/admin/class-settings.php:254
 msgid "Mapbox Token"
@@ -481,12 +480,13 @@ msgstr "رمز MAPBOX"
 
 #: plugins/wp-freeio/includes/admin/class-settings.php:255
 msgid ""
-"<a href=\"//www.mapbox.com/help/create-api-access-token/\">Get a FREE token</a> and "
-"paste it below. If there is nothing added, we will fallback to the Google Maps "
-"service."
+"<a href=\"//www.mapbox.com/help/create-api-access-token/\">Get a FREE "
+"token</a> and paste it below. If there is nothing added, we will fallback to "
+"the Google Maps service."
 msgstr ""
-"<a href=\"//www.mapbox.com/help/create-api-access-token/\"> احصل على رمز مجاني </a> "
-"ولصقه أدناه.إذا لم يكن هناك شيء مضاف ، فسنقود إلى خدمة خرائط Google."
+"<a href=\"//www.mapbox.com/help/create-api-access-token/\"> احصل على رمز "
+"مجاني </a> ولصقه أدناه.إذا لم يكن هناك شيء مضاف ، فسنقود إلى خدمة خرائط "
+"Google."
 
 #: plugins/wp-freeio/includes/admin/class-settings.php:265
 #, fuzzy
@@ -522,13 +522,13 @@ msgstr "هنا خرائط مفتاح API"
 
 #: plugins/wp-freeio/includes/admin/class-settings.php:298
 msgid ""
-"<a href=\"https://developer.here.com/tutorials/getting-here-credentials/\">Get a "
-"API key</a> and paste it below. If there is nothing added, we will fallback to the "
-"Google Maps service."
+"<a href=\"https://developer.here.com/tutorials/getting-here-credentials/\">"
+"Get a API key</a> and paste it below. If there is nothing added, we will "
+"fallback to the Google Maps service."
 msgstr ""
-"<a href=\"https://developer.here.com/tutorials/getting-here-credentials/\"> احصل "
-"على مفتاح API </a> ولصقه أدناه.إذا لم يكن هناك شيء مضاف ، فسنقود إلى خدمة خرائط "
-"Google."
+"<a href=\"https://developer.here.com/tutorials/getting-here-credentials/\"> "
+"احصل على مفتاح API </a> ولصقه أدناه.إذا لم يكن هناك شيء مضاف ، فسنقود إلى "
+"خدمة خرائط Google."
 
 #: plugins/wp-freeio/includes/admin/class-settings.php:308
 #, fuzzy
@@ -853,11 +853,11 @@ msgstr "صفحة الوظائف"
 
 #: plugins/wp-freeio/includes/admin/class-settings.php:487
 msgid ""
-"This lets the plugin know the location of the jobs listing page. The "
-"<code>[wp_freeio_jobs]</code> shortcode should be on this page."
+"This lets the plugin know the location of the jobs listing page. The <code>"
+"[wp_freeio_jobs]</code> shortcode should be on this page."
 msgstr ""
-"هذا يتيح للمكون الإضافي معرفة موقع صفحة قائمة الوظائف.يجب أن يكون الرمز المختصر "
-"<code> [wp_freeio_jobs] </code> في هذه الصفحة."
+"هذا يتيح للمكون الإضافي معرفة موقع صفحة قائمة الوظائف.يجب أن يكون الرمز "
+"المختصر <code> [wp_freeio_jobs] </code> في هذه الصفحة."
 
 #: plugins/wp-freeio/includes/admin/class-settings.php:495
 #, fuzzy
@@ -870,8 +870,8 @@ msgid ""
 "This lets the plugin know the location of the services listing page. The "
 "<code>[wp_freeio_services]</code> shortcode should be on this page."
 msgstr ""
-"هذا يتيح للمكون الإضافي معرفة موقع صفحة قائمة الخدمات.يجب أن يكون الرمز المختصر "
-"<code> [wp_freeio_services] </code> في هذه الصفحة."
+"هذا يتيح للمكون الإضافي معرفة موقع صفحة قائمة الخدمات.يجب أن يكون الرمز "
+"المختصر <code> [wp_freeio_services] </code> في هذه الصفحة."
 
 #: plugins/wp-freeio/includes/admin/class-settings.php:504
 #, fuzzy
@@ -884,8 +884,8 @@ msgid ""
 "This lets the plugin know the location of the projects listing page. The "
 "<code>[wp_freeio_projects]</code> shortcode should be on this page."
 msgstr ""
-"هذا يتيح للمكون الإضافي معرفة موقع صفحة قائمة المشاريع.يجب أن يكون الرمز المختصر "
-"<code> [wp_freeio_projects] </code> في هذه الصفحة."
+"هذا يتيح للمكون الإضافي معرفة موقع صفحة قائمة المشاريع.يجب أن يكون الرمز "
+"المختصر <code> [wp_freeio_projects] </code> في هذه الصفحة."
 
 #: plugins/wp-freeio/includes/admin/class-settings.php:513
 #, fuzzy
@@ -898,8 +898,8 @@ msgid ""
 "This lets the plugin know the location of the employers listing page. The "
 "<code>[wp_freeio_employers]</code> shortcode should be on this page."
 msgstr ""
-"هذا يتيح للمكون الإضافي معرفة موقع صفحة قائمة أصحاب العمل.يجب أن يكون الرمز المختصر "
-"<code> [wp_freeio_employers] </code> على هذه الصفحة."
+"هذا يتيح للمكون الإضافي معرفة موقع صفحة قائمة أصحاب العمل.يجب أن يكون الرمز "
+"المختصر <code> [wp_freeio_employers] </code> على هذه الصفحة."
 
 #: plugins/wp-freeio/includes/admin/class-settings.php:522
 #, fuzzy
@@ -912,22 +912,21 @@ msgid ""
 "This lets the plugin know the location of the freelancers listing page. The "
 "<code>[wp_freeio_freelancers]</code> shortcode should be on this page."
 msgstr ""
-"هذا يتيح للمكون الإضافي معرفة موقع صفحة قائمة المستقلين.يجب أن يكون الرمز المختصر "
-"<code> [wp_freeio_freelancers] </code> على هذه الصفحة."
+"هذا يتيح للمكون الإضافي معرفة موقع صفحة قائمة المستقلين.يجب أن يكون الرمز "
+"المختصر <code> [wp_freeio_freelancers] </code> على هذه الصفحة."
 
 #: plugins/wp-freeio/includes/admin/class-settings.php:531
-#, fuzzy
 #| msgid "Login Text"
 msgid "Login Page"
 msgstr "صفحة تسجيل الدخول"
 
 #: plugins/wp-freeio/includes/admin/class-settings.php:532
 msgid ""
-"This lets the plugin know the location of the job listings page. The "
-"<code>[wp_freeio_login]</code> shortcode should be on this page."
+"This lets the plugin know the location of the job listings page. The <code>"
+"[wp_freeio_login]</code> shortcode should be on this page."
 msgstr ""
-"هذا يتيح للمكون الإضافي معرفة موقع صفحة قوائم الوظائف.يجب أن يكون الرمز المختصر "
-"<code> [wp_freeio_login] </code> في هذه الصفحة."
+"هذا يتيح للمكون الإضافي معرفة موقع صفحة قوائم الوظائف.يجب أن يكون الرمز "
+"المختصر <code> [wp_freeio_login] </code> في هذه الصفحة."
 
 #: plugins/wp-freeio/includes/admin/class-settings.php:539
 #, fuzzy
@@ -937,13 +936,13 @@ msgstr "صفحة التسجيل"
 
 #: plugins/wp-freeio/includes/admin/class-settings.php:540
 msgid ""
-"This lets the plugin know the location of the job listings page. The "
-"<code>[wp_freeio_register_employer]</code> <code>[wp_freeio_register_freelancer]</"
-"code> shortcode should be on this page."
+"This lets the plugin know the location of the job listings page. The <code>"
+"[wp_freeio_register_employer]</code> <code>[wp_freeio_register_freelancer]"
+"</code> shortcode should be on this page."
 msgstr ""
 "هذا يتيح للمكون الإضافي معرفة موقع صفحة قوائم الوظائف.<code> "
-"[wp_freeio_register_employer] </code> <code> [wp_freeio_register_freelancer] </"
-"code> يجب أن يكون الرمز المختصر في هذه الصفحة."
+"[wp_freeio_register_employer] </code> <code> [wp_freeio_register_freelancer] "
+"</code> يجب أن يكون الرمز المختصر في هذه الصفحة."
 
 #: plugins/wp-freeio/includes/admin/class-settings.php:547
 #, fuzzy
@@ -991,11 +990,11 @@ msgstr "الموافقة على صفحة المستخدم"
 
 #: plugins/wp-freeio/includes/admin/class-settings.php:580
 msgid ""
-"This lets the plugin know the location of the job listings page. The "
-"<code>[wp_freeio_approve_user]</code> shortcode should be on this page."
+"This lets the plugin know the location of the job listings page. The <code>"
+"[wp_freeio_approve_user]</code> shortcode should be on this page."
 msgstr ""
-"هذا يتيح للمكون الإضافي معرفة موقع صفحة قوائم الوظائف.يجب أن يكون الرمز المختصر "
-"<code> [wp_freeio_approve_user] </code> على هذه الصفحة."
+"هذا يتيح للمكون الإضافي معرفة موقع صفحة قوائم الوظائف.يجب أن يكون الرمز "
+"المختصر <code> [wp_freeio_approve_user] </code> على هذه الصفحة."
 
 #: plugins/wp-freeio/includes/admin/class-settings.php:587
 #, fuzzy
@@ -1006,11 +1005,11 @@ msgstr "صفحة لوحة معلومات مستقلة"
 #: plugins/wp-freeio/includes/admin/class-settings.php:588
 #: plugins/wp-freeio/includes/admin/class-settings.php:596
 msgid ""
-"This lets the plugin know the location of the user dashboard. The "
-"<code>[wp_freeio_user_dashboard]</code> shortcode should be on this page."
+"This lets the plugin know the location of the user dashboard. The <code>"
+"[wp_freeio_user_dashboard]</code> shortcode should be on this page."
 msgstr ""
-"هذا يتيح للمكون الإضافي معرفة موقع لوحة معلومات المستخدم.يجب أن يكون الرمز المختصر "
-"<code> [wp_freeio_user_dashboard] </code> في هذه الصفحة."
+"هذا يتيح للمكون الإضافي معرفة موقع لوحة معلومات المستخدم.يجب أن يكون الرمز "
+"المختصر <code> [wp_freeio_user_dashboard] </code> في هذه الصفحة."
 
 #: plugins/wp-freeio/includes/admin/class-settings.php:595
 #, fuzzy
@@ -1026,11 +1025,11 @@ msgstr "تحرير صفحة الملف الشخصي"
 
 #: plugins/wp-freeio/includes/admin/class-settings.php:604
 msgid ""
-"This lets the plugin know the location of the user edit profile. The "
-"<code>[wp_freeio_change_profile]</code> shortcode should be on this page."
+"This lets the plugin know the location of the user edit profile. The <code>"
+"[wp_freeio_change_profile]</code> shortcode should be on this page."
 msgstr ""
-"هذا يتيح للمكون الإضافي معرفة موقع ملف تعريف تحرير المستخدم.يجب أن يكون الرمز "
-"المختصر <code> [wp_freeio_change_profile] </code> على هذه الصفحة."
+"هذا يتيح للمكون الإضافي معرفة موقع ملف تعريف تحرير المستخدم.يجب أن يكون "
+"الرمز المختصر <code> [wp_freeio_change_profile] </code> على هذه الصفحة."
 
 #: plugins/wp-freeio/includes/admin/class-settings.php:611
 #, fuzzy
@@ -1040,11 +1039,11 @@ msgstr "تغيير صفحة كلمة المرور"
 
 #: plugins/wp-freeio/includes/admin/class-settings.php:612
 msgid ""
-"This lets the plugin know the location of the user edit profile. The "
-"<code>[wp_freeio_change_password]</code> shortcode should be on this page."
+"This lets the plugin know the location of the user edit profile. The <code>"
+"[wp_freeio_change_password]</code> shortcode should be on this page."
 msgstr ""
-"هذا يتيح للمكون الإضافي معرفة موقع ملف تعريف تحرير المستخدم.يجب أن يكون الرمز "
-"المختصر <code> [wp_freeio_change_password] </code> في هذه الصفحة."
+"هذا يتيح للمكون الإضافي معرفة موقع ملف تعريف تحرير المستخدم.يجب أن يكون "
+"الرمز المختصر <code> [wp_freeio_change_password] </code> في هذه الصفحة."
 
 #: plugins/wp-freeio/includes/admin/class-settings.php:619
 msgid "My Jobs Page"
@@ -1052,11 +1051,11 @@ msgstr "صفحة وظائف بلدي"
 
 #: plugins/wp-freeio/includes/admin/class-settings.php:620
 msgid ""
-"This lets the plugin know the location of the job listings page. The "
-"<code>[wp_freeio_my_jobs]</code> shortcode should be on this page."
+"This lets the plugin know the location of the job listings page. The <code>"
+"[wp_freeio_my_jobs]</code> shortcode should be on this page."
 msgstr ""
-"هذا يتيح للمكون الإضافي معرفة موقع صفحة قوائم الوظائف.يجب أن يكون الرمز المختصر "
-"<code> [wp_freeio_my_jobs] </code> على هذه الصفحة."
+"هذا يتيح للمكون الإضافي معرفة موقع صفحة قوائم الوظائف.يجب أن يكون الرمز "
+"المختصر <code> [wp_freeio_my_jobs] </code> على هذه الصفحة."
 
 #: plugins/wp-freeio/includes/admin/class-settings.php:627
 #, fuzzy
@@ -1066,11 +1065,11 @@ msgstr "صفحة المشاريع الخاصة بي"
 
 #: plugins/wp-freeio/includes/admin/class-settings.php:628
 msgid ""
-"This lets the plugin know the location of the projects page. The "
-"<code>[wp_freeio_my_projects]</code> shortcode should be on this page."
+"This lets the plugin know the location of the projects page. The <code>"
+"[wp_freeio_my_projects]</code> shortcode should be on this page."
 msgstr ""
-"هذا يتيح للمكون الإضافي معرفة موقع صفحة المشاريع.يجب أن يكون الرمز المختصر <code> "
-"[wp_freeio_my_projects] </code> في هذه الصفحة."
+"هذا يتيح للمكون الإضافي معرفة موقع صفحة المشاريع.يجب أن يكون الرمز المختصر "
+"<code> [wp_freeio_my_projects] </code> في هذه الصفحة."
 
 #: plugins/wp-freeio/includes/admin/class-settings.php:635
 #, fuzzy
@@ -1080,11 +1079,11 @@ msgstr "صفحة الخدمات الخاصة بي"
 
 #: plugins/wp-freeio/includes/admin/class-settings.php:636
 msgid ""
-"This lets the plugin know the location of the services page. The "
-"<code>[wp_freeio_my_services]</code> shortcode should be on this page."
+"This lets the plugin know the location of the services page. The <code>"
+"[wp_freeio_my_services]</code> shortcode should be on this page."
 msgstr ""
-"هذا يتيح للمكون الإضافي معرفة موقع صفحة الخدمات.يجب أن يكون الرمز المختصر <code> "
-"[wp_freeio_my_services] </code> في هذه الصفحة."
+"هذا يتيح للمكون الإضافي معرفة موقع صفحة الخدمات.يجب أن يكون الرمز المختصر "
+"<code> [wp_freeio_my_services] </code> في هذه الصفحة."
 
 #: plugins/wp-freeio/includes/admin/class-settings.php:643
 #, fuzzy
@@ -1094,11 +1093,11 @@ msgstr "صفحة المقترحات الخاصة بي"
 
 #: plugins/wp-freeio/includes/admin/class-settings.php:644
 msgid ""
-"This lets the plugin know the location of the services page. The "
-"<code>[wp_freeio_my_proposals]</code> shortcode should be on this page."
+"This lets the plugin know the location of the services page. The <code>"
+"[wp_freeio_my_proposals]</code> shortcode should be on this page."
 msgstr ""
-"هذا يتيح للمكون الإضافي معرفة موقع صفحة الخدمات.يجب أن يكون الرمز المختصر <code> "
-"[wp_freeio_my_proposals] </code> في هذه الصفحة."
+"هذا يتيح للمكون الإضافي معرفة موقع صفحة الخدمات.يجب أن يكون الرمز المختصر "
+"<code> [wp_freeio_my_proposals] </code> في هذه الصفحة."
 
 #: plugins/wp-freeio/includes/admin/class-settings.php:651
 #, fuzzy
@@ -1108,11 +1107,11 @@ msgstr "صفحة الخدمات الشراء الخاصة بي"
 
 #: plugins/wp-freeio/includes/admin/class-settings.php:652
 msgid ""
-"This lets the plugin know the location of the services page. The "
-"<code>[wp_freeio_my_bought_services]</code> shortcode should be on this page."
+"This lets the plugin know the location of the services page. The <code>"
+"[wp_freeio_my_bought_services]</code> shortcode should be on this page."
 msgstr ""
-"هذا يتيح للمكون الإضافي معرفة موقع صفحة الخدمات.يجب أن يكون الرمز المختصر </code> "
-"[wp_freeio_my_bought_services] </code> في هذه الصفحة."
+"هذا يتيح للمكون الإضافي معرفة موقع صفحة الخدمات.يجب أن يكون الرمز المختصر "
+"</code> [wp_freeio_my_bought_services] </code> في هذه الصفحة."
 
 #: plugins/wp-freeio/includes/admin/class-settings.php:659
 #, fuzzy
@@ -1122,11 +1121,11 @@ msgstr "صفحة النزاعات الخاصة بي"
 
 #: plugins/wp-freeio/includes/admin/class-settings.php:660
 msgid ""
-"This lets the plugin know the location of the services page. The "
-"<code>[wp_freeio_dispute]</code> shortcode should be on this page."
+"This lets the plugin know the location of the services page. The <code>"
+"[wp_freeio_dispute]</code> shortcode should be on this page."
 msgstr ""
-"هذا يتيح للمكون الإضافي معرفة موقع صفحة الخدمات.يجب أن يكون الرمز المختصر <code> "
-"[wp_freeio_dispute] </code> في هذه الصفحة."
+"هذا يتيح للمكون الإضافي معرفة موقع صفحة الخدمات.يجب أن يكون الرمز المختصر "
+"<code> [wp_freeio_dispute] </code> في هذه الصفحة."
 
 #: plugins/wp-freeio/includes/admin/class-settings.php:667
 msgid "Terms and Conditions Page"
@@ -1155,8 +1154,8 @@ msgstr "إرسال صفحة نموذج الخدمة"
 
 #: plugins/wp-freeio/includes/admin/class-settings.php:696
 msgid ""
-"This is page to display form for submit service. The "
-"<code>[wp_freeio_submission_service]</code> shortcode should be on this page."
+"This is page to display form for submit service. The <code>"
+"[wp_freeio_submission_service]</code> shortcode should be on this page."
 msgstr ""
 "هذه صفحة لعرض النموذج لتقديم الخدمة.يجب أن يكون الرمز المختصر <code> "
 "[wp_freeio_submission_service] </code> في هذه الصفحة."
@@ -1248,13 +1247,13 @@ msgstr "السماح بتحريرات المنشورة"
 
 #: plugins/wp-freeio/includes/admin/class-settings.php:715
 msgid ""
-"Choose whether published service services can be edited and if edits require admin "
-"approval. When moderation is required, the original service services will be "
-"unpublished while edits await admin approval."
+"Choose whether published service services can be edited and if edits require "
+"admin approval. When moderation is required, the original service services "
+"will be unpublished while edits await admin approval."
 msgstr ""
-"اختر ما إذا كان يمكن تحرير خدمات الخدمة المنشورة وما إذا كانت التعديلات تتطلب "
-"موافقة المسؤول.عندما يكون الاعتدال مطلوبًا ، سيتم نشر خدمات الخدمة الأصلية أثناء "
-"تعديلات في انتظار موافقة المسؤول."
+"اختر ما إذا كان يمكن تحرير خدمات الخدمة المنشورة وما إذا كانت التعديلات "
+"تتطلب موافقة المسؤول.عندما يكون الاعتدال مطلوبًا ، سيتم نشر خدمات الخدمة "
+"الأصلية أثناء تعديلات في انتظار موافقة المسؤول."
 
 #: plugins/wp-freeio/includes/admin/class-settings.php:719
 #: plugins/wp-freeio/includes/admin/class-settings.php:794
@@ -1284,11 +1283,11 @@ msgstr "مدة الخدمة"
 
 #: plugins/wp-freeio/includes/admin/class-settings.php:727
 msgid ""
-"Services will display for the set number of days, then expire. Enter this field "
-"\"0\" if you don't want services to have an expiration date."
+"Services will display for the set number of days, then expire. Enter this "
+"field \"0\" if you don't want services to have an expiration date."
 msgstr ""
-"ستعرض الخدمات لعدد الأيام ، ثم تنتهي صلاحيتها.أدخل هذا الحقل \"0\" إذا كنت لا تريد "
-"أن يكون للخدمات تاريخ انتهاء صلاحية."
+"ستعرض الخدمات لعدد الأيام ، ثم تنتهي صلاحيتها.أدخل هذا الحقل \"0\" إذا كنت "
+"لا تريد أن يكون للخدمات تاريخ انتهاء صلاحية."
 
 #: plugins/wp-freeio/includes/admin/class-settings.php:733
 #, fuzzy
@@ -1346,8 +1345,8 @@ msgstr "إرسال صفحة نموذج المشروع"
 
 #: plugins/wp-freeio/includes/admin/class-settings.php:771
 msgid ""
-"This is page to display form for submit project. The "
-"<code>[wp_freeio_submission_project]</code> shortcode should be on this page."
+"This is page to display form for submit project. The <code>"
+"[wp_freeio_submission_project]</code> shortcode should be on this page."
 msgstr ""
 "هذه صفحة لعرض النموذج لتقديم المشروع.يجب أن يكون الرمز المختصر <code> "
 "[wp_freeio_submission_project] </code> في هذه الصفحة."
@@ -1364,13 +1363,13 @@ msgstr "طلب موافقة المسؤول على جميع عمليات تقدي
 
 #: plugins/wp-freeio/includes/admin/class-settings.php:790
 msgid ""
-"Choose whether published project projects can be edited and if edits require admin "
-"approval. When moderation is required, the original project projects will be "
-"unpublished while edits await admin approval."
+"Choose whether published project projects can be edited and if edits require "
+"admin approval. When moderation is required, the original project projects "
+"will be unpublished while edits await admin approval."
 msgstr ""
-"اختر ما إذا كان يمكن تحرير مشاريع المشروع المنشورة وما إذا كانت التعديلات تتطلب "
-"موافقة المسؤول.عندما يكون الاعتدال مطلوبًا ، سيتم نشر مشاريع المشروع الأصلية في حين "
-"أن التعديلات في انتظار موافقة المسؤول."
+"اختر ما إذا كان يمكن تحرير مشاريع المشروع المنشورة وما إذا كانت التعديلات "
+"تتطلب موافقة المسؤول.عندما يكون الاعتدال مطلوبًا ، سيتم نشر مشاريع المشروع "
+"الأصلية في حين أن التعديلات في انتظار موافقة المسؤول."
 
 #: plugins/wp-freeio/includes/admin/class-settings.php:801
 #, fuzzy
@@ -1380,11 +1379,11 @@ msgstr "مدة المشروع"
 
 #: plugins/wp-freeio/includes/admin/class-settings.php:802
 msgid ""
-"Projects will display for the set number of days, then expire. Enter this field "
-"\"0\" if you don't want projects to have an expiration date."
+"Projects will display for the set number of days, then expire. Enter this "
+"field \"0\" if you don't want projects to have an expiration date."
 msgstr ""
-"سيتم عرض المشاريع لعدد المحدد من الأيام ، ثم تنتهي صلاحيتها.أدخل هذا الحقل \"0\" "
-"إذا كنت لا تريد أن يكون للمشاريع تاريخ انتهاء صلاحية."
+"سيتم عرض المشاريع لعدد المحدد من الأيام ، ثم تنتهي صلاحيتها.أدخل هذا الحقل "
+"\"0\" إذا كنت لا تريد أن يكون للمشاريع تاريخ انتهاء صلاحية."
 
 #: plugins/wp-freeio/includes/admin/class-settings.php:808
 #, fuzzy
@@ -1413,8 +1412,8 @@ msgstr "إرسال صفحة نموذج الوظيفة"
 
 #: plugins/wp-freeio/includes/admin/class-settings.php:846
 msgid ""
-"This is page to display form for submit job. The <code>[wp_freeio_submission_job]</"
-"code> shortcode should be on this page."
+"This is page to display form for submit job. The <code>"
+"[wp_freeio_submission_job]</code> shortcode should be on this page."
 msgstr ""
 "هذه صفحة لعرض نموذج لتقديم الوظيفة.يجب أن يكون الرمز المختصر <code> "
 "[wp_freeio_submission_job] </code> في هذه الصفحة."
@@ -1431,13 +1430,13 @@ msgstr "طلب موافقة المسؤول على جميع عمليات تقدي
 
 #: plugins/wp-freeio/includes/admin/class-settings.php:865
 msgid ""
-"Choose whether published job listings can be edited and if edits require admin "
-"approval. When moderation is required, the original job listings will be "
-"unpublished while edits await admin approval."
+"Choose whether published job listings can be edited and if edits require "
+"admin approval. When moderation is required, the original job listings will "
+"be unpublished while edits await admin approval."
 msgstr ""
-"اختر ما إذا كان يمكن تحرير قوائم الوظائف المنشورة وما إذا كانت التعديلات تتطلب "
-"موافقة المسؤول.عندما يكون الاعتدال مطلوبًا ، سيتم نشر قوائم الوظائف الأصلية في حين "
-"أن التعديلات في انتظار موافقة المسؤول."
+"اختر ما إذا كان يمكن تحرير قوائم الوظائف المنشورة وما إذا كانت التعديلات "
+"تتطلب موافقة المسؤول.عندما يكون الاعتدال مطلوبًا ، سيتم نشر قوائم الوظائف "
+"الأصلية في حين أن التعديلات في انتظار موافقة المسؤول."
 
 #: plugins/wp-freeio/includes/admin/class-settings.php:876
 #, fuzzy
@@ -1447,11 +1446,11 @@ msgstr "مدة الإدراج"
 
 #: plugins/wp-freeio/includes/admin/class-settings.php:877
 msgid ""
-"Listings will display for the set number of days, then expire. Enter this field "
-"\"0\" if you don't want listings to have an expiration date."
+"Listings will display for the set number of days, then expire. Enter this "
+"field \"0\" if you don't want listings to have an expiration date."
 msgstr ""
-"ستعرض القوائم لعدد الأيام المحددة ، ثم تنتهي صلاحيتها.أدخل هذا الحقل \"0\" إذا كنت "
-"لا تريد أن يكون للقوائم تاريخ انتهاء الصلاحية."
+"ستعرض القوائم لعدد الأيام المحددة ، ثم تنتهي صلاحيتها.أدخل هذا الحقل \"0\" "
+"إذا كنت لا تريد أن يكون للقوائم تاريخ انتهاء الصلاحية."
 
 #: plugins/wp-freeio/includes/admin/class-settings.php:883
 #, fuzzy
@@ -1719,10 +1718,12 @@ msgstr "يمكن لجميع مستخدمي التسجيل رؤية خدمات ا
 
 #: plugins/wp-freeio/includes/admin/class-settings.php:1102
 msgid "Register Employers (All registered employers can see review services.)"
-msgstr "تسجيل أصحاب العمل (يمكن لجميع أصحاب العمل المسجلين رؤية خدمات المراجعة.)"
+msgstr ""
+"تسجيل أصحاب العمل (يمكن لجميع أصحاب العمل المسجلين رؤية خدمات المراجعة.)"
 
 #: plugins/wp-freeio/includes/admin/class-settings.php:1103
-msgid "Employers bought service (All employers bought service can review services.)"
+msgid ""
+"Employers bought service (All employers bought service can review services.)"
 msgstr ""
 "اشترى أصحاب العمل الخدمة (يمكن لجميع أصحاب العمل الذين اشتروا الخدمة مراجعة "
 "الخدمات.)"
@@ -1825,7 +1826,8 @@ msgid "Restrict Review"
 msgstr "تقييد المراجعة"
 
 #: plugins/wp-freeio/includes/admin/class-settings.php:1243
-msgid "Register Freelancers (All registered freelancers can see review projects.)"
+msgid ""
+"Register Freelancers (All registered freelancers can see review projects.)"
 msgstr "سجل المستقلين (يمكن لجميع المستقلين المسجلين رؤية مشاريع المراجعة.)"
 
 #: plugins/wp-freeio/includes/admin/class-settings.php:1289
@@ -1928,8 +1930,10 @@ msgstr "تقييد صفحة تفاصيل أصحاب العمل لجميع الم
 
 #: plugins/wp-freeio/includes/admin/class-settings.php:1354
 #: plugins/wp-freeio/includes/admin/class-settings.php:1372
-msgid "Only Applicants (Freelancer can view only their own applicants employers.)"
-msgstr "يمكن لمقدمي الطلبات فقط (Freelancer فقط عرض أصحاب عمل المتقدمين الخاصة بهم.)"
+msgid ""
+"Only Applicants (Freelancer can view only their own applicants employers.)"
+msgstr ""
+"يمكن لمقدمي الطلبات فقط (Freelancer فقط عرض أصحاب عمل المتقدمين الخاصة بهم.)"
 
 #: plugins/wp-freeio/includes/admin/class-settings.php:1355
 #: plugins/wp-freeio/includes/admin/class-settings.php:1373
@@ -1953,9 +1957,11 @@ msgid "Restrict View Contact Employer"
 msgstr "تقييد عرض الاتصال بالاتصال"
 
 #: plugins/wp-freeio/includes/admin/class-settings.php:1386
-msgid "Restrict View Contact Employers detail page for all users except employers."
+msgid ""
+"Restrict View Contact Employers detail page for all users except employers."
 msgstr ""
-"تقييد عرض صفحة تفاصيل الاتصال بأرباب العمل لجميع المستخدمين باستثناء أرباب العمل."
+"تقييد عرض صفحة تفاصيل الاتصال بأرباب العمل لجميع المستخدمين باستثناء أرباب "
+"العمل."
 
 #: plugins/wp-freeio/includes/admin/class-settings.php:1392
 #: plugins/wp-freeio/includes/admin/class-settings.php:1488
@@ -1963,14 +1969,16 @@ msgid ""
 "Only Applicants (Freelancer can see contact info only their own applicants "
 "employers.)"
 msgstr ""
-"يمكن لمقدمي الطلبات فقط (Freelancer رؤية معلومات الاتصال فقط أصحاب عمل المتقدمين "
-"الخاصة بهم.)"
+"يمكن لمقدمي الطلبات فقط (Freelancer رؤية معلومات الاتصال فقط أصحاب عمل "
+"المتقدمين الخاصة بهم.)"
 
 #: plugins/wp-freeio/includes/admin/class-settings.php:1393
 msgid ""
-"Register Freelancers (All registered employers can see contact info employers.)"
+"Register Freelancers (All registered employers can see contact info "
+"employers.)"
 msgstr ""
-"سجل المستقلين (يمكن لجميع أصحاب العمل المسجلين رؤية أصحاب العمل معلومات الاتصال.)"
+"سجل المستقلين (يمكن لجميع أصحاب العمل المسجلين رؤية أصحاب العمل معلومات "
+"الاتصال.)"
 
 #: plugins/wp-freeio/includes/admin/class-settings.php:1404
 #, fuzzy
@@ -2249,11 +2257,11 @@ msgstr "استئناف المدة"
 
 #: plugins/wp-freeio/includes/admin/class-settings.php:1810
 msgid ""
-"Resumes will display for the set number of days, then expire. Enter this field "
-"\"0\" if you don't want resumes to have an expiration date."
+"Resumes will display for the set number of days, then expire. Enter this "
+"field \"0\" if you don't want resumes to have an expiration date."
 msgstr ""
-"سيتم عرض السير الذاتية لعدد الأيام من الأيام ، ثم تنتهي صلاحيتها.أدخل هذا الحقل "
-"\"0\" إذا كنت لا تريد أن يكون لها استئناف تاريخ انتهاء الصلاحية."
+"سيتم عرض السير الذاتية لعدد الأيام من الأيام ، ثم تنتهي صلاحيتها.أدخل هذا "
+"الحقل \"0\" إذا كنت لا تريد أن يكون لها استئناف تاريخ انتهاء الصلاحية."
 
 #: plugins/wp-freeio/includes/admin/class-settings.php:1816
 #: plugins/wp-freeio/includes/admin/class-settings.php:1823
@@ -2290,9 +2298,10 @@ msgstr "صفحة حزم مستقلة"
 
 #: plugins/wp-freeio/includes/admin/class-settings.php:1852
 msgid ""
-"Select Freelancer Packages Page. It will redirect freelancers at selected page to "
-"buy package."
-msgstr "حدد صفحة حزم Freelancer.سوف يعيد توجيه المستقلين في صفحة محددة لشراء الحزمة."
+"Select Freelancer Packages Page. It will redirect freelancers at selected "
+"page to buy package."
+msgstr ""
+"حدد صفحة حزم Freelancer.سوف يعيد توجيه المستقلين في صفحة محددة لشراء الحزمة."
 
 #: plugins/wp-freeio/includes/admin/class-settings.php:1862
 msgid "Apply Job With Complete Resume"
@@ -2356,7 +2365,8 @@ msgstr "تقييد صفحة التفاصيل المستقلة لجميع الم�
 
 #: plugins/wp-freeio/includes/admin/class-settings.php:1924
 #: plugins/wp-freeio/includes/admin/class-settings.php:1941
-msgid "Only Applicants (Employer can view only their own applicants freelancers.)"
+msgid ""
+"Only Applicants (Employer can view only their own applicants freelancers.)"
 msgstr "يمكن لمقدمي الطلبات فقط (صاحب العمل عرض فقط لمقدمي الطلبات المستقلين.)"
 
 #: plugins/wp-freeio/includes/admin/class-settings.php:1925
@@ -2374,7 +2384,8 @@ msgstr "تقييد قائمة مستقلة"
 
 #: plugins/wp-freeio/includes/admin/class-settings.php:1935
 msgid "Restrict Freelancers Listing page for all users except employers."
-msgstr "قم بتقييد صفحة الإدراج المستقلين لجميع المستخدمين باستثناء أرباب العمل."
+msgstr ""
+"قم بتقييد صفحة الإدراج المستقلين لجميع المستخدمين باستثناء أرباب العمل."
 
 #: plugins/wp-freeio/includes/admin/class-settings.php:1953
 #, fuzzy
@@ -2383,7 +2394,8 @@ msgid "Restrict View Contact Freelancer"
 msgstr "تقييد عرض الاتصال freelancer"
 
 #: plugins/wp-freeio/includes/admin/class-settings.php:1954
-msgid "Restrict View Contact Freelancers detail page for all users except employers."
+msgid ""
+"Restrict View Contact Freelancers detail page for all users except employers."
 msgstr "تقييد عرض صفحة الاتصال المستقلة لجميع المستخدمين باستثناء أصحاب العمل."
 
 #: plugins/wp-freeio/includes/admin/class-settings.php:1960
@@ -2397,9 +2409,11 @@ msgstr ""
 
 #: plugins/wp-freeio/includes/admin/class-settings.php:1961
 msgid ""
-"Register Employers (All registered employers can see contact info freelancers.)"
+"Register Employers (All registered employers can see contact info "
+"freelancers.)"
 msgstr ""
-"تسجيل أصحاب العمل (يمكن لجميع أصحاب العمل المسجلين رؤية معلومات الاتصال المستقلة.)"
+"تسجيل أصحاب العمل (يمكن لجميع أصحاب العمل المسجلين رؤية معلومات الاتصال "
+"المستقلة.)"
 
 #: plugins/wp-freeio/includes/admin/class-settings.php:1971
 #, fuzzy
@@ -2487,7 +2501,7 @@ msgstr "إعدادات API Facebook"
 #: plugins/wp-freeio/includes/admin/class-settings.php:2412
 #, php-format
 msgid "Callback URL is: %s"
-msgstr ""
+msgstr "عنوان URL للاتصال هو: ٪ s"
 
 #: plugins/wp-freeio/includes/admin/class-settings.php:2297
 msgid "App ID"
@@ -2657,8 +2671,8 @@ msgstr ""
 
 #: plugins/wp-freeio/includes/admin/class-settings.php:2459
 msgid ""
-"You can retrieve your site key from <a href=\"https://www.google.com/recaptcha/"
-"admin#list\">Google's reCAPTCHA admin dashboard.</a>"
+"You can retrieve your site key from <a href=\"https://www.google."
+"com/recaptcha/admin#list\">Google's reCAPTCHA admin dashboard.</a>"
 msgstr ""
 
 #: plugins/wp-freeio/includes/admin/class-settings.php:2464
@@ -2667,8 +2681,8 @@ msgstr ""
 
 #: plugins/wp-freeio/includes/admin/class-settings.php:2465
 msgid ""
-"You can retrieve your secret key from <a href=\"https://www.google.com/recaptcha/"
-"admin#list\">Google's reCAPTCHA admin dashboard.</a>"
+"You can retrieve your secret key from <a href=\"https://www.google."
+"com/recaptcha/admin#list\">Google's reCAPTCHA admin dashboard.</a>"
 msgstr ""
 
 #: plugins/wp-freeio/includes/admin/class-settings.php:2482
@@ -2688,8 +2702,8 @@ msgstr "نشر مشروع جديد"
 
 #: plugins/wp-freeio/includes/admin/class-settings.php:2494
 msgid ""
-"Send a notice to the site administrator when a new project is submitted on the "
-"frontend."
+"Send a notice to the site administrator when a new project is submitted on "
+"the frontend."
 msgstr ""
 
 #: plugins/wp-freeio/includes/admin/class-settings.php:2497
@@ -2928,7 +2942,8 @@ msgstr ""
 
 #: plugins/wp-freeio/includes/admin/class-settings.php:2515
 msgid ""
-"Send a notice to the site administrator when a project is updated on the frontend."
+"Send a notice to the site administrator when a project is updated on the "
+"frontend."
 msgstr "أرسل إشعارًا إلى مسؤول الموقع عند تحديث المشروع على الواجهة الأمامية."
 
 #: plugins/wp-freeio/includes/admin/class-settings.php:2534
@@ -2936,7 +2951,8 @@ msgid "Admin Notice of Expiring Project"
 msgstr "إشعار المشرف لمشروع انتهاء الصلاحية"
 
 #: plugins/wp-freeio/includes/admin/class-settings.php:2537
-msgid "Send notices to the site administrator before a project listing expires."
+msgid ""
+"Send notices to the site administrator before a project listing expires."
 msgstr ""
 
 #: plugins/wp-freeio/includes/admin/class-settings.php:2540
@@ -3064,9 +3080,10 @@ msgstr "إشعار المسؤول عن خدمة جديدة"
 
 #: plugins/wp-freeio/includes/admin/class-settings.php:2795
 msgid ""
-"Send a notice to the site administrator when a new service is submitted on the "
-"frontend."
-msgstr "أرسل إشعارًا إلى مسؤول الموقع عند تقديم خدمة جديدة على الواجهة الأمامية."
+"Send a notice to the site administrator when a new service is submitted on "
+"the frontend."
+msgstr ""
+"أرسل إشعارًا إلى مسؤول الموقع عند تقديم خدمة جديدة على الواجهة الأمامية."
 
 #: plugins/wp-freeio/includes/admin/class-settings.php:2813
 msgid "Admin Notice of Updated Service"
@@ -3074,7 +3091,8 @@ msgstr "إشعار المسؤول عن الخدمة المحدثة"
 
 #: plugins/wp-freeio/includes/admin/class-settings.php:2816
 msgid ""
-"Send a notice to the site administrator when a service is updated on the frontend."
+"Send a notice to the site administrator when a service is updated on the "
+"frontend."
 msgstr ""
 
 #: plugins/wp-freeio/includes/admin/class-settings.php:2835
@@ -3082,7 +3100,8 @@ msgid "Admin Notice of Expiring Service"
 msgstr ""
 
 #: plugins/wp-freeio/includes/admin/class-settings.php:2838
-msgid "Send notices to the site administrator before a service listing expires."
+msgid ""
+"Send notices to the site administrator before a service listing expires."
 msgstr ""
 
 #: plugins/wp-freeio/includes/admin/class-settings.php:2862
@@ -3177,15 +3196,19 @@ msgstr "إشعار المسؤول عن الوظيفة الجديدة"
 
 #: plugins/wp-freeio/includes/admin/class-settings.php:3055
 msgid ""
-"Send a notice to the site administrator when a new job is submitted on the frontend."
-msgstr "أرسل إشعارًا إلى مسؤول الموقع عند تقديم وظيفة جديدة على الواجهة الأمامية."
+"Send a notice to the site administrator when a new job is submitted on the "
+"frontend."
+msgstr ""
+"أرسل إشعارًا إلى مسؤول الموقع عند تقديم وظيفة جديدة على الواجهة الأمامية."
 
 #: plugins/wp-freeio/includes/admin/class-settings.php:3074
 msgid "Admin Notice of Updated Job"
 msgstr "إشعار المسؤول عن الوظيفة المحدثة"
 
 #: plugins/wp-freeio/includes/admin/class-settings.php:3077
-msgid "Send a notice to the site administrator when a job is updated on the frontend."
+msgid ""
+"Send a notice to the site administrator when a job is updated on the "
+"frontend."
 msgstr "أرسل إشعارًا إلى مسؤول الموقع عند تحديث الوظيفة على الواجهة الأمامية."
 
 #: plugins/wp-freeio/includes/admin/class-settings.php:3096
@@ -3246,7 +3269,7 @@ msgstr "هل تريد إرسال بريد إلكتروني إلى Freelance عن
 #: plugins/wp-freeio/includes/admin/class-settings.php:3229
 #, php-format
 msgid "Thanks for applying the job: %s"
-msgstr ""
+msgstr "شكرا لتطبيق الوظيفة: ٪ s"
 
 #: plugins/wp-freeio/includes/admin/class-settings.php:3241
 msgid "Send a email to freelancer when a new meetings posted"
@@ -3271,7 +3294,8 @@ msgid "Send a email to freelancer when his application rejected"
 msgstr "تم تقييد الصفحة فقط لمصدري المستقلين ينظرون إلى المتقدمين."
 
 #: plugins/wp-freeio/includes/admin/class-settings.php:3288
-msgid "Do you want to send a email to freelancer when his application rejected."
+msgid ""
+"Do you want to send a email to freelancer when his application rejected."
 msgstr ""
 
 #: plugins/wp-freeio/includes/admin/class-settings.php:3295
@@ -3285,13 +3309,14 @@ msgid "Send a email to freelancer when his application undo-rejected"
 msgstr ""
 
 #: plugins/wp-freeio/includes/admin/class-settings.php:3310
-msgid "Do you want to send a email to freelancer when his application undo-rejected."
+msgid ""
+"Do you want to send a email to freelancer when his application undo-rejected."
 msgstr "هل تريد إرسال بريد إلكتروني إلى Freelancer عندما تم تراجع طلبه."
 
 #: plugins/wp-freeio/includes/admin/class-settings.php:3317
 #, php-format
 msgid "Undo-Reject interview: %s"
-msgstr ""
+msgstr "التراجع عن المقابلة: ٪ s"
 
 #: plugins/wp-freeio/includes/admin/class-settings.php:3329
 msgid "Send a email to freelancer When his application Approve"
@@ -3312,13 +3337,14 @@ msgid "Send a email to freelancer When his application Undo-approve"
 msgstr ""
 
 #: plugins/wp-freeio/includes/admin/class-settings.php:3354
-msgid "Do you want to send a email to freelancer When his application Undo-approve."
+msgid ""
+"Do you want to send a email to freelancer When his application Undo-approve."
 msgstr "هل تريد إرسال بريد إلكتروني إلى Freelancer عندما يتراجع طلبه."
 
 #: plugins/wp-freeio/includes/admin/class-settings.php:3361
 #, php-format
 msgid "Undo-approve interview: %s"
-msgstr ""
+msgstr "مقابلة التراجع عن الفوضى: ٪ s"
 
 #: plugins/wp-freeio/includes/admin/class-settings.php:3373
 #: plugins/wp-freeio/includes/post-types/class-post-type-freelancer-alert.php:25
@@ -3380,13 +3406,14 @@ msgid "Send a email to administrator when user withdraw the money"
 msgstr "أرسل بريدًا إلكترونيًا إلى المسؤول عندما يسحب المستخدم الأموال"
 
 #: plugins/wp-freeio/includes/admin/class-settings.php:3464
-msgid "Do you want to send a email to administrator when user withdraw the money."
+msgid ""
+"Do you want to send a email to administrator when user withdraw the money."
 msgstr "هل تريد إرسال بريد إلكتروني إلى المسؤول عند سحب المستخدم الأموال."
 
 #: plugins/wp-freeio/includes/admin/class-settings.php:3471
 #, php-format
 msgid "A new withdraw: %s"
-msgstr ""
+msgstr "انسحاب جديد: ٪ s"
 
 #: plugins/wp-freeio/includes/admin/class-settings.php:3482
 #: plugins/wp-freeio/includes/post-types/class-post-type-dispute.php:47
@@ -3408,14 +3435,15 @@ msgstr "هل تريد إرسال بريد إلكتروني إلى المستخد
 #: plugins/wp-freeio/includes/admin/class-settings.php:3584
 #, php-format
 msgid "New dispute: %s"
-msgstr ""
+msgstr "نزاع جديد: ٪ s"
 
 #: plugins/wp-freeio/includes/admin/class-settings.php:3511
 msgid "Send a email to administrator when he received a dispute"
 msgstr "أرسل بريدًا إلكترونيًا إلى المسؤول عندما تلقى نزاعًا"
 
 #: plugins/wp-freeio/includes/admin/class-settings.php:3514
-msgid "Do you want to send a email to administrator when he received a dispute."
+msgid ""
+"Do you want to send a email to administrator when he received a dispute."
 msgstr "هل تريد إرسال بريد إلكتروني إلى المسؤول عندما تلقى نزاعًا."
 
 #: plugins/wp-freeio/includes/admin/class-settings.php:3532
@@ -3429,7 +3457,7 @@ msgstr "هل تريد إرسال بريد إلكتروني إلى المستخد
 #: plugins/wp-freeio/includes/admin/class-settings.php:3542
 #, php-format
 msgid "New dispute message: %s"
-msgstr ""
+msgstr "رسالة نزاع جديدة: ٪ s"
 
 #: plugins/wp-freeio/includes/admin/class-settings.php:3553
 msgid "Send a email to winner user when admin process"
@@ -3473,7 +3501,8 @@ msgid "Send a email to user when his verification approved"
 msgstr "أرسل بريدًا إلكترونيًا إلى المستخدم عند الموافقة على التحقق منه"
 
 #: plugins/wp-freeio/includes/admin/class-settings.php:3628
-msgid "Do you want to send a email to user when he received a verification message."
+msgid ""
+"Do you want to send a email to user when he received a verification message."
 msgstr "هل تريد إرسال بريد إلكتروني إلى المستخدم عندما تلقى رسالة التحقق."
 
 #: plugins/wp-freeio/includes/admin/class-settings.php:3647
@@ -3484,7 +3513,8 @@ msgstr "المستخدمون"
 
 #: plugins/wp-freeio/includes/admin/class-settings.php:3655
 msgid "Send a email to user when he registered user (auto approve)"
-msgstr "أرسل بريدًا إلكترونيًا إلى المستخدم عندما يكون مستخدمًا مسجلًا (اتفاق تلقائي)"
+msgstr ""
+"أرسل بريدًا إلكترونيًا إلى المستخدم عندما يكون مستخدمًا مسجلًا (اتفاق تلقائي)"
 
 #: plugins/wp-freeio/includes/admin/class-settings.php:3658
 msgid "Do you want to send a email to user when he registered user."
@@ -3493,19 +3523,20 @@ msgstr "هل تريد إرسال بريد إلكتروني إلى المستخد
 #: plugins/wp-freeio/includes/admin/class-settings.php:3665
 #, php-format
 msgid "New user register: %s"
-msgstr ""
+msgstr "سجل مستخدم جديد: ٪ s"
 
 #: plugins/wp-freeio/includes/admin/class-settings.php:3676
 msgid ""
-"Send a email to user|admin When a new user registered (Email Approve, Admin Approve)"
+"Send a email to user|admin When a new user registered (Email Approve, Admin "
+"Approve)"
 msgstr ""
-"أرسل بريدًا إلكترونيًا إلى المستخدم | المسؤول عند تسجيل مستخدم جديد (موافقة البريد "
-"الإلكتروني ، الموافقة على المسؤول)"
+"أرسل بريدًا إلكترونيًا إلى المستخدم | المسؤول عند تسجيل مستخدم جديد (موافقة "
+"البريد الإلكتروني ، الموافقة على المسؤول)"
 
 #: plugins/wp-freeio/includes/admin/class-settings.php:3686
 #, php-format
 msgid "Approve new user register: %s"
-msgstr ""
+msgstr "الموافقة على سجل المستخدم الجديد: ٪ s"
 
 #: plugins/wp-freeio/includes/admin/class-settings.php:3697
 msgid "Send a email to user When his account approved"
@@ -3518,7 +3549,7 @@ msgstr "هل تريد إرسال بريد إلكتروني إلى المستخد
 #: plugins/wp-freeio/includes/admin/class-settings.php:3707
 #, php-format
 msgid "Your account approved: %s"
-msgstr ""
+msgstr "حسابك المعتمد: ٪ s"
 
 #: plugins/wp-freeio/includes/admin/class-settings.php:3718
 msgid "Send a email to user When his account denied."
@@ -3531,7 +3562,7 @@ msgstr "هل تريد إرسال بريد إلكتروني إلى المستخد
 #: plugins/wp-freeio/includes/admin/class-settings.php:3728
 #, php-format
 msgid "Your account denied: %s"
-msgstr ""
+msgstr "رفض حسابك: ٪ s"
 
 #: plugins/wp-freeio/includes/admin/class-settings.php:3739
 #, fuzzy
@@ -3572,8 +3603,8 @@ msgstr "رقم الناشر"
 
 #: plugins/wp-freeio/includes/admin/class-settings.php:3786
 msgid ""
-"Acquire an publisher ID from the <a href=\"https://www.indeed.com/publisher\" "
-"target=\"_blank\">https://www.indeed.com/publisher</a>"
+"Acquire an publisher ID from the <a href=\"https://www.indeed."
+"com/publisher\" target=\"_blank\">https://www.indeed.com/publisher</a>"
 msgstr ""
 "الحصول على معرف الناشر من <a href=\"https://www.indeed.com/publisher\" "
 "target=\"_blank\"> https://www.indeed.com/publisher </a>"
@@ -3593,11 +3624,12 @@ msgstr "Ziprecruiter API مفتاح"
 
 #: plugins/wp-freeio/includes/admin/class-settings.php:3806
 msgid ""
-"Acquire an API key from the <a href=\"https://www.ziprecruiter.com/zipsearch\" "
-"target=\"_blank\">https://www.ziprecruiter.com/zipsearch</a>"
+"Acquire an API key from the <a href=\"https://www.ziprecruiter."
+"com/zipsearch\" target=\"_blank\">https://www.ziprecruiter.com/zipsearch</a>"
 msgstr ""
-"الحصول على مفتاح API من <a href=\"https://www.ziprecruiter.com/zipsemerevis\" "
-"target=\"_blank\"> https://www.ziprecruiter.com/zipsearch </a>"
+"الحصول على مفتاح API من <a href=\"https://www.ziprecruiter."
+"com/zipsemerevis\" target=\"_blank\"> https://www.ziprecruiter.com/zipsearch "
+"</a>"
 
 #: plugins/wp-freeio/includes/admin/class-settings.php:3810
 msgid "CareerJet Jobs Import"
@@ -4689,6 +4721,8 @@ msgid ""
 "You have no package. <a href=\"%s\" class=\"text-theme\">Click here</a> to "
 "subscribe a package."
 msgstr ""
+"ليس لديك حزمة.<a href=\"٪S\" class=\"text-theme\"> انقر هنا </a> للاشتراك في "
+"حزمة."
 
 #: plugins/wp-freeio/includes/class-freelancer.php:634
 msgid "You need to complete your resume before you can apply for a job."
@@ -4775,7 +4809,8 @@ msgstr "البريد الإلكتروني PayOneer"
 
 #: plugins/wp-freeio/includes/class-freelancer.php:1098
 msgid ""
-"Your withdrawal request has been submitted. We will process your withdrawal request"
+"Your withdrawal request has been submitted. We will process your withdrawal "
+"request"
 msgstr "تم تقديم طلب السحب الخاص بك.سنقوم بمعالجة طلب السحب الخاص بك"
 
 #: plugins/wp-freeio/includes/class-freelancer.php:1101
@@ -4818,14 +4853,17 @@ msgstr "يجب تسجيل الدخول لتحميل الملفات باستخد�
 
 #: plugins/wp-freeio/includes/class-image.php:149
 #, php-format
-msgid "\"%1$s\" (filetype %2$s) needs to be one of the following file types: %3$s"
+msgid ""
+"\"%1$s\" (filetype %2$s) needs to be one of the following file types: %3$s"
 msgstr ""
+"\"٪ 1 $ s\" (يجب أن يكون FileType ٪ 2 $ S) أحد أنواع الملفات التالية: ٪ 3 $ s"
 
 #: plugins/wp-freeio/includes/class-image.php:152
 #: plugins/wp-freeio/includes/class-image.php:201
 #, php-format
 msgid "Uploaded files need to be one of the following file types: %s"
 msgstr ""
+"يجب أن تكون الملفات التي تم تحميلها واحدة من أنواع الملفات التالية: ٪ S"
 
 #: plugins/wp-freeio/includes/class-image.php:256
 #, fuzzy
@@ -5024,7 +5062,7 @@ msgstr "لا يمكن إنشاء وظيفة"
 #: plugins/wp-freeio/includes/class-job_listing.php:303
 #, php-format
 msgid "<a href=\"%s\" class=\"employer text-theme\">%s</a>"
-msgstr ""
+msgstr "<a href=\"٪S\" class=\"eMployer text-home\"> ٪ s </a>"
 
 #: plugins/wp-freeio/includes/class-job_listing.php:324
 #, fuzzy
@@ -5055,7 +5093,7 @@ msgstr "في الساعة"
 #: plugins/wp-freeio/includes/class-job_listing.php:501
 #, php-format
 msgid "Application ends: <strong>%s</strong>"
-msgstr ""
+msgstr "ينتهي التطبيق: <strong> ٪ s </strong>"
 
 #: plugins/wp-freeio/includes/class-job_listing.php:568
 #, fuzzy
@@ -5295,7 +5333,8 @@ msgid "Prev"
 msgstr "السابق"
 
 #: plugins/wp-freeio/includes/class-mixes.php:450
-#: plugins/wp-freeio/includes/class-mixes.php:549 themes/freeio/functions.php:323
+#: plugins/wp-freeio/includes/class-mixes.php:549
+#: themes/freeio/functions.php:323
 msgid "Next"
 msgstr "التالي"
 
@@ -5339,7 +5378,8 @@ msgid "Hourly rate"
 msgstr "السعر بالساعة"
 
 #: plugins/wp-freeio/includes/class-project.php:583
-msgid "You do not have permission to apply on a project. Please log in to continue."
+msgid ""
+"You do not have permission to apply on a project. Please log in to continue."
 msgstr "ليس لديك إذن للتقدم في المشروع.الرجاء تسجيل الدخول للمتابعة."
 
 #: plugins/wp-freeio/includes/class-project.php:589
@@ -5356,7 +5396,8 @@ msgstr "حدث خطأ ما حاول مرة أخرى"
 
 #: plugins/wp-freeio/includes/class-project.php:607
 msgid ""
-"This project has been assigned to one of the freelancer. You can't send proposals."
+"This project has been assigned to one of the freelancer. You can't send "
+"proposals."
 msgstr ""
 
 #: plugins/wp-freeio/includes/class-project.php:610
@@ -5365,8 +5406,8 @@ msgstr "تم الانتهاء من هذا المشروع ، لذلك لا يمك
 
 #: plugins/wp-freeio/includes/class-project.php:613
 msgid ""
-"This project has been cancelled, when employer will re-open this project then you "
-"would be able to send proposal."
+"This project has been cancelled, when employer will re-open this project "
+"then you would be able to send proposal."
 msgstr ""
 
 #: plugins/wp-freeio/includes/class-project.php:616
@@ -5644,13 +5685,15 @@ msgstr "في خدمة قائمة الانتظار"
 #: plugins/wp-freeio/includes/class-user.php:519
 #: plugins/wp-freeio/includes/class-user.php:721
 msgid ""
-"Security check failed, this could be because of your browser cache. Please clear "
-"the cache and check it again."
+"Security check failed, this could be because of your browser cache. Please "
+"clear the cache and check it again."
 msgstr ""
 
 #: plugins/wp-freeio/includes/class-service.php:585
 #: plugins/wp-freeio/includes/class-service.php:649
-msgid "You do not have permission to submit service addon. Please log in to continue."
+msgid ""
+"You do not have permission to submit service addon. Please log in to "
+"continue."
 msgstr ""
 
 #: plugins/wp-freeio/includes/class-service.php:590
@@ -5696,12 +5739,14 @@ msgid "An error occured when removing an item."
 msgstr ""
 
 #: plugins/wp-freeio/includes/class-service.php:709
-msgid "You do not have permission to buy this service. Please log in to continue."
+msgid ""
+"You do not have permission to buy this service. Please log in to continue."
 msgstr ""
 
 #: plugins/wp-freeio/includes/class-service.php:714
 msgid ""
-"You do not have permission to buy this service. Only employers can buy the services."
+"You do not have permission to buy this service. Only employers can buy the "
+"services."
 msgstr "ليس لديك إذن لشراء هذه الخدمة.يمكن لأصحاب العمل فقط شراء الخدمات."
 
 #: plugins/wp-freeio/includes/class-service.php:842
@@ -5771,7 +5816,7 @@ msgstr "تفاصيل التحقق"
 #: plugins/wp-freeio/includes/class-user-notification.php:175
 #, php-format
 msgid "A new application is submitted on your job <a href=\"%s\">%s</a>"
-msgstr ""
+msgstr "يتم تقديم طلب جديد على وظيفتك <a href=\"٪S\"> ٪ s </a>"
 
 #: plugins/wp-freeio/includes/class-user-notification.php:180
 #, php-format
@@ -5783,8 +5828,8 @@ msgstr ""
 #: plugins/wp-freeio/includes/class-user-notification.php:186
 #, php-format
 msgid ""
-"The application is removed on your job <a href=\"%s\">%s</a> by <a href=\"%s\">%s</"
-"a>."
+"The application is removed on your job <a href=\"%s\">%s</a> by <a "
+"href=\"%s\">%s</a>."
 msgstr ""
 
 #: plugins/wp-freeio/includes/class-user-notification.php:196
@@ -5818,32 +5863,47 @@ msgstr "خدمة"
 #: plugins/wp-freeio/includes/class-user-notification.php:208
 #, php-format
 msgid ""
-"A new meeting is created on the %s <a href=\"%s\">%s</a> by <a href=\"%s\">%s</a>."
+"A new meeting is created on the %s <a href=\"%s\">%s</a> by <a href=\"%s\">"
+"%s</a>."
 msgstr ""
+"يتم إنشاء اجتماع جديد على ٪ s <a href=\"٪S\"> ٪ s </a> بواسطة <a href=\"٪S\">"
+" ٪ s </a>."
 
 #: plugins/wp-freeio/includes/class-user-notification.php:226
 #, php-format
 msgid ""
-"A meeting is re-schedule on the %s <a href=\"%s\">%s</a> by <a href=\"%s\">%s</a>."
+"A meeting is re-schedule on the %s <a href=\"%s\">%s</a> by <a href=\"%s\">"
+"%s</a>."
 msgstr ""
+"يتم إعادة جدولة الاجتماع على ٪ s <a href=\"٪S\"> ٪ s </a> بواسطة <a "
+"href=\"٪S\"> ٪ s </a>."
 
 #: plugins/wp-freeio/includes/class-user-notification.php:244
 #, php-format
-msgid "A meeting is removed on the %s <a href=\"%s\">%s</a> by <a href=\"%s\">%s</a>."
+msgid ""
+"A meeting is removed on the %s <a href=\"%s\">%s</a> by <a href=\"%s\">%s</a>"
+"."
 msgstr ""
+"تتم إزالة الاجتماع على ٪ s <a href=\"٪S\"> ٪ s </a> بواسطة <a href=\"ns\"> ٪ "
+"s </a>."
 
 #: plugins/wp-freeio/includes/class-user-notification.php:261
 #, php-format
 msgid ""
-"A meeting is canceled on your %s <a href=\"%s\">%s</a> by <a href=\"%s\">%s</a>."
+"A meeting is canceled on your %s <a href=\"%s\">%s</a> by <a href=\"%s\">"
+"%s</a>."
 msgstr ""
+"يتم إلغاء اجتماع على النسبة المئوية الخاصة بك <a href=\"٪S\"> ٪ s </a> "
+"بواسطة <a href=\"٪S\"> ٪ s </a>."
 
 #: plugins/wp-freeio/includes/class-user-notification.php:267
 #, php-format
 msgid ""
-"The application is rejected on your job <a href=\"%s\">%s</a> by <a href=\"%s\">%s</"
-"a>."
+"The application is rejected on your job <a href=\"%s\">%s</a> by <a "
+"href=\"%s\">%s</a>."
 msgstr ""
+"يتم رفض التطبيق على وظيفتك <a href=\"٪S\"> ٪ s </a> بواسطة <a href=\"٪S\"> ٪ "
+"s </a>."
 
 #: plugins/wp-freeio/includes/class-user-notification.php:273
 #, php-format
@@ -5855,8 +5915,8 @@ msgstr ""
 #: plugins/wp-freeio/includes/class-user-notification.php:279
 #, php-format
 msgid ""
-"The application is approved on your job <a href=\"%s\">%s</a> by <a href=\"%s\">%s</"
-"a>."
+"The application is approved on your job <a href=\"%s\">%s</a> by <a "
+"href=\"%s\">%s</a>."
 msgstr ""
 
 #: plugins/wp-freeio/includes/class-user-notification.php:285
@@ -5865,11 +5925,13 @@ msgid ""
 "The application is undo approved on your job <a href=\"%s\">%s</a> by <a "
 "href=\"%s\">%s</a>."
 msgstr ""
+"تم التراجع عن التطبيق على وظيفتك <a href=\"٪S\"> ٪ s </a> بواسطة <a "
+"href=\"٪S\"> ٪ s </a>."
 
 #: plugins/wp-freeio/includes/class-user-notification.php:296
 #, php-format
 msgid "A new private message from <a href=\"%s\">%s</a>."
-msgstr ""
+msgstr "رسالة خاصة جديدة من <a href=\"٪S\"> ٪ s </a>."
 
 #: plugins/wp-freeio/includes/class-user-notification.php:299
 #, php-format
@@ -5878,13 +5940,14 @@ msgstr ""
 
 #: plugins/wp-freeio/includes/class-user-notification.php:306
 #, php-format
-msgid "You are invited to send proposal for this project <a href=\"%s\">%s</a>."
+msgid ""
+"You are invited to send proposal for this project <a href=\"%s\">%s</a>."
 msgstr ""
 
 #: plugins/wp-freeio/includes/class-user-notification.php:314
 #, php-format
 msgid "You are invited to apply jobs %s."
-msgstr ""
+msgstr "أنت مدعو لتطبيق الوظائف ٪ s."
 
 #: plugins/wp-freeio/includes/class-user-notification.php:322
 #, php-format
@@ -5892,26 +5955,33 @@ msgid ""
 "A new proposal is submitted on your project <a href=\"%s\">%s</a> by <a "
 "href=\"%s\">%s</a>."
 msgstr ""
+"يتم تقديم اقتراح جديد في مشروعك <a href=\"٪S\"> ٪ s </a> بواسطة <a "
+"href=\"٪S\"> ٪ s </a>."
 
 #: plugins/wp-freeio/includes/class-user-notification.php:329
 #, php-format
 msgid ""
-"A proposal is edited on your project <a href=\"%s\">%s</a> by <a href=\"%s\">%s</a>."
+"A proposal is edited on your project <a href=\"%s\">%s</a> by <a href=\"%s\">"
+"%s</a>."
 msgstr ""
 
 #: plugins/wp-freeio/includes/class-user-notification.php:336
 #, php-format
 msgid ""
-"You have hired for the following project <a href=\"%s\">%s</a> by the employer <a "
-"href=\"%s\">%s</a>."
+"You have hired for the following project <a href=\"%s\">%s</a> by the "
+"employer <a href=\"%s\">%s</a>."
 msgstr ""
+"لقد استأجرت للمشروع التالي <a href=\"٪S\"> ٪ s </a> من قبل صاحب العمل <a "
+"href=\" سمالي> ٪ s </a>."
 
 #: plugins/wp-freeio/includes/class-user-notification.php:343
 #, php-format
 msgid ""
-"You have cancelled hiring for the following project <a href=\"%s\">%s</a> by the "
-"employer <a href=\"%s\">%s</a>."
+"You have cancelled hiring for the following project <a href=\"%s\">%s</a> by "
+"the employer <a href=\"%s\">%s</a>."
 msgstr ""
+"لقد ألغت التوظيف للمشروع التالي <a href=\"٪S\"> ٪ s </a> بواسطة صاحب العمل "
+"<a href=\" مجتمعة> ٪ s </a>."
 
 #: plugins/wp-freeio/includes/class-user-notification.php:375
 #, php-format
@@ -5919,6 +5989,8 @@ msgid ""
 "A message is sent on your project proposal <a href=\"%s\">%s</a> by <a "
 "href=\"%s\">%s</a>."
 msgstr ""
+"يتم إرسال رسالة على اقتراح المشروع الخاص بك <a href=\"٪S\"> ٪ s </a> بواسطة "
+"<a href=\"٪S\"> ٪ s </a>."
 
 #: plugins/wp-freeio/includes/class-user-notification.php:390
 #, php-format
@@ -5933,27 +6005,30 @@ msgstr ""
 #: plugins/wp-freeio/includes/class-user-notification.php:403
 #, php-format
 msgid ""
-"You have hired for the following service <a href=\"%s\">%s</a> by the employer <a "
-"href=\"%s\">%s</a>."
+"You have hired for the following service <a href=\"%s\">%s</a> by the "
+"employer <a href=\"%s\">%s</a>."
 msgstr ""
 
 #: plugins/wp-freeio/includes/class-user-notification.php:410
 #, php-format
 msgid ""
-"You have cancelled hiring for the following service <a href=\"%s\">%s</a> by the "
-"employer <a href=\"%s\">%s</a>."
+"You have cancelled hiring for the following service <a href=\"%s\">%s</a> by "
+"the employer <a href=\"%s\">%s</a>."
 msgstr ""
 
 #: plugins/wp-freeio/includes/class-user-notification.php:443
 #, php-format
 msgid ""
-"A message is sent on your service <a href=\"%s\">%s</a> by <a href=\"%s\">%s</a>."
+"A message is sent on your service <a href=\"%s\">%s</a> by <a href=\"%s\">"
+"%s</a>."
 msgstr ""
+"يتم إرسال رسالة على خدمتك <a href=\"٪S\"> ٪ s </a> بواسطة <a href=\" مجتمعة> "
+"٪ s </a>."
 
 #: plugins/wp-freeio/includes/class-user-notification.php:457
 #, php-format
 msgid "Your service completed <a href=\"%s\">%s</a>."
-msgstr ""
+msgstr "تم الانتهاء من خدمتك <a href=\"٪S\"> ٪ s </a>."
 
 #: plugins/wp-freeio/includes/class-user-notification.php:459
 #, php-format
@@ -5964,12 +6039,17 @@ msgstr ""
 #, php-format
 msgid "A dispute is sent on <a href=\"%s\">%s</a> by <a href=\"%s\">%s</a>."
 msgstr ""
+"يتم إرسال النزاع على <a href=\"٪S\"> ٪ s </a> بواسطة <a href=\" مجتمعة> ٪ s "
+"</a>."
 
 #: plugins/wp-freeio/includes/class-user-notification.php:513
 #, php-format
 msgid ""
-"A new dispute message is sent on <a href=\"%s\">%s</a> by <a href=\"%s\">%s</a>."
+"A new dispute message is sent on <a href=\"%s\">%s</a> by <a href=\"%s\">"
+"%s</a>."
 msgstr ""
+"يتم إرسال رسالة نزاع جديدة على <a href=\"٪S\"> ٪ s </a> بواسطة <a "
+"href=\"ns\"> ٪ s </a>."
 
 #: plugins/wp-freeio/includes/class-user.php:69
 #: plugins/wp-freeio/includes/class-woocommerce.php:540
@@ -6054,7 +6134,8 @@ msgstr ""
 #: plugins/wp-freeio/includes/class-user.php:608
 msgid "System is unable to send you mail containg your new password."
 msgstr ""
-"النظام غير قادر على إرسال البريد الخاص بك containg كلمة المرور الجديدة الخاصة بك."
+"النظام غير قادر على إرسال البريد الخاص بك containg كلمة المرور الجديدة "
+"الخاصة بك."
 
 #: plugins/wp-freeio/includes/class-user.php:611
 #, fuzzy
@@ -6267,19 +6348,20 @@ msgstr "منقي"
 
 #: plugins/wp-freeio/includes/class-user.php:2158
 msgid ""
-"Registration complete. Before you can login, you must activate your account sent to "
-"your email address."
+"Registration complete. Before you can login, you must activate your account "
+"sent to your email address."
 msgstr ""
-"اكتمل التسجيل.قبل أن تتمكن من تسجيل الدخول ، يجب عليك تنشيط حسابك المرسلة إلى عنوان "
-"بريدك الإلكتروني."
+"اكتمل التسجيل.قبل أن تتمكن من تسجيل الدخول ، يجب عليك تنشيط حسابك المرسلة "
+"إلى عنوان بريدك الإلكتروني."
 
 #: plugins/wp-freeio/includes/class-user.php:2160
 #, fuzzy
 #| msgid "Your resume has to be confirmed by an administrator before publish."
 msgid ""
-"Registration complete. Your account has to be confirmed by an administrator before "
-"you can login"
-msgstr "اكتمل التسجيل.يجب تأكيد حسابك من قبل المسؤول قبل أن تتمكن من تسجيل الدخول"
+"Registration complete. Your account has to be confirmed by an administrator "
+"before you can login"
+msgstr ""
+"اكتمل التسجيل.يجب تأكيد حسابك من قبل المسؤول قبل أن تتمكن من تسجيل الدخول"
 
 #: plugins/wp-freeio/includes/class-user.php:2162
 #: plugins/wp-freeio/includes/class-user.php:2181
@@ -6289,16 +6371,23 @@ msgstr "يجب تأكيد حسابك حتى الآن."
 #: plugins/wp-freeio/includes/class-user.php:2177
 #, php-format
 msgid ""
-"Account account has not confirmed yet, you must activate your account with the link "
-"sent to your email address. If you did not receive this email, please check your "
-"junk/spam folder. <a href=\"javascript:void(0);\" class=\"wp-freeio-resend-approve-"
-"account-btn\" data-login=\"%s\">Click here</a> to resend the activation email."
+"Account account has not confirmed yet, you must activate your account with "
+"the link sent to your email address. If you did not receive this email, "
+"please check your junk/spam folder. <a href=\"javascript:void(0);\" "
+"class=\"wp-freeio-resend-approve-account-btn\" data-login=\"%s\">Click "
+"here</a> to resend the activation email."
 msgstr ""
+"لم يتم تأكيد حساب الحساب بعد ، يجب عليك تنشيط حسابك مع الرابط المرسلة إلى "
+"عنوان بريدك الإلكتروني.إذا لم تتلق هذا البريد الإلكتروني ، فيرجى التحقق من "
+"مجلد غير المرغوب فيه/البريد العشوائي.<a href = \"javaScript: void (0) "
+"؛\"class = \"wp-freeio-risend-approve-cascount-btn\" data-login = \"٪ s\"> "
+"انقر هنا </a> لإعادة تقديم البريد الإلكتروني للتنشيط."
 
 #: plugins/wp-freeio/includes/class-user.php:2179
 #, fuzzy
 #| msgid "Your resume has to be confirmed by an administrator before publish."
-msgid "Your account has to be confirmed by an administrator before you can login."
+msgid ""
+"Your account has to be confirmed by an administrator before you can login."
 msgstr "يجب تأكيد حسابك من قبل المسؤول قبل أن تتمكن من تسجيل الدخول."
 
 #: plugins/wp-freeio/includes/class-user.php:2190
@@ -7103,8 +7192,10 @@ msgstr "وظيفة مميزة"
 
 #: plugins/wp-freeio/includes/custom-fields/class-fields-manager.php:454
 msgid ""
-"Featured properties will be sticky during searches, and can be styled differently."
-msgstr "ستكون الخصائص المميزة لزجة أثناء عمليات البحث ، ويمكن تصميمها بشكل مختلف."
+"Featured properties will be sticky during searches, and can be styled "
+"differently."
+msgstr ""
+"ستكون الخصائص المميزة لزجة أثناء عمليات البحث ، ويمكن تصميمها بشكل مختلف."
 
 #: plugins/wp-freeio/includes/custom-fields/class-fields-manager.php:461
 #: plugins/wp-freeio/includes/post-types/class-post-type-job_listing.php:426
@@ -7114,8 +7205,10 @@ msgid "Urgent Job"
 msgstr "وظيفة عاجلة"
 
 #: plugins/wp-freeio/includes/custom-fields/class-fields-manager.php:464
-msgid "Urgent jobs will be sticky during searches, and can be styled differently."
-msgstr "ستكون الوظائف العاجلة لزجة أثناء عمليات البحث ، ويمكن تصميمها بشكل مختلف."
+msgid ""
+"Urgent jobs will be sticky during searches, and can be styled differently."
+msgstr ""
+"ستكون الوظائف العاجلة لزجة أثناء عمليات البحث ، ويمكن تصميمها بشكل مختلف."
 
 #: plugins/wp-freeio/includes/custom-fields/class-fields-manager.php:471
 #: plugins/wp-freeio/includes/post-types/class-post-type-job_listing.php:340
@@ -7264,8 +7357,10 @@ msgstr "صاحب العمل المميز"
 #: plugins/wp-freeio/includes/custom-fields/class-fields-manager.php:1510
 #: plugins/wp-freeio/includes/custom-fields/class-fields-manager.php:1799
 msgid ""
-"Featured employer will be sticky during searches, and can be styled differently."
-msgstr "سيكون صاحب العمل المميز لزجًا أثناء عمليات البحث ، ويمكن تصميمه بشكل مختلف."
+"Featured employer will be sticky during searches, and can be styled "
+"differently."
+msgstr ""
+"سيكون صاحب العمل المميز لزجًا أثناء عمليات البحث ، ويمكن تصميمه بشكل مختلف."
 
 #: plugins/wp-freeio/includes/custom-fields/class-fields-manager.php:728
 #, fuzzy
@@ -8253,8 +8348,8 @@ msgstr "الكلمات الدالة"
 #: plugins/wp-freeio/includes/import-jobs-integration/ziprecruiter/class-ziprecruiter-jobs.php:59
 msgid "Enter job title, keywords or company name. Default keyword is all."
 msgstr ""
-"أدخل المسمى الوظيفي أو الكلمات الرئيسية أو اسم الشركة.الكلمة الرئيسية الافتراضية هي "
-"كل شيء."
+"أدخل المسمى الوظيفي أو الكلمات الرئيسية أو اسم الشركة.الكلمة الرئيسية "
+"الافتراضية هي كل شيء."
 
 #: plugins/wp-freeio/includes/import-jobs-integration/careerbuilder/class-careerbuilder-jobs.php:65
 #: plugins/wp-freeio/includes/import-jobs-integration/careerjet/class-careerjet-jobs.php:65
@@ -8288,8 +8383,10 @@ msgstr "انتهت يوم"
 #: plugins/wp-freeio/includes/import-jobs-integration/careerjet/class-careerjet-jobs.php:78
 #: plugins/wp-freeio/includes/import-jobs-integration/indeed/class-indeed-jobs.php:109
 #: plugins/wp-freeio/includes/import-jobs-integration/ziprecruiter/class-ziprecruiter-jobs.php:85
-msgid "Enter number of days (numeric format) for expiray date after job posted date."
-msgstr "أدخل عدد الأيام (التنسيق الرقمي) لتاريخ انتهاء الصلاحية بعد تاريخ النشر."
+msgid ""
+"Enter number of days (numeric format) for expiray date after job posted date."
+msgstr ""
+"أدخل عدد الأيام (التنسيق الرقمي) لتاريخ انتهاء الصلاحية بعد تاريخ النشر."
 
 #: plugins/wp-freeio/includes/import-jobs-integration/careerbuilder/class-careerbuilder-jobs.php:84
 #: plugins/wp-freeio/includes/import-jobs-integration/careerjet/class-careerjet-jobs.php:84
@@ -8363,7 +8460,7 @@ msgstr "٪ 1 $ s تم تثبيتها وتفعيلها بنجاح."
 #: plugins/wp-freeio/includes/import-jobs-integration/ziprecruiter/class-ziprecruiter-jobs.php:299
 #, php-format
 msgid "<span class=\"employer text-theme\">%s</span>"
-msgstr ""
+msgstr "<span class = \"صاحب العمل النص\"> ٪ s </span>"
 
 #: plugins/wp-freeio/includes/import-jobs-integration/careerbuilder/class-careerbuilder-jobs.php:296
 #: plugins/wp-freeio/includes/import-jobs-integration/careerjet/class-careerjet-jobs.php:284
@@ -8503,11 +8600,11 @@ msgstr ""
 
 #: plugins/wp-freeio/includes/import-jobs-integration/indeed/class-indeed-jobs.php:102
 msgid ""
-"Enter number of jobs to import. Default number of import jobs is 10. Maximum import "
-"jobs limit is 25."
+"Enter number of jobs to import. Default number of import jobs is 10. Maximum "
+"import jobs limit is 25."
 msgstr ""
-"أدخل عدد الوظائف للاستيراد.العدد الافتراضي لوظائف الاستيراد هو 10. الحد الأقصى "
-"لوظائف الاستيراد هو 25."
+"أدخل عدد الوظائف للاستيراد.العدد الافتراضي لوظائف الاستيراد هو 10. الحد "
+"الأقصى لوظائف الاستيراد هو 25."
 
 #: plugins/wp-freeio/includes/import-jobs-integration/indeed/class-indeed-jobs.php:146
 msgid "Indeed Job Fields"
@@ -8854,18 +8951,21 @@ msgstr "لم يتم العثور على ٪ s"
 #: plugins/wp-freeio/includes/post-types/class-post-type-withdraw.php:46
 #, php-format
 msgid "No %s found in Trash"
-msgstr ""
+msgstr "لم يتم العثور على ٪ في القمامة"
 
 #: plugins/wp-freeio/includes/post-types/class-post-type-dispute.php:116
 #, php-format
 msgid ""
-"Service/Project: <a href=\"post.php?post=%s&action=edit\" target=\"_blank\">%s</a>"
+"Service/Project: <a href=\"post.php?post=%s&action=edit\" target=\"_blank\">"
+"%s</a>"
 msgstr ""
+"الخدمة/المشروع: <a href=\"post.php؟post=٪S&Action=edit\" target=\"_blank\"> "
+"٪ s </a>"
 
 #: plugins/wp-freeio/includes/post-types/class-post-type-dispute.php:131
 #, php-format
 msgid "Sender: %s"
-msgstr ""
+msgstr "المرسل: ٪ s"
 
 #: plugins/wp-freeio/includes/post-types/class-post-type-dispute.php:146
 #, fuzzy, php-format
@@ -9266,7 +9366,7 @@ msgstr ""
 #: plugins/wp-freeio/templates/single-job_listing/header.php:30
 #, php-format
 msgid "by %s"
-msgstr ""
+msgstr "بنسبة ٪ s"
 
 #: plugins/wp-freeio/includes/post-types/class-post-type-meeting.php:23
 #, fuzzy
@@ -9556,23 +9656,23 @@ msgstr "نوع الحساب"
 #: plugins/wp-freeio/includes/socials/class-social-facebook.php:178
 #, php-format
 msgid "Graph returned an error: %s"
-msgstr ""
+msgstr "أعاد الرسم البياني خطأ: ٪ s"
 
 #: plugins/wp-freeio/includes/socials/class-social-facebook.php:151
 #: plugins/wp-freeio/includes/socials/class-social-facebook.php:180
 #, php-format
 msgid "Facebook SDK returned an error: %s"
-msgstr ""
+msgstr "عاد Facebook SDK إلى خطأ: ٪ s"
 
 #: plugins/wp-freeio/includes/socials/class-social-linkedin.php:132
 #, php-format
 msgid "LinkedIn login error: %s %s"
-msgstr ""
+msgstr "خطأ تسجيل الدخول LinkedIn: ٪ s ٪ s"
 
 #: plugins/wp-freeio/includes/socials/class-social-twitter.php:105
 #, php-format
 msgid "%s There is problem while connecting to twitter"
-msgstr ""
+msgstr "٪ s هناك مشكلة أثناء الاتصال بـ Twitter"
 
 #: plugins/wp-freeio/includes/socials/class-social-twitter.php:130
 msgid "There is problem while connecting to twitter"
@@ -9623,7 +9723,7 @@ msgstr "آباء"
 #: plugins/wp-freeio/includes/taxonomies/class-taxonomy-service-tag.php:36
 #, php-format
 msgid "Parent %s:"
-msgstr ""
+msgstr "آباء:"
 
 #: plugins/wp-freeio/includes/taxonomies/class-taxonomy-employer-category.php:37
 #: plugins/wp-freeio/includes/taxonomies/class-taxonomy-freelancer-category.php:36
@@ -9685,7 +9785,7 @@ msgstr "العلامات"
 #: plugins/wp-freeio/includes/taxonomies/class-taxonomy-job-type.php:38
 #, php-format
 msgid "Job %s"
-msgstr ""
+msgstr "وظائف"
 
 #: plugins/wp-freeio/includes/taxonomies/class-taxonomy-job-type.php:35
 #, fuzzy
@@ -9989,14 +10089,14 @@ msgstr "لم يتم اتخاذ أي إجراء.المكون الإضافي ٪ 1 
 #: themes/freeio/inc/plugins/class-tgm-plugin-activation.php:399
 #, fuzzy, php-format
 #| msgid ""
-#| "Plugin not activated. A higher version of %s is needed for this theme. Please "
-#| "update the plugin."
+#| "Plugin not activated. A higher version of %s is needed for this theme. "
+#| "Please update the plugin."
 msgid ""
-"Plugin not activated. A higher version of %s is needed for this theme. Please "
-"update the plugin."
+"Plugin not activated. A higher version of %s is needed for this theme. "
+"Please update the plugin."
 msgstr ""
-"البرنامج المساعد غير المنشط.هناك حاجة إلى نسخة أعلى من ٪ s لهذا الموضوع.يرجى تحديث "
-"البرنامج المساعد."
+"البرنامج المساعد غير المنشط.هناك حاجة إلى نسخة أعلى من ٪ s لهذا الموضوع.يرجى "
+"تحديث البرنامج المساعد."
 
 #: plugins/wp-freeio/libraries/class-tgm-plugin-activation.php:401
 #: themes/freeio/inc/plugins/class-tgm-plugin-activation.php:401
@@ -10015,7 +10115,8 @@ msgstr "رفض هذا الإشعار"
 msgid ""
 "There are one or more required or recommended plugins to install, update or "
 "activate."
-msgstr "هناك مكونات إضافية أو أكثر مطلوبة أو موصى بها لتثبيت أو تحديث أو تنشيط."
+msgstr ""
+"هناك مكونات إضافية أو أكثر مطلوبة أو موصى بها لتثبيت أو تحديث أو تنشيط."
 
 #: plugins/wp-freeio/libraries/class-tgm-plugin-activation.php:404
 #: themes/freeio/inc/plugins/class-tgm-plugin-activation.php:404
@@ -10040,30 +10141,31 @@ msgstr "قم بتعيين متغير Config Parent_Slug بدلاً من ذلك."
 #: plugins/wp-freeio/libraries/class-tgm-plugin-activation.php:1027
 #: themes/freeio/inc/plugins/class-tgm-plugin-activation.php:1024
 msgid ""
-"The remote plugin package does not contain a folder with the desired slug and "
-"renaming did not work."
+"The remote plugin package does not contain a folder with the desired slug "
+"and renaming did not work."
 msgstr ""
-"لا تحتوي حزمة المكون الإضافي عن بُعد على مجلد مع Slug المطلوبة ولم تنجح إعادة تسمية."
+"لا تحتوي حزمة المكون الإضافي عن بُعد على مجلد مع Slug المطلوبة ولم تنجح "
+"إعادة تسمية."
 
 #: plugins/wp-freeio/libraries/class-tgm-plugin-activation.php:1027
 #: plugins/wp-freeio/libraries/class-tgm-plugin-activation.php:1030
 #: themes/freeio/inc/plugins/class-tgm-plugin-activation.php:1024
 #: themes/freeio/inc/plugins/class-tgm-plugin-activation.php:1027
 msgid ""
-"Please contact the plugin provider and ask them to package their plugin according "
-"to the WordPress guidelines."
+"Please contact the plugin provider and ask them to package their plugin "
+"according to the WordPress guidelines."
 msgstr ""
-"يرجى الاتصال بمزود البرنامج المساعد واطلب منهم حزم البرنامج المساعد الخاص بهم وفقًا "
-"لإرشادات WordPress."
+"يرجى الاتصال بمزود البرنامج المساعد واطلب منهم حزم البرنامج المساعد الخاص "
+"بهم وفقًا لإرشادات WordPress."
 
 #: plugins/wp-freeio/libraries/class-tgm-plugin-activation.php:1030
 #: themes/freeio/inc/plugins/class-tgm-plugin-activation.php:1027
 msgid ""
-"The remote plugin package consists of more than one file, but the files are not "
-"packaged in a folder."
+"The remote plugin package consists of more than one file, but the files are "
+"not packaged in a folder."
 msgstr ""
-"تتكون حزمة المكون الإضافي عن بُعد من أكثر من ملف واحد ، ولكن لا يتم تعبئة الملفات في "
-"مجلد."
+"تتكون حزمة المكون الإضافي عن بُعد من أكثر من ملف واحد ، ولكن لا يتم تعبئة "
+"الملفات في مجلد."
 
 #: plugins/wp-freeio/libraries/class-tgm-plugin-activation.php:2075
 #: themes/freeio/inc/plugins/class-tgm-plugin-activation.php:2072
@@ -10253,11 +10355,11 @@ msgstr "فشل تركيب ٪ 1 $ s."
 #: plugins/wp-freeio/libraries/class-tgm-plugin-activation.php:3600
 #: themes/freeio/inc/plugins/class-tgm-plugin-activation.php:3597
 msgid ""
-"The installation and activation process is starting. This process may take a while "
-"on some hosts, so please be patient."
+"The installation and activation process is starting. This process may take a "
+"while on some hosts, so please be patient."
 msgstr ""
-"بدأت عملية التثبيت والتنشيط.قد تستغرق هذه العملية بعض الوقت على بعض المضيفين ، لذا "
-"يرجى التحلي بالصبر."
+"بدأت عملية التثبيت والتنشيط.قد تستغرق هذه العملية بعض الوقت على بعض المضيفين "
+"، لذا يرجى التحلي بالصبر."
 
 #: plugins/wp-freeio/libraries/class-tgm-plugin-activation.php:3602
 #: themes/freeio/inc/plugins/class-tgm-plugin-activation.php:3599
@@ -10295,11 +10397,11 @@ msgstr "تركيب وتفعيل البرنامج المساعد ٪ 1 $ S (٪ 2 $
 #: plugins/wp-freeio/libraries/class-tgm-plugin-activation.php:3608
 #: themes/freeio/inc/plugins/class-tgm-plugin-activation.php:3605
 msgid ""
-"The installation process is starting. This process may take a while on some hosts, "
-"so please be patient."
+"The installation process is starting. This process may take a while on some "
+"hosts, so please be patient."
 msgstr ""
-"تبدأ عملية التثبيت.قد تستغرق هذه العملية بعض الوقت على بعض المضيفين ، لذا يرجى "
-"التحلي بالصبر."
+"تبدأ عملية التثبيت.قد تستغرق هذه العملية بعض الوقت على بعض المضيفين ، لذا "
+"يرجى التحلي بالصبر."
 
 #: plugins/wp-freeio/libraries/class-tgm-plugin-activation.php:3610
 #: themes/freeio/inc/plugins/class-tgm-plugin-activation.php:3607
@@ -10538,7 +10640,7 @@ msgstr "عرض التفاصيل"
 #: plugins/wp-freeio/libraries/plugin-update-checker/Puc/v4p9/Plugin/Ui.php:77
 #, php-format
 msgid "More information about %s"
-msgstr ""
+msgstr "مزيد من المعلومات حول ٪ s"
 
 #: plugins/wp-freeio/libraries/plugin-update-checker/Puc/v4p9/Plugin/Ui.php:128
 #, fuzzy
@@ -10549,7 +10651,7 @@ msgstr "تحقق من وجود تحديثات"
 #: plugins/wp-freeio/libraries/plugin-update-checker/Puc/v4p9/Plugin/Ui.php:223
 #, php-format
 msgid "Unknown update checker status \"%s\""
-msgstr ""
+msgstr "حالة مدقق تحديث غير معروفة \"٪ s\""
 
 #: plugins/wp-freeio/libraries/plugin-update-checker/Puc/v4p9/Vcs/PluginUpdateChecker.php:98
 #, fuzzy
@@ -10671,7 +10773,7 @@ msgstr "تم إنشاؤه بواسطة: ٪ s"
 #: themes/freeio/template-jobs/misc/freelancer-meetings.php:130
 #, php-format
 msgid "Re-schedule by: %s"
-msgstr ""
+msgstr "إعادة الجدول عن طريق: ٪ s"
 
 #: plugins/wp-freeio/templates/misc/freelancers-shortlist.php:36
 #: plugins/wp-freeio/templates/misc/job-applicants.php:49
@@ -10843,8 +10945,9 @@ msgstr "احفظ الملف"
 #: themes/freeio/template-jobs/misc/register-employer.php:90
 #: themes/freeio/template-jobs/misc/register-freelancer.php:111
 #, php-format
-msgid "You accept our <a href=\"%s\">Terms and Conditions and Privacy Policy</a>"
-msgstr ""
+msgid ""
+"You accept our <a href=\"%s\">Terms and Conditions and Privacy Policy</a>"
+msgstr "أنت تقبل <a href=\"٪S\"> الشروط والأحكام وسياسة الخصوصية </a>"
 
 #: plugins/wp-freeio/templates/misc/resume-form.php:48
 #: themes/freeio/template-jobs/misc/resume-form.php:49
@@ -10854,11 +10957,13 @@ msgstr "حفظ السيرة الذاتية"
 #: plugins/wp-freeio/templates/project-submission/project-submit-done.php:13
 #, php-format
 msgid ""
-"Project listed successfully. To view your listing <a href=\"%s\">click here</a>."
+"Project listed successfully. To view your listing <a href=\"%s\">click "
+"here</a>."
 msgstr ""
 
 #: plugins/wp-freeio/templates/project-submission/project-submit-done.php:16
-msgid "Project submitted successfully. Your listing will be visible once approved."
+msgid ""
+"Project submitted successfully. Your listing will be visible once approved."
 msgstr "قدم المشروع بنجاح.ستكون قائمتك مرئية بمجرد الموافقة عليها."
 
 #: plugins/wp-freeio/templates/service-submission/my-services.php:148
@@ -10871,11 +10976,13 @@ msgstr "٪ د المتقدمين (المتقدمين)"
 #: plugins/wp-freeio/templates/service-submission/service-submit-done.php:13
 #, php-format
 msgid ""
-"Service listed successfully. To view your listing <a href=\"%s\">click here</a>."
-msgstr ""
+"Service listed successfully. To view your listing <a href=\"%s\">click "
+"here</a>."
+msgstr "خدمة المدرجة بنجاح.لعرض قائمتك <a href=\"٪S\"> انقر هنا </a>."
 
 #: plugins/wp-freeio/templates/service-submission/service-submit-done.php:16
-msgid "Service submitted successfully. Your listing will be visible once approved."
+msgid ""
+"Service submitted successfully. Your listing will be visible once approved."
 msgstr "الخدمة المقدمة بنجاح.ستكون قائمتك مرئية بمجرد الموافقة عليها."
 
 #: plugins/wp-freeio/templates/single-employer.php:32
@@ -11009,7 +11116,7 @@ msgstr "صاحب العمل"
 #: plugins/wp-freeio/templates/single-job_listing/apply-call-form.php:35
 #, php-format
 msgid "Call %s to apply"
-msgstr ""
+msgstr "المكالمة ٪ S للتقدم"
 
 #: plugins/wp-freeio/templates/single-job_listing/apply-email-form.php:34
 #: plugins/wp-freeio/templates/single-job_listing/apply-internal-form.php:20
@@ -11036,9 +11143,11 @@ msgstr "تحميل السيرة الذاتية (٪ s)"
 #: themes/freeio/template-jobs/single-job_listing/apply-internal-form.php:101
 #, php-format
 msgid ""
-"You accept our <a href=\"%s\" target=\"_blank\">Terms and Conditions and Privacy "
-"Policy</a>"
+"You accept our <a href=\"%s\" target=\"_blank\">Terms and Conditions and "
+"Privacy Policy</a>"
 msgstr ""
+"أنت تقبل <a href=\"٪S\" target=\"_blank\"> الشروط والأحكام وسياسة الخصوصية "
+"</a>"
 
 #: plugins/wp-freeio/templates/single-job_listing/apply-email-form.php:142
 #: plugins/wp-freeio/templates/single-job_listing/apply-internal-form.php:129
@@ -11049,7 +11158,8 @@ msgstr "التقدم لوظيفة"
 
 #: plugins/wp-freeio/templates/submission/job-submit-done.php:13
 #, php-format
-msgid "Job listed successfully. To view your listing <a href=\"%s\">click here</a>."
+msgid ""
+"Job listed successfully. To view your listing <a href=\"%s\">click here</a>."
 msgstr ""
 
 #: plugins/wp-freeio/templates/submission/job-submit-done.php:16
@@ -11218,14 +11328,14 @@ msgstr "اقرأ أكثر"
 #: themes/freeio/footer.php:28
 #, fuzzy, php-format
 #| msgid ""
-#| "&copy; %s - Freeio. All Rights Reserved. <br/> Powered by <a href=\"//"
-#| "themeforest.net/user/apustheme\">ApusTheme</a>"
+#| "&copy; %s - Freeio. All Rights Reserved. <br/> Powered by <a "
+#| "href=\"//themeforest.net/user/apustheme\">ApusTheme</a>"
 msgid ""
-"&copy; %s - Freeioss. All Rights Reserved. <br/> Powered by <a href=\"//themeforest."
-"net/user/apustheme\">ApusTheme</a>"
+"&copy; %s - Freeioss. All Rights Reserved. <br/> Powered by <a "
+"href=\"//themeforest.net/user/apustheme\">ApusTheme</a>"
 msgstr ""
-"&ينسخ؛٪ s - Freeioss.كل الحقوق محفوظة.<br/> مدعوم من <a href=\"//themeforest.net/"
-"user/apustheme\"> apustheme </a>"
+"&ينسخ؛٪ s - Freeioss.كل الحقوق محفوظة.<br/> مدعوم من <a href=\"//themeforest."
+"net/user/apustheme\"> apustheme </a>"
 
 #: themes/freeio/functions.php:72
 msgid "Primary Menu"
@@ -11449,9 +11559,11 @@ msgstr "نوع تخطيط الرأس"
 #| "You can add or edit a header in <a href=\"%s\" target=\"_blank\">Headers "
 #| "Builder</a>"
 msgid ""
-"You can add or edit a header in <a href=\"%s\" target=\"_blank\">Headers Builder</a>"
+"You can add or edit a header in <a href=\"%s\" target=\"_blank\">Headers "
+"Builder</a>"
 msgstr ""
-"يمكنك إضافة أو تحرير رأس في <a href=\"٪S\" target=\"_blank\"> منشئ الرؤوس </a>"
+"يمكنك إضافة أو تحرير رأس في <a href=\"٪S\" target=\"_blank\"> منشئ الرؤوس "
+"</a>"
 
 #: themes/freeio/inc/customizer/customizer.php:92
 msgid "Sticky Header"
@@ -11496,9 +11608,11 @@ msgstr "نوع تخطيط تذييل"
 #| "You can add or edit a header in <a href=\"%s\" target=\"_blank\">Footers "
 #| "Builder</a>"
 msgid ""
-"You can add or edit a header in <a href=\"%s\" target=\"_blank\">Footers Builder</a>"
+"You can add or edit a header in <a href=\"%s\" target=\"_blank\">Footers "
+"Builder</a>"
 msgstr ""
-"يمكنك إضافة أو تحرير رأس في <a href=\"٪s\" target=\"_blank\"> منشئ تذييلات </a>"
+"يمكنك إضافة أو تحرير رأس في <a href=\"٪s\" target=\"_blank\"> منشئ تذييلات "
+"</a>"
 
 #: themes/freeio/inc/customizer/customizer.php:216
 msgid "Back To Top Button"
@@ -11804,12 +11918,12 @@ msgstr "حجم الصورة المصغرة"
 #: themes/freeio/inc/customizer/customizer.php:440
 msgid ""
 "Enter thumbnail size. Example: thumbnail, medium, large, full or other sizes "
-"defined by current theme. Alternatively enter image size in pixels: 200x100 (Width "
-"x Height) ."
+"defined by current theme. Alternatively enter image size in pixels: 200x100 "
+"(Width x Height) ."
 msgstr ""
-"أدخل حجم المصغرة.مثال: الصورة المصغرة ، المتوسطة ، الكبيرة ، الكاملة أو غيرها من "
-"الأحجام المحددة بواسطة السمة الحالية.بدلاً من ذلك ، أدخل حجم الصورة بالبكسل: 200x100 "
-"(العرض x ارتفاع)."
+"أدخل حجم المصغرة.مثال: الصورة المصغرة ، المتوسطة ، الكبيرة ، الكاملة أو "
+"غيرها من الأحجام المحددة بواسطة السمة الحالية.بدلاً من ذلك ، أدخل حجم الصورة "
+"بالبكسل: 200x100 (العرض x ارتفاع)."
 
 #: themes/freeio/inc/customizer/customizer.php:446
 msgid "Blog Single"
@@ -12538,11 +12652,11 @@ msgstr "درس اضافي"
 
 #: themes/freeio/inc/vendors/cmb2/page.php:564
 msgid ""
-"If you wish to style particular content element differently, then use this field to "
-"add a class name and then refer to it in your css file."
+"If you wish to style particular content element differently, then use this "
+"field to add a class name and then refer to it in your css file."
 msgstr ""
-"إذا كنت ترغب في تصميم عنصر محتوى معين بشكل مختلف ، فاستخدم هذا الحقل لإضافة اسم فئة "
-"ثم الرجوع إليه في ملف CSS الخاص بك."
+"إذا كنت ترغب في تصميم عنصر محتوى معين بشكل مختلف ، فاستخدم هذا الحقل لإضافة "
+"اسم فئة ثم الرجوع إليه في ملف CSS الخاص بك."
 
 #: themes/freeio/inc/vendors/cmb2/page.php:570
 msgid "Display Settings"
@@ -13046,11 +13160,11 @@ msgstr "اسم فئة إضافي"
 #: themes/freeio/inc/vendors/elementor/wp-freeio-widgets/user_info.php:93
 #: themes/freeio/inc/vendors/elementor/wp-freeio-widgets/user_short_profile.php:48
 msgid ""
-"If you wish to style particular content element differently, please add a class "
-"name to this field and refer to it in your custom CSS file."
+"If you wish to style particular content element differently, please add a "
+"class name to this field and refer to it in your custom CSS file."
 msgstr ""
-"إذا كنت ترغب في تصميم عنصر محتوى معين بشكل مختلف ، فيرجى إضافة اسم فئة إلى هذا "
-"الحقل والإشارة إليه في ملف CSS المخصص."
+"إذا كنت ترغب في تصميم عنصر محتوى معين بشكل مختلف ، فيرجى إضافة اسم فئة إلى "
+"هذا الحقل والإشارة إليه في ملف CSS المخصص."
 
 #: themes/freeio/inc/vendors/elementor/header-widgets/logo.php:16
 msgid "Apus Header Logo"
@@ -13266,11 +13380,11 @@ msgstr "لم يتم تعريف القالب."
 #: themes/freeio/inc/vendors/elementor/header-widgets/nav_bar.php:173
 #: themes/freeio/inc/vendors/elementor/widgets/tabs.php:253
 msgid ""
-"The tabs are working. Please, note, that you have to add a template to the library "
-"in order to be able to display it inside the tabs."
+"The tabs are working. Please, note, that you have to add a template to the "
+"library in order to be able to display it inside the tabs."
 msgstr ""
-"علامات التبويب تعمل.من فضلك ، لاحظ أنه يتعين عليك إضافة قالب إلى المكتبة حتى تتمكن "
-"من عرضه داخل علامات التبويب."
+"علامات التبويب تعمل.من فضلك ، لاحظ أنه يتعين عليك إضافة قالب إلى المكتبة حتى "
+"تتمكن من عرضه داخل علامات التبويب."
 
 #: themes/freeio/inc/vendors/elementor/header-widgets/nav_bar.php:179
 #: themes/freeio/inc/vendors/elementor/widgets/elementor-template.php:128
@@ -14252,13 +14366,13 @@ msgstr "أدخل عنوانك"
 
 #: themes/freeio/inc/vendors/elementor/widgets/achievements.php:94
 msgid ""
-"Click edit button to change this text. Lorem ipsum dolor sit amet, consectetur "
-"adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus "
-"leo."
+"Click edit button to change this text. Lorem ipsum dolor sit amet, "
+"consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, "
+"pulvinar dapibus leo."
 msgstr ""
 "انقر فوق زر تحرير لتغيير هذا النص.lorem ipsum dolor sit amet ، incectetur "
-"adipiscing leit.Ut Elit Tellus ، Luctus nec Ullamcorper Mattis ، Pulvinar Dapibus "
-"Leo."
+"adipiscing leit.Ut Elit Tellus ، Luctus nec Ullamcorper Mattis ، Pulvinar "
+"Dapibus Leo."
 
 #: themes/freeio/inc/vendors/elementor/widgets/achievements.php:95
 #: themes/freeio/inc/vendors/elementor/widgets/features_box.php:108
@@ -14855,8 +14969,8 @@ msgstr "قالب elementor apus تحميل"
 #: themes/freeio/inc/vendors/elementor/widgets/elementor-template.php:122
 #: themes/freeio/inc/vendors/elementor/widgets/filter_button_template.php:173
 msgid ""
-"The element are working. Please, note, that you have to add a template to the "
-"library in order to be able to display it inside the section."
+"The element are working. Please, note, that you have to add a template to "
+"the library in order to be able to display it inside the section."
 msgstr ""
 
 #: themes/freeio/inc/vendors/elementor/widgets/features_box.php:16
@@ -16306,7 +16420,7 @@ msgstr "علامات تبويب APUS المفضلة"
 #: themes/freeio/inc/vendors/elementor/wp-freeio-widgets/favorite_tabs.php:57
 #, php-format
 msgid "Show %s Favorite Tab"
-msgstr ""
+msgstr "علامة تبويب ٪ s tavis"
 
 #: themes/freeio/inc/vendors/elementor/wp-freeio-widgets/freelancer/archive-listing-items.php:14
 msgid "Freelancer Archive:: Freelancer Items"
@@ -17287,10 +17401,11 @@ msgstr "مستقل"
 
 #: themes/freeio/inc/vendors/one-click-demo-import/functions.php:15
 msgid ""
-"Import process may take 5-10 minutes. If you facing any issues please contact our "
-"support."
+"Import process may take 5-10 minutes. If you facing any issues please "
+"contact our support."
 msgstr ""
-"قد تستغرق عملية الاستيراد 5-10 دقائق.إذا كنت تواجه أي مشكلات ، فيرجى الاتصال بدعمنا."
+"قد تستغرق عملية الاستيراد 5-10 دقائق.إذا كنت تواجه أي مشكلات ، فيرجى الاتصال "
+"بدعمنا."
 
 #: themes/freeio/inc/vendors/woocommerce/customizer.php:24
 msgid "Shop Settings"
@@ -17823,7 +17938,7 @@ msgstr "إرسال تقرير"
 #: themes/freeio/inc/vendors/wp-freeio/functions-service-display.php:169
 #, php-format
 msgid "+%d"
-msgstr ""
+msgstr "+٪ د"
 
 #: themes/freeio/inc/vendors/wp-freeio/functions-freelancer.php:261
 #: themes/freeio/inc/vendors/wp-freeio/functions-freelancer.php:284
@@ -17855,7 +17970,7 @@ msgstr "قالب Elementor"
 #: themes/freeio/inc/vendors/wp-freeio/functions-project-display.php:371
 #, php-format
 msgid " Posted %s ago"
-msgstr ""
+msgstr "نشرت ٪ قبل"
 
 #: themes/freeio/inc/vendors/wp-freeio/functions-project-display.php:419
 #: themes/freeio/inc/vendors/wp-freeio/functions-project-display.php:423
@@ -18498,11 +18613,11 @@ msgstr "المنشور السابق"
 
 #: themes/freeio/widgets/elementor-template.php:17
 msgid ""
-"Please, note, that you have to add a template to the library in order to be able to "
-"display it inside the tabs."
+"Please, note, that you have to add a template to the library in order to be "
+"able to display it inside the tabs."
 msgstr ""
-"من فضلك ، لاحظ أنه يتعين عليك إضافة قالب إلى المكتبة حتى تتمكن من عرضه داخل علامات "
-"التبويب."
+"من فضلك ، لاحظ أنه يتعين عليك إضافة قالب إلى المكتبة حتى تتمكن من عرضه داخل "
+"علامات التبويب."
 
 #: themes/freeio/woocommerce/cart/cart.php:78
 msgid "Available on backorder"
@@ -18523,11 +18638,12 @@ msgstr "يجب عليك أن تقوم بتسجيل الدخول إلى الخر�
 
 #: themes/freeio/woocommerce/checkout/payment.php:33
 msgid ""
-"Sorry, it seems that there are no available payment methods for your state. Please "
-"contact us if you require assistance or wish to make alternate arrangements."
+"Sorry, it seems that there are no available payment methods for your state. "
+"Please contact us if you require assistance or wish to make alternate "
+"arrangements."
 msgstr ""
-"عذرًا ، يبدو أنه لا توجد طرق دفع متوفرة لدولتك.يرجى الاتصال بنا إذا كنت بحاجة إلى "
-"مساعدة أو ترغب في اتخاذ ترتيبات بديلة."
+"عذرًا ، يبدو أنه لا توجد طرق دفع متوفرة لدولتك.يرجى الاتصال بنا إذا كنت "
+"بحاجة إلى مساعدة أو ترغب في اتخاذ ترتيبات بديلة."
 
 #: themes/freeio/woocommerce/checkout/payment.php:33
 msgid "Please fill in your details above to see available payment methods."
@@ -18536,17 +18652,18 @@ msgstr "يرجى ملء التفاصيل الخاصة بك أعلاه لمشاه
 #: themes/freeio/woocommerce/checkout/payment.php:42
 #, fuzzy, php-format
 #| msgid ""
-#| "Since your browser does not support JavaScript, or it is disabled, please ensure "
-#| "you click the %1$sUpdate Totals%2$s button before placing your order. You may be "
-#| "charged more than the amount stated above if you fail to do so."
+#| "Since your browser does not support JavaScript, or it is disabled, please "
+#| "ensure you click the %1$sUpdate Totals%2$s button before placing your "
+#| "order. You may be charged more than the amount stated above if you fail "
+#| "to do so."
 msgid ""
-"Since your browser does not support JavaScript, or it is disabled, please ensure "
-"you click the %1$sUpdate Totals%2$s button before placing your order. You may be "
-"charged more than the amount stated above if you fail to do so."
+"Since your browser does not support JavaScript, or it is disabled, please "
+"ensure you click the %1$sUpdate Totals%2$s button before placing your order. "
+"You may be charged more than the amount stated above if you fail to do so."
 msgstr ""
-"نظرًا لأن متصفحك لا يدعم JavaScript ، أو يتم تعطيله ، يرجى التأكد من النقر فوق زر ٪ "
-"1 $ supdate totals ٪ 2 $ s قبل تقديم طلبك.قد يتم فرض رسوم عليك أكثر من المبلغ "
-"المذكور أعلاه إذا فشلت في القيام بذلك."
+"نظرًا لأن متصفحك لا يدعم JavaScript ، أو يتم تعطيله ، يرجى التأكد من النقر "
+"فوق زر ٪ 1 $ supdate totals ٪ 2 $ s قبل تقديم طلبك.قد يتم فرض رسوم عليك أكثر "
+"من المبلغ المذكور أعلاه إذا فشلت في القيام بذلك."
 
 #: themes/freeio/woocommerce/checkout/thankyou.php:39
 #: themes/freeio/woocommerce/checkout/thankyou.php:70
@@ -18567,11 +18684,11 @@ msgstr "ترتيب حسب:"
 
 #: themes/freeio/woocommerce/myaccount/form-lost-password.php:25
 msgid ""
-"Lost your password? Please enter your username or email address. You will receive a "
-"link to create a new password via email."
+"Lost your password? Please enter your username or email address. You will "
+"receive a link to create a new password via email."
 msgstr ""
-"فقدت كلمة المرور الخاصة بك؟الرجاء إدخال اسم المستخدم أو عنوان البريد الإلكتروني."
-"ستتلقى رابطًا لإنشاء كلمة مرور جديدة عبر البريد الإلكتروني."
+"فقدت كلمة المرور الخاصة بك؟الرجاء إدخال اسم المستخدم أو عنوان البريد "
+"الإلكتروني.ستتلقى رابطًا لإنشاء كلمة مرور جديدة عبر البريد الإلكتروني."
 
 #: themes/freeio/woocommerce/myaccount/my-address.php:17
 msgid "My Addresses"
@@ -18681,565 +18798,3 @@ msgstr "تفاصيل"
 #: themes/freeio/wp-private-message/reply-item.php:25
 msgid "Yesterday"
 msgstr "أمس"
-
-#~ msgid "Freeio"
-#~ msgstr "Freeio"
-
-#~ msgid ""
-#~ "Freeio is a Freelance Marketplace WordPress theme with some exciting features "
-#~ "and excellent code quality."
-#~ msgstr ""
-#~ "Freeio هو موضوع WordPress Freelance Marketplace مع بعض الميزات المثيرة وجودة رمز "
-#~ "ممتازة."
-
-#~ msgid "ApusTheme"
-#~ msgstr "Apustheme"
-
-#~ msgid "We can’t seem to find the page you’re looking for"
-#~ msgstr "لا يبدو أننا نجد الصفحة التي تبحث عنها"
-
-#~ msgid "Back to Home"
-#~ msgstr "العودة إلى المنزل"
-
-#~ msgid "Comments are closed."
-#~ msgstr "التعليقات مغلقة."
-
-#~ msgid "Switch Account"
-#~ msgstr "تبديل حساب"
-
-#~ msgid "Font Subsets"
-#~ msgstr "الخطوط الفرعية الخط"
-
-#~ msgid "Posts navigation"
-#~ msgstr "الملاحة المشاركات"
-
-#~ msgid "Your comment is awaiting moderation."
-#~ msgstr "تعليقك ينتظر الموافقة عليه."
-
-#~ msgctxt "plugin A *and* plugin B"
-#~ msgid "and"
-#~ msgstr "و"
-
-#~ msgctxt "Install/Update Status"
-#~ msgid "%1$s, %2$s"
-#~ msgstr "٪ 1 $ s ، ٪ 2 $ s"
-
-#~ msgctxt "as in: \"version nr unknown\""
-#~ msgid "unknown"
-#~ msgstr "مجهول"
-
-#~ msgid "Comment navigation"
-#~ msgstr "تعليق الملاحة"
-
-#~ msgid "#"
-#~ msgstr "#"
-
-#~ msgid "Package Info"
-#~ msgstr "معلومات الحزمة"
-
-#~ msgid "CV Count:"
-#~ msgstr "عدد السيرة الذاتية:"
-
-#~ msgid "CV Limit:"
-#~ msgstr "حد السيرة الذاتية:"
-
-#~ msgid "Urgent:"
-#~ msgstr "عاجل:"
-
-#~ msgid "Featured:"
-#~ msgstr "متميز:"
-
-#~ msgid "Limit Posts:"
-#~ msgstr "الحد من المشاركات:"
-
-#~ msgid "Number Days"
-#~ msgstr "عدد أيام"
-
-#~ msgid "No proposals found."
-#~ msgstr "لم يتم العثور على مقترحات."
-
-#~ msgid "Cost/Time"
-#~ msgstr "التكلفة/الوقت"
-
-#~ msgid "Hire Now"
-#~ msgstr "استئجار الآن"
-
-#~ msgid "No service orders found."
-#~ msgstr "لم يتم العثور على أوامر خدمة."
-
-#~ msgid "View History"
-#~ msgstr "عرض السجل"
-
-#~ msgid "E-mail"
-#~ msgstr "بريد إلكتروني"
-
-#~ msgid "Phone"
-#~ msgstr "هاتف"
-
-#~ msgid "Completed Service"
-#~ msgstr "الخدمة المكتملة"
-
-#~ msgid "Buy Now"
-#~ msgstr "اشتري الآن"
-
-#~ msgid "Transactions"
-#~ msgstr "المعاملات"
-
-#~ msgid "Payment Mode"
-#~ msgstr "طريقة الدفع"
-
-#~ msgid "Don't have any items"
-#~ msgstr "ليس لديك أي عناصر"
-
-#~ msgid "Show Menu"
-#~ msgstr "قائمة العرض"
-
-#~ msgid "You need to be signed in to access this page."
-#~ msgstr "يجب أن يتم تسجيل الدخول للوصول إلى هذه الصفحة."
-
-#~ msgid "Sign in"
-#~ msgstr "تسجيل الدخول"
-
-#~ msgid "Report this employer"
-#~ msgstr "الإبلاغ عن صاحب العمل هذا"
-
-#~ msgid "Tagged as:"
-#~ msgstr "الموسومة على النحو التالي:"
-
-#~ msgid "Salary:"
-#~ msgstr "مرتب:"
-
-#~ msgid "Deadline date:"
-#~ msgstr "تاريخ الموعد النهائي:"
-
-#~ msgid "Report this job"
-#~ msgstr "الإبلاغ عن هذه الوظيفة"
-
-#~ msgid "Price:"
-#~ msgstr "سعر:"
-
-#~ msgid "Your Proposals"
-#~ msgstr "مقترحاتك"
-
-#~ msgid "Title:"
-#~ msgstr "عنوان:"
-
-#~ msgid "Num Posts:"
-#~ msgstr "مشاركات NUM:"
-
-#~ msgid "Dashboard Template"
-#~ msgstr "قالب لوحة القيادة"
-
-#~ msgid "Employers Elementor Template"
-#~ msgstr "قالب أصحاب العمل"
-
-#~ msgid "Projects Elementor Template"
-#~ msgstr "مشاريع قالب elementor"
-
-#~ msgid "Services Elementor Template"
-#~ msgstr "قالب خدمات الخدمات"
-
-#~ msgid "Services Template"
-#~ msgstr "قالب الخدمات"
-
-#~ msgid "Search..."
-#~ msgstr "يبحث..."
-
-#~ msgid "Applied date:"
-#~ msgstr "التاريخ التطبيقي:"
-
-#~ msgid "Undo Rejected"
-#~ msgstr "تراجع رفض"
-
-#~ msgid "We're Sorry Opps! Freelancer Expired"
-#~ msgstr "نحن آسفون!انتهت صلاحية الحر"
-
-#~ msgid ""
-#~ "Unable to access the link. Freelancer has been expired. Please contact the admin "
-#~ "or who shared the link with you."
-#~ msgstr ""
-#~ "غير قادر على الوصول إلى الرابط.وقد انتهت صلاحية Freelancer.يرجى الاتصال بالمسؤول "
-#~ "أو شاركك الرابط معك."
-
-#~ msgid ""
-#~ "Unable to access the link. Job has been expired. Please contact the admin or who "
-#~ "shared the link with you."
-#~ msgstr ""
-#~ "غير قادر على الوصول إلى الرابط.انتهت صلاحية الوظيفة.يرجى الاتصال بالمسؤول أو "
-#~ "شاركك الرابط معك."
-
-#~ msgid "We're Sorry Opps! Project Expired"
-#~ msgstr "نحن آسفون!انتهت صلاحية المشروع"
-
-#~ msgid "We're Sorry Opps! Service Expired"
-#~ msgstr "نحن آسفون!انتهت صلاحية الخدمة"
-
-#~ msgid "No employer found."
-#~ msgstr "لم يتم العثور على صاحب عمل."
-
-#~ msgid "Load more"
-#~ msgstr "تحميل المزيد"
-
-#~ msgid "All employers loaded."
-#~ msgstr "تم تحميل جميع أرباب العمل."
-
-#~ msgid "All freelancers loaded."
-#~ msgstr "تم تحميل جميع المستقلين."
-
-#~ msgid "All jobs loaded."
-#~ msgstr "جميع الوظائف المحملة."
-
-#~ msgid "No project found."
-#~ msgstr "لم يتم العثور على مشروع."
-
-#~ msgid "All projects loaded."
-#~ msgstr "جميع المشاريع المحملة."
-
-#~ msgid "No service found."
-#~ msgstr "لم يتم العثور على خدمة."
-
-#~ msgid "All services loaded."
-#~ msgstr "جميع الخدمات المحملة."
-
-#~ msgid "Are you sure! You want to delete your profile."
-#~ msgstr "هل أنت متأكد!تريد حذف ملف التعريف الخاص بك."
-
-#~ msgid "This can't be undone!"
-#~ msgstr "هذا لا يمكن التراجع!"
-
-#~ msgid "Please enter your login Password to confirm:"
-#~ msgstr "الرجاء إدخال كلمة مرور تسجيل الدخول لتأكيد:"
-
-#~ msgid "Resolved"
-#~ msgstr "تم الحل"
-
-#~ msgid "Ongoing"
-#~ msgstr "جاري التنفيذ"
-
-#~ msgid "Choose a Service/Project"
-#~ msgstr "اختر خدمة/مشروع"
-
-#~ msgid "Send Dispute"
-#~ msgstr "أرسل النزاع"
-
-#~ msgid "User Name"
-#~ msgstr "اسم المستخدم"
-
-#~ msgid "Created"
-#~ msgstr "مخلوق"
-
-#~ msgid "Recent Proposals"
-#~ msgstr "المقترحات الحديثة"
-
-#~ msgid "No employees found."
-#~ msgstr "لم يتم العثور على موظفين."
-
-#~ msgid "Enter Password"
-#~ msgstr "أدخل كلمة المرور"
-
-#~ msgid "Zoom Settings"
-#~ msgstr "إعدادات التكبير"
-
-#~ msgid "Zoom Email"
-#~ msgstr "تكبير البريد الإلكتروني"
-
-#~ msgid "Meeting with: "
-#~ msgstr "لقاء مع: "
-
-#~ msgid "Minutes"
-#~ msgstr "دقائق"
-
-#~ msgid "Zoom Meeting"
-#~ msgstr "اجتماع التكبير"
-
-#~ msgid "Posted Services"
-#~ msgstr "الخدمات المنشورة"
-
-#~ msgid "Completed Services"
-#~ msgstr "الخدمات المكتملة"
-
-#~ msgid "In Queue Services"
-#~ msgstr "في خدمات قائمة الانتظار"
-
-#~ msgid "Cancel Meeting"
-#~ msgstr "إلغاء الاجتماع"
-
-#~ msgid "Filter by job"
-#~ msgstr "تصفية عن طريق الوظيفة"
-
-#~ msgid "No applicants found."
-#~ msgstr "لم يتم العثور على المتقدمين."
-
-#~ msgid "Date Applied"
-#~ msgstr "تاريخ تطبيقها"
-
-#~ msgid "No application found."
-#~ msgstr "لم يتم العثور على تطبيق."
-
-#~ msgid "Forgotten password"
-#~ msgstr "كلمة سر منسية"
-
-#~ msgid "Times"
-#~ msgstr "مرات"
-
-#~ msgid "Your Total Price"
-#~ msgstr "إجمالي سعرك"
-
-#~ msgid "No proposal found."
-#~ msgstr "لم يتم العثور على اقتراح."
-
-#~ msgid "Save Details"
-#~ msgstr "حفظ التفاصيل"
-
-#~ msgid "Your resume has expired."
-#~ msgstr "انتهت سيرتك الذاتية."
-
-#~ msgid "Net income"
-#~ msgstr "صافي الدخل"
-
-#~ msgid "Pending Clearance"
-#~ msgstr "تصريح معلق"
-
-#~ msgid "Available for withdrawal"
-#~ msgstr "متاح للانسحاب"
-
-#~ msgid "Withdraw now"
-#~ msgstr "انسحب الآن"
-
-#~ msgid "Select Payout Method"
-#~ msgstr "حدد طريقة الدفع"
-
-#~ msgid "No statement found."
-#~ msgstr "لم يتم العثور على بيان."
-
-#~ msgid ""
-#~ "You have already sent the verification document. Please revoke verification to "
-#~ "send again."
-#~ msgstr "لقد أرسلت بالفعل وثيقة التحقق.يرجى إلغاء التحقق للإرسال مرة أخرى."
-
-#~ msgid "View Proposals"
-#~ msgstr "عرض المقترحات"
-
-#~ msgid "Relist"
-#~ msgstr "ريب"
-
-#~ msgid "Continue"
-#~ msgstr "يكمل"
-
-#~ msgid "You don't have any projects, yet. Start by creating new one."
-#~ msgstr "ليس لديك أي مشاريع ، حتى الآن.ابدأ بإنشاء واحدة جديدة."
-
-#~ msgid "Edit Project"
-#~ msgstr "تحرير المشروع"
-
-#~ msgid "In Queue"
-#~ msgstr "في قائمة الانتظار"
-
-#~ msgid "You don't have any services, yet. Start by creating new one."
-#~ msgstr "ليس لديك أي خدمات ، حتى الآن.ابدأ بإنشاء واحدة جديدة."
-
-#~ msgid "Cost"
-#~ msgstr "يكلف"
-
-#~ msgid "You don't have any service addons, yet. Start by creating new one."
-#~ msgstr "ليس لديك أي إضافات خدمة ، حتى الآن.ابدأ بإنشاء واحدة جديدة."
-
-#~ msgid "Edit Service"
-#~ msgstr "تحرير الخدمة"
-
-#~ msgid "Open Position"
-#~ msgstr "موقف مفتوح"
-
-#~ msgid "Video"
-#~ msgstr "فيديو"
-
-#~ msgid "About Freelancer"
-#~ msgstr "حول مستقل"
-
-#~ msgid "Portfolio"
-#~ msgstr "مَلَفّ"
-
-#~ msgid "Select a your CV"
-#~ msgstr "حدد سيرتك الذاتية"
-
-#~ msgid "or upload your CV"
-#~ msgstr "أو تحميل سيرتك الذاتية"
-
-#~ msgid "Related Jobs"
-#~ msgstr "وظائف ذات صلة"
-
-#~ msgid "Please login as freelancer account to download attachment"
-#~ msgstr "يرجى تسجيل الدخول كحساب مستقل لتنزيل المرفق"
-
-#~ msgid "Send Your Proposal"
-#~ msgstr "أرسل اقتراحك"
-
-#~ msgid "Related Services"
-#~ msgstr "الخدمات ذات الصلة"
-
-#~ msgid "Post a New Job"
-#~ msgstr "انشر وظيفة جديدة"
-
-#~ msgid "Created & Expired"
-#~ msgstr "تم إنشاؤها وانتهاء صلاحيتها"
-
-#~ msgid "Created: "
-#~ msgstr "مخلوق: "
-
-#~ msgid "You don't have any jobs, yet. Start by creating new one."
-#~ msgstr "ليس لديك أي وظائف ، حتى الآن.ابدأ بإنشاء واحدة جديدة."
-
-#~ msgid "Related Posts"
-#~ msgstr "المنشورات ذات الصلة"
-
-#~ msgid "Nothing Found"
-#~ msgstr "لم يتم العثور على شيء"
-
-#~ msgid "Try again please, use the search form below."
-#~ msgstr "حاول مرة أخرى من فضلك ، استخدم نموذج البحث أدناه."
-
-#~ msgid "Quantity"
-#~ msgstr "كمية"
-
-#~ msgid "Total"
-#~ msgstr "المجموع"
-
-#~ msgid "Product"
-#~ msgstr "منتج"
-
-#~ msgid "Coupon:"
-#~ msgstr "القسيمة:"
-
-#~ msgid "Coupon code"
-#~ msgstr "رمز الكوبون"
-
-#~ msgid "Apply coupon"
-#~ msgstr "تطبيق القسيمة"
-
-#~ msgid "You may be interested in&hellip;"
-#~ msgstr "قد تكون مهتمًا بـ & hellip ؛"
-
-#~ msgid "View your shopping cart"
-#~ msgstr "عرض سلة التسوق الخاصة بك"
-
-#~ msgid "My Cart"
-#~ msgstr "عربتي"
-
-#~ msgid "Currently Empty"
-#~ msgstr "حاليا فارغة"
-
-#~ msgid "Continue shopping"
-#~ msgstr "مواصلة التسوق"
-
-#~ msgid "View Cart"
-#~ msgstr "عرض العربة"
-
-#~ msgid "Billing &amp; Shipping"
-#~ msgstr "الفواتير & amp ؛شحن"
-
-#~ msgid "Billing details"
-#~ msgstr "تفاصيل الفاتورة"
-
-#~ msgid "Create an account?"
-#~ msgstr "إنشاء حساب؟"
-
-#~ msgid "Your order"
-#~ msgstr "طلبك"
-
-#~ msgid "Ship to a different address?"
-#~ msgstr "شحن إلى عنوان مختلف؟"
-
-#~ msgid "Update totals"
-#~ msgstr "مجموع التحديثات"
-
-#~ msgid ""
-#~ "Unfortunately your order cannot be processed as the originating bank/merchant "
-#~ "has declined your transaction. Please attempt your purchase again."
-#~ msgstr ""
-#~ "لسوء الحظ ، لا يمكن معالجة طلبك لأن البنك/التاجر الأصلي قد رفض معاملتك.الرجاء "
-#~ "محاولة الشراء مرة أخرى."
-
-#~ msgid "My Account"
-#~ msgstr "حسابي"
-
-#~ msgid "Payment Method"
-#~ msgstr "طريقة الدفع او السداد"
-
-#~ msgid "Quantity : "
-#~ msgstr "كمية : "
-
-#~ msgctxt "Product quantity input tooltip"
-#~ msgid "Qty"
-#~ msgstr "كتي"
-
-#~ msgid "Add payment method"
-#~ msgstr "إضافة طريقة دفع"
-
-#~ msgid ""
-#~ "New payment methods can only be added during checkout. Please contact us if you "
-#~ "require assistance."
-#~ msgstr ""
-#~ "لا يمكن إضافة طرق دفع جديدة إلا أثناء الخروج.يرجى الاتصال بنا إذا كنت بحاجة إلى "
-#~ "مساعدة."
-
-#~ msgid ""
-#~ "This will be how your name will be displayed in the account section and in "
-#~ "reviews"
-#~ msgstr "سيكون هذا هو ما سيتم عرض اسمك في قسم الحساب وفي المراجعات"
-
-#~ msgid "Current Password (leave blank to leave unchanged)"
-#~ msgstr "كلمة المرور الحالية (اترك فارغة للمغادرة دون تغيير)"
-
-#~ msgid "New Password (leave blank to leave unchanged)"
-#~ msgstr "كلمة مرور جديدة (اترك فارغة للمغادرة دون تغيير)"
-
-#~ msgid "Save changes"
-#~ msgstr "حفظ التغييرات"
-
-#~ msgid "Remember me"
-#~ msgstr "تذكرنى"
-
-#~ msgid "sign in"
-#~ msgstr "تسجيل الدخول"
-
-#~ msgid "A password will be sent to your email address."
-#~ msgstr "سيتم إرسال كلمة المرور إلى عنوان بريدك الإلكتروني."
-
-#~ msgid "You have not set up this type of address yet."
-#~ msgstr "لم تقم بإعداد هذا النوع من العنوان بعد."
-
-#~ msgid "Order details"
-#~ msgstr "تفاصيل الطلب"
-
-#~ msgid "Note:"
-#~ msgstr "ملحوظة:"
-
-#~ msgid "There are no reviews yet."
-#~ msgstr "لا توجد توصيات بعد."
-
-#~ msgid "SKU:"
-#~ msgstr "SKU:"
-
-#~ msgid "Related Products"
-#~ msgstr "منتجات ذات صله"
-
-#~ msgid "out of 5"
-#~ msgstr "من 5"
-
-#~ msgid "Up-Sells Products"
-#~ msgstr "منتجات الصعود"
-
-#~ msgid "Show messages box"
-#~ msgstr "إظهار مربع الرسائل"
-
-#~ msgid "Read"
-#~ msgstr "يقرأ"
-
-#~ msgid "Unread"
-#~ msgstr "غير مقروء"
-
-#~ msgid "No message found"
-#~ msgstr "لم يتم العثور على رسالة"
-
-#~ msgid "Delete Conversation"
-#~ msgstr "مسح المحادثة"
